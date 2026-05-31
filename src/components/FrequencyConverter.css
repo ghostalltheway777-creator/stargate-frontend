@@ -1,0 +1,54 @@
+.fc-page { max-width: 480px; margin: 0 auto; padding: 0 0 80px; }
+
+.fc-hero { text-align: center; padding: 32px 20px 20px; background: linear-gradient(180deg,#040810,#050c18); border-bottom: 1px solid rgba(80,200,150,0.15); }
+.fc-icon { font-size: 36px; margin-bottom: 10px; color: #50c890; }
+.fc-title { font-size: 24px; font-weight: 700; color: #fff; margin: 0 0 6px; letter-spacing: 2px; }
+.fc-sub { font-size: 11px; color: rgba(255,255,255,0.4); margin: 0; }
+
+.fc-tabs { display: flex; border-bottom: 1px solid rgba(255,255,255,0.06); }
+.fc-tab { flex: 1; padding: 12px; background: none; border: none; color: rgba(255,255,255,0.4); font-size: 13px; cursor: pointer; }
+.fc-tab.active { color: #50c890; border-bottom: 2px solid #50c890; }
+
+.fc-section { padding: 16px; }
+
+.fc-alert { background: rgba(255,120,50,0.08); border: 1px solid rgba(255,120,50,0.25); border-radius: 12px; padding: 16px; margin-bottom: 16px; }
+.fc-alert-title { font-size: 14px; font-weight: 700; color: #ff8040; margin-bottom: 8px; }
+.fc-alert-text { font-size: 12px; color: rgba(255,255,255,0.7); line-height: 1.7; margin: 0; }
+
+.fc-card { background: rgba(80,200,150,0.04); border: 1px solid rgba(80,200,150,0.12); border-radius: 12px; padding: 16px; margin-bottom: 14px; }
+.fc-card-icon { font-size: 22px; margin-bottom: 8px; }
+.fc-card-title { font-size: 13px; font-weight: 700; color: #50c890; margin: 0 0 10px; }
+.fc-card-text { font-size: 12px; color: rgba(255,255,255,0.7); line-height: 1.8; margin: 0 0 8px; }
+.fc-card-source { font-size: 10px; color: rgba(255,255,255,0.3); margin: 0; font-style: italic; }
+
+.fc-info-box { background: rgba(80,200,150,0.06); border: 1px solid rgba(80,200,150,0.2); border-radius: 10px; padding: 12px; margin-bottom: 16px; }
+.fc-info-box p { font-size: 12px; color: rgba(255,255,255,0.6); margin: 0; line-height: 1.6; }
+
+.fc-convert-box { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 16px; margin-bottom: 14px; }
+.fc-convert-title { font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 4px; }
+.fc-convert-desc { font-size: 11px; color: rgba(255,255,255,0.4); margin: 0 0 12px; }
+
+.fc-drop-zone { border: 2px dashed rgba(80,200,150,0.3); border-radius: 12px; padding: 24px; text-align: center; cursor: pointer; margin-bottom: 12px; transition: all 0.2s; }
+.fc-drop-zone:hover { border-color: rgba(80,200,150,0.6); background: rgba(80,200,150,0.04); }
+.fc-drop-inner { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.fc-drop-icon { font-size: 28px; color: rgba(80,200,150,0.6); }
+.fc-drop-text { font-size: 13px; color: rgba(255,255,255,0.5); }
+.fc-file-selected { display: flex; align-items: center; gap: 10px; }
+.fc-file-icon { font-size: 24px; }
+.fc-file-name { font-size: 13px; color: #50c890; flex: 1; text-align: left; word-break: break-all; }
+.fc-file-size { font-size: 11px; color: rgba(255,255,255,0.4); }
+
+.fc-url-input { width: 100%; padding: 12px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; color: #fff; font-size: 13px; box-sizing: border-box; margin-bottom: 8px; }
+.fc-supported { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+.fc-supported span { font-size: 10px; color: rgba(80,200,150,0.7); background: rgba(80,200,150,0.08); border: 1px solid rgba(80,200,150,0.2); border-radius: 20px; padding: 3px 8px; }
+
+.fc-btn { width: 100%; padding: 14px; background: linear-gradient(135deg,rgba(80,200,150,0.2),rgba(80,200,150,0.08)); border: 1px solid rgba(80,200,150,0.4); border-radius: 12px; color: #50c890; font-size: 14px; font-weight: 700; cursor: pointer; }
+.fc-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.fc-error { background: rgba(255,80,80,0.08); border: 1px solid rgba(255,80,80,0.2); border-radius: 10px; padding: 12px; color: #ff8080; font-size: 12px; margin-top: 12px; }
+
+.fc-success { background: rgba(80,200,150,0.08); border: 1px solid rgba(80,200,150,0.3); border-radius: 14px; padding: 20px; text-align: center; margin-top: 14px; }
+.fc-success-icon { font-size: 32px; color: #50c890; margin-bottom: 8px; }
+.fc-success-title { font-size: 15px; font-weight: 700; color: #50c890; margin-bottom: 14px; }
+.fc-download-btn { display: inline-block; background: #50c890; color: #000; font-weight: 700; padding: 12px 24px; border-radius: 10px; text-decoration: none; font-size: 14px; margin-bottom: 10px; }
+.fc-success-note { font-size: 11px; color: rgba(255,255,255,0.4); margin: 0; }

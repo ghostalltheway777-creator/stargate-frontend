@@ -26,6 +26,7 @@ const ITEMS = [
   { path:'/intentions',          icon:'⬡', name:'Intentioner',            desc:'Kollektivt felt · Send energi', color:'#5070d0' },
   { path:'/alive',               icon:'◈', name:'Alt er Levende',         desc:'Panpsychisme · Resonans · Bevidst univers', color:'#f0a040' },
   { path:'/frequency',           icon:'∿', name:'Frekvenser',             desc:'432 Hz · 528 Hz · Schumann · Solfeggio · DNA', color:'#50c090' },
+  { path:'/freq-convert',       icon:'⚙', name:'432 Hz Konverter',        desc:'Konverter din musik · YouTube · SoundCloud · MP3 · Rockefeller & 440 Hz historien', color:'#50c890' },
   { path:'/pineal',              icon:'👁', name:'Pineal / Third Eye',     desc:'DMT fabrik · Fluorid · Ancient viden · Hjerte som elektromagnet', color:'#8060cc' },
   { path:'/manifestation',       icon:'✦', name:'Manifestation',          desc:'As Within So Without · 369 · Neville · Se det med lukkede øjne', color:'#d4a843' },
   { path:'/sacred-sexuality',    icon:'🌹', name:'Sacred Sexuality',       desc:'Tantra · Kundalini · Seksuel energi · Healing', color:'#e06080' },

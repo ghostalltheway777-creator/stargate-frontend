@@ -53,6 +53,9 @@ import PsychControl from './components/PsychControl'
 import Transhumanism from './components/Transhumanism'
 import Avatar2045 from './components/Avatar2045'
 import PrivacyPolicy from './components/PrivacyPolicy'
+import FrequencyConverter from './components/FrequencyConverter'
+import CovidScam from './components/CovidScam'
+import WorldOrder from './components/WorldOrder'
 import WWIIBankers from './components/WWIIBankers'
 import SacredSexuality from './components/SacredSexuality'
 import DailyMeditation from './components/DailyMeditation'
@@ -188,6 +191,9 @@ function AppInner() {
           <Route path="/profile"        element={<Profile />} />
           <Route path="/premium"        element={<Premium />} />
           <Route path="/privacy"        element={<PrivacyPolicy />} />
+          <Route path="/freq-convert"   element={<P><FrequencyConverter /></P>} />
+          <Route path="/covid"          element={<P><CovidScam /></P>} />
+          <Route path="/world-order"    element={<P><WorldOrder /></P>} />
 
           {/* PREMIUM — kræver betaling */}
           <Route path="/explore"        element={<ExploreHub />} />
