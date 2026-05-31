@@ -10,8 +10,8 @@ workflows:
           cd android
           chmod +x gradlew
           echo "sdk.dir=$ANDROID_SDK_ROOT" > local.properties
-          # Patch capacitor.build.gradle to remove cordova dependency
-          sed -i 's|apply from: "../capacitor-cordova-android-plugins/cordova.variables.gradle"||g' app/capacitor.build.gradle
+          # Patch capacitor.build.gradle to remove cordova dependency (macOS compatible)
+          python3 -c "f=open('app/capacitor.build.gradle'); c=f.read(); f.close(); c=c.replace('apply from: \"../capacitor-cordova-android-plugins/cordova.variables.gradle\"',''); f=open('app/capacitor.build.gradle','w'); f.write(c); f.close()"
           ./gradlew assembleDebug
     artifacts:
       - android/app/build/outputs/apk/debug/*.apk
