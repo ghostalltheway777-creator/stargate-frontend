@@ -20,6 +20,7 @@ const ITEMS = [
   { path:'/food-scanner',   icon:'📱', name:'Food Scanner',          desc:'Scan stregkode · Seed oils · E-numre · Dr. Sebi analyse', color:'#50cc80' },
   { path:'/ancient-medicine',icon:'🌿',name:'Ancient Medicine',       desc:'AI Natur Doctor · Dr. Sebi · CIA kure · Body & Mind · Healing', color:'#50aa50' },
   { path:'/wwii-bankers',   icon:'⚔️', name:'Krig som Forretning',   desc:'Wall Street · Bolsjevikker · Operation Paperclip · CIA', color:'#cc9944' },
+  { path:'/palestine',      icon:'🕊', name:'Gaza · Lebanon · Iran',        desc:'ICC arrestordrer · FN · Vidner · Hamas oprindelse · JFK · AIPAC · Archon forbindelsen', color:'#50cc70' },
   { path:'/world-order',    icon:'🌍', name:'Den Virkelige Verdensorden', desc:'Rothschild banker · Ukraine kupet · Nordstream · Mette Frederiksen · BRICS · Rusland/Kina som syndebukke', color:'#5060cc' },
   { path:'/covid',          icon:'🦠', name:'COVID-19 Scam',          desc:'William Shakespeare · mRNA · Gates retssag · Hanta · 440 Hz forbindelsen', color:'#cc4444' },
   { path:'/propaganda',     icon:'📺', name:'Se Gennem Systemet',    desc:'Propaganda · COVID Scam · Problem-Løsning · Mockingbird', color:'#cc4444' },

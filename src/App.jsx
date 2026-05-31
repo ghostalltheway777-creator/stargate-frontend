@@ -56,6 +56,7 @@ import PrivacyPolicy from './components/PrivacyPolicy'
 import FrequencyConverter from './components/FrequencyConverter'
 import CovidScam from './components/CovidScam'
 import WorldOrder from './components/WorldOrder'
+import Palestine from './components/Palestine'
 import WWIIBankers from './components/WWIIBankers'
 import SacredSexuality from './components/SacredSexuality'
 import DailyMeditation from './components/DailyMeditation'
@@ -194,6 +195,7 @@ function AppInner() {
           <Route path="/freq-convert"   element={<P><FrequencyConverter /></P>} />
           <Route path="/covid"          element={<P><CovidScam /></P>} />
           <Route path="/world-order"    element={<P><WorldOrder /></P>} />
+          <Route path="/palestine"      element={<P><Palestine /></P>} />
 
           {/* PREMIUM — kræver betaling */}
           <Route path="/explore"        element={<ExploreHub />} />

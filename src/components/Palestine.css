@@ -1,0 +1,37 @@
+.pal-page { max-width: 480px; margin: 0 auto; padding: 0 0 80px; }
+.pal-hero { text-align: center; padding: 32px 20px 16px; background: linear-gradient(180deg,#060a08,#080d0a); border-bottom: 1px solid rgba(80,180,100,0.15); }
+.pal-icon { font-size: 36px; margin-bottom: 8px; }
+.pal-title { font-size: 22px; font-weight: 700; color: #fff; margin: 0 0 6px; letter-spacing: 2px; }
+.pal-sub { font-size: 11px; color: rgba(255,255,255,0.4); margin: 0; }
+
+.pal-tabs { display: flex; gap: 3px; padding: 12px 12px 0; overflow-x: auto; scrollbar-width: none; }
+.pal-tabs::-webkit-scrollbar { display: none; }
+.pal-tab { flex-shrink: 0; padding: 8px 10px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; color: rgba(255,255,255,0.4); font-size: 11px; cursor: pointer; }
+.pal-tab.active { background: rgba(80,180,100,0.1); border-color: rgba(80,180,100,0.35); color: #50cc70; }
+
+.pal-section { padding: 16px; }
+.pal-alert { background: rgba(80,180,100,0.06); border: 1px solid rgba(80,180,100,0.2); border-radius: 12px; padding: 14px; margin-bottom: 16px; text-align: center; }
+.pal-alert p { font-size: 12px; color: rgba(255,255,255,0.8); margin: 0; line-height: 1.7; }
+
+.pal-green-box { background: rgba(80,180,100,0.08); border: 1px solid rgba(80,180,100,0.25); border-radius: 14px; padding: 20px; margin-bottom: 16px; }
+.pal-green-title { font-size: 15px; font-weight: 700; color: #50cc70; margin: 0 0 12px; }
+.pal-green-box p { font-size: 12px; color: rgba(255,255,255,0.75); line-height: 1.7; margin: 0; }
+
+.pal-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07); border-radius: 12px; padding: 16px; margin-bottom: 14px; }
+.pal-card-icon { font-size: 22px; margin-bottom: 8px; }
+.pal-card-title { font-size: 13px; font-weight: 700; color: #50cc70; margin: 0 0 10px; }
+.pal-card-text { font-size: 12px; color: rgba(255,255,255,0.7); line-height: 1.8; margin: 0 0 8px; }
+.pal-card-src { font-size: 10px; color: rgba(255,255,255,0.3); margin: 0; font-style: italic; }
+.pal-org { font-size: 10px; font-weight: 700; color: rgba(80,180,100,0.7); letter-spacing: 1px; margin-bottom: 6px; }
+.pal-year { font-size: 11px; font-weight: 700; color: rgba(212,168,67,0.8); margin-bottom: 6px; }
+.pal-witness-who { font-size: 12px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+
+.pal-voice { padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.04); }
+.pal-voice:last-child { border-bottom: none; }
+.pal-voice-name { font-size: 12px; font-weight: 700; color: #50cc70; margin-bottom: 3px; }
+.pal-voice-desc { font-size: 11px; color: rgba(255,255,255,0.55); line-height: 1.5; }
+
+.pal-stat-row { display: flex; gap: 6px; margin-bottom: 16px; flex-wrap: wrap; }
+.pal-stat { flex: 1; min-width: 100px; background: rgba(255,80,80,0.06); border: 1px solid rgba(255,80,80,0.15); border-radius: 12px; padding: 12px 8px; text-align: center; }
+.pal-stat-num { font-size: 14px; font-weight: 900; color: #ff8080; margin-bottom: 4px; }
+.pal-stat-label { font-size: 9px; color: rgba(255,255,255,0.5); line-height: 1.4; }
