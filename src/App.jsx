@@ -57,6 +57,7 @@ import FrequencyConverter from './components/FrequencyConverter'
 import CovidScam from './components/CovidScam'
 import WorldOrder from './components/WorldOrder'
 import Palestine from './components/Palestine'
+import Hollywood from './components/Hollywood'
 import WWIIBankers from './components/WWIIBankers'
 import SacredSexuality from './components/SacredSexuality'
 import DailyMeditation from './components/DailyMeditation'
@@ -143,7 +144,8 @@ function AppInner() {
     setShowIntro(false)
   }
 
-  const [showOnboarding, setShowOnboarding] = useState(() => !localStorage.getItem('sg_onboarded'))
+  const { isSetup } = useUser()
+  const [showOnboarding, setShowOnboarding] = useState(() => !localStorage.getItem('sg_onboarded') && !isSetup)
 
   const isActive = (path) =>
     path === '/'
@@ -196,6 +198,7 @@ function AppInner() {
           <Route path="/covid"          element={<P><CovidScam /></P>} />
           <Route path="/world-order"    element={<P><WorldOrder /></P>} />
           <Route path="/palestine"      element={<P><Palestine /></P>} />
+          <Route path="/hollywood"      element={<P><Hollywood /></P>} />
 
           {/* PREMIUM — kræver betaling */}
           <Route path="/explore"        element={<ExploreHub />} />

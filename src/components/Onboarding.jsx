@@ -27,8 +27,9 @@ export default function Onboarding({ onDone }) {
   const [birthdate, setBirthdate] = useState('')
   const [error, setError]         = useState('')
   const [loading, setLoading]     = useState(false)
+  const [loginMode, setLoginMode] = useState(false)
   const { choose } = useTradition()
-  const { uuid, signupWithPin, saveProfile } = useUser()
+  const { uuid, signupWithPin, loginWithPin, saveProfile } = useUser()
   const nav = useNavigate()
 
   function skipOnboarding() {
@@ -46,9 +47,20 @@ export default function Onboarding({ onDone }) {
       if (tradition) choose(tradition)
       localStorage.setItem('sg_onboarded', '1')
       setStep(3)
-    } catch (e) {
-      setError(e.message)
-    }
+    } catch (e) { setError(e.message) }
+    setLoading(false)
+  }
+
+  async function handleLogin() {
+    if (!name.trim()) return setError('Skriv dit navn')
+    if (pin.length < 4) return setError('PIN skal være mindst 4 cifre')
+    setLoading(true); setError('')
+    try {
+      await loginWithPin(name.trim(), pin)
+      if (tradition) choose(tradition)
+      localStorage.setItem('sg_onboarded', '1')
+      setStep(3)
+    } catch (e) { setError(e.message) }
     setLoading(false)
   }
 
@@ -94,34 +106,42 @@ export default function Onboarding({ onDone }) {
           <>
             <div className="ob-header">
               <div className="ob-star">◎</div>
-              <h2 className="ob-title">Opret din profil</h2>
+              <h2 className="ob-title">{loginMode ? 'Log ind' : 'Opret din profil'}</h2>
               <p className="ob-sub">Log ind fra enhver enhed med navn + PIN</p>
+            </div>
+            <div className="auth-tabs" style={{marginBottom:'16px'}}>
+              <button className={`auth-tab ${!loginMode ? 'active' : ''}`} onClick={() => { setLoginMode(false); setError('') }}>Opret profil</button>
+              <button className={`auth-tab ${loginMode ? 'active' : ''}`} onClick={() => { setLoginMode(true); setError('') }}>Log ind</button>
             </div>
             <div className="ob-field">
               <label>Kaldenavn</label>
-              <input placeholder="Hvad vil du hedde?" value={name}
+              <input placeholder={loginMode ? 'Dit navn' : 'Hvad vil du hedde?'} value={name}
                 onChange={e => setName(e.target.value)} autoFocus />
             </div>
             <div className="ob-field">
-              <label>PIN-kode (4+ cifre)</label>
+              <label>PIN-kode</label>
               <input type="password" inputMode="numeric" placeholder="••••"
                 maxLength={8} value={pin}
                 onChange={e => setPin(e.target.value.replace(/\D/g, ''))} />
             </div>
-            <div className="ob-field">
-              <label>Email <span className="ob-optional">(til PIN-gendannelse)</span></label>
-              <input type="email" placeholder="din@email.dk" value={email}
-                onChange={e => setEmail(e.target.value)} />
-            </div>
-            <div className="ob-field">
-              <label>Fødselsdato <span className="ob-optional">(til personligt tal)</span></label>
-              <input type="date" value={birthdate}
-                onChange={e => setBirthdate(e.target.value)} />
-            </div>
+            {!loginMode && (
+              <>
+                <div className="ob-field">
+                  <label>Email <span className="ob-optional">(til PIN-gendannelse)</span></label>
+                  <input type="email" placeholder="din@email.dk" value={email}
+                    onChange={e => setEmail(e.target.value)} />
+                </div>
+                <div className="ob-field">
+                  <label>Fødselsdato <span className="ob-optional">(til personligt tal)</span></label>
+                  <input type="date" value={birthdate}
+                    onChange={e => setBirthdate(e.target.value)} />
+                </div>
+              </>
+            )}
             {error && <p className="ob-error">{error}</p>}
-            <button className="ob-btn" onClick={handleCreateProfile}
+            <button className="ob-btn" onClick={loginMode ? handleLogin : handleCreateProfile}
               disabled={loading || !name.trim() || pin.length < 4}>
-              {loading ? '...' : 'Opret profil →'}
+              {loading ? '...' : loginMode ? 'Log ind →' : 'Opret profil →'}
             </button>
             <button className="ob-skip" onClick={skipProfile}>Spring over — udforsk uden profil</button>
           </>

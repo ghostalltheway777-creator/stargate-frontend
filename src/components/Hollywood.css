@@ -1,0 +1,31 @@
+.hw-page { max-width: 480px; margin: 0 auto; padding: 0 0 80px; }
+.hw-hero { text-align: center; padding: 32px 20px 16px; background: linear-gradient(180deg,#0a0505,#100508); border-bottom: 1px solid rgba(200,50,50,0.2); }
+.hw-icon { font-size: 36px; margin-bottom: 8px; }
+.hw-title { font-size: 26px; font-weight: 900; color: #fff; margin: 0 0 6px; letter-spacing: 4px; }
+.hw-sub { font-size: 11px; color: rgba(255,255,255,0.4); margin: 0 0 10px; }
+.hw-badge { font-size: 10px; color: rgba(212,168,67,0.7); border: 1px solid rgba(212,168,67,0.2); border-radius: 20px; padding: 4px 12px; display: inline-block; }
+
+.hw-tabs { display: flex; gap: 3px; padding: 12px 12px 0; overflow-x: auto; scrollbar-width: none; }
+.hw-tabs::-webkit-scrollbar { display: none; }
+.hw-tab { flex-shrink: 0; padding: 8px 10px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; color: rgba(255,255,255,0.4); font-size: 11px; cursor: pointer; }
+.hw-tab.active { background: rgba(200,50,50,0.12); border-color: rgba(200,50,50,0.35); color: #ff8080; }
+
+.hw-section { padding: 16px; }
+.hw-intro { font-size: 12px; color: rgba(255,255,255,0.6); line-height: 1.7; margin-bottom: 16px; border-left: 2px solid rgba(200,50,50,0.3); padding-left: 10px; }
+.hw-alert { background: rgba(200,50,50,0.06); border: 1px solid rgba(200,50,50,0.2); border-radius: 12px; padding: 14px; margin-bottom: 16px; text-align: center; }
+.hw-alert p { font-size: 12px; font-style: italic; color: rgba(255,255,255,0.8); margin: 0; line-height: 1.7; }
+
+.hw-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07); border-radius: 12px; padding: 16px; margin-bottom: 14px; }
+.hw-card-icon { font-size: 22px; margin-bottom: 8px; }
+.hw-card-title { font-size: 13px; font-weight: 700; color: #ff8080; margin: 0 0 10px; }
+.hw-card-text { font-size: 12px; color: rgba(255,255,255,0.7); line-height: 1.8; margin: 0 0 8px; }
+.hw-card-src { font-size: 10px; color: rgba(255,255,255,0.3); margin: 0; font-style: italic; }
+
+.hw-symbol-card { display: flex; gap: 14px; align-items: flex-start; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px; padding: 12px; margin-bottom: 10px; }
+.hw-symbol-icon { font-size: 24px; flex-shrink: 0; }
+.hw-symbol-name { font-size: 13px; font-weight: 700; color: #d4a843; margin-bottom: 4px; }
+.hw-symbol-desc { font-size: 11px; color: rgba(255,255,255,0.6); line-height: 1.6; }
+
+.hw-green-box { background: rgba(80,200,100,0.08); border: 1px solid rgba(80,200,100,0.25); border-radius: 14px; padding: 20px; margin-bottom: 16px; }
+.hw-green-box h2 { font-size: 15px; font-weight: 700; color: #50cc70; margin: 0 0 10px; }
+.hw-green-box p { font-size: 12px; color: rgba(255,255,255,0.75); line-height: 1.7; margin: 0; }

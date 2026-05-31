@@ -8,7 +8,6 @@ const TABS = [
   { id: 'gates',        label: '⚖️ Gates Retssag' },
   { id: 'hanta',        label: '🧬 Hanta Virus' },
   { id: 'distraction',  label: '🎪 Aflede Opmærksomhed' },
-  { id: 'frequency',    label: '∿ Frekvens & Sundhed' },
 ]
 
 export default function CovidScam() {
