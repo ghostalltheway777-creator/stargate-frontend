@@ -12,16 +12,60 @@ export default function FrequencyConverter() {
   const [downloadName, setDownloadName] = useState('')
   const [streamSrc, setStreamSrc] = useState(null)
   const [streamLoading, setStreamLoading] = useState(false)
+  const [queue, setQueue]       = useState([])
+  const [queueIndex, setQueueIndex] = useState(0)
   const inputRef = useRef()
   const audioRef = useRef()
 
-  function streamUrl() {
+  function playIndex(idx, q) {
+    const list = q || queue
+    if (idx < 0 || idx >= list.length) return
+    setQueueIndex(idx)
+    setStreamLoading(true)
+    setError('')
+    setDownloadUrl(null)
+    const encoded = encodeURIComponent(list[idx])
+    setStreamSrc(`/api/frequency/stream-url?url=${encoded}`)
+  }
+
+  function addToQueue() {
+    const u = url.trim()
+    if (!u) return
+    const newQueue = [...queue, u]
+    setQueue(newQueue)
+    setUrl('')
+    if (newQueue.length === 1) playIndex(0, newQueue)
+  }
+
+  function streamNow() {
     if (!url.trim()) return
     setError('')
     setStreamLoading(true)
     setDownloadUrl(null)
     const encoded = encodeURIComponent(url.trim())
     setStreamSrc(`/api/frequency/stream-url?url=${encoded}`)
+  }
+
+  function removeFromQueue(idx) {
+    const newQueue = queue.filter((_, i) => i !== idx)
+    setQueue(newQueue)
+    if (idx === queueIndex && newQueue.length > 0) {
+      playIndex(Math.min(idx, newQueue.length - 1), newQueue)
+    } else if (newQueue.length === 0) {
+      setStreamSrc(null)
+    }
+  }
+
+  function onAudioEnded() {
+    const next = queueIndex + 1
+    if (next < queue.length) playIndex(next)
+  }
+
+  function shortUrl(u) {
+    try {
+      const p = new URL(u)
+      return p.hostname.replace('www.','') + p.pathname.slice(0,30)
+    } catch { return u.slice(0, 40) }
   }
 
   async function convertFile() {
@@ -154,21 +198,21 @@ export default function FrequencyConverter() {
             </button>
           </div>
 
-          {/* URL INPUT */}
+          {/* URL INPUT + QUEUE */}
           <div className="fc-convert-box">
             <div className="fc-convert-title">🔗 YouTube / SoundCloud link</div>
-            <p className="fc-convert-desc">Indsæt et direkte link til musikken</p>
-            <input className="fc-url-input" placeholder="https://youtube.com/... eller https://soundcloud.com/..."
-              value={url} onChange={e => { setUrl(e.target.value); setDownloadUrl(null); setError('') }} />
+            <p className="fc-convert-desc">Indsæt link — spil nu eller læg i kø</p>
+            <input className="fc-url-input" placeholder="https://youtube.com/watch?v=..."
+              value={url} onChange={e => { setUrl(e.target.value); setError('') }} />
             <div className="fc-supported">
-              <span>✓ YouTube</span>
-              <span>✓ SoundCloud</span>
-              <span>✓ Vimeo</span>
-              <span>✓ Bandcamp</span>
+              <span>✓ YouTube</span><span>✓ SoundCloud</span><span>✓ Vimeo</span><span>✓ Bandcamp</span>
             </div>
             <div className="fc-btn-row">
-              <button className="fc-btn fc-btn-stream" onClick={streamUrl} disabled={!url.trim() || loading}>
-                ▶ Spil Live 432 Hz
+              <button className="fc-btn fc-btn-stream" onClick={streamNow} disabled={!url.trim() || loading}>
+                ▶ Spil nu
+              </button>
+              <button className="fc-btn fc-btn-queue" onClick={addToQueue} disabled={!url.trim()}>
+                + Kø
               </button>
               <button className="fc-btn fc-btn-dl" onClick={convertUrl} disabled={!url.trim() || loading}>
                 {loading ? progress : '⬇ Download'}
@@ -176,10 +220,20 @@ export default function FrequencyConverter() {
             </div>
           </div>
 
+          {/* PLAYER */}
           {streamSrc && (
             <div className="fc-stream-box">
-              <div className="fc-stream-title">▶ Live 432 Hz Stream</div>
-              <p className="fc-stream-note">Bufferer 10-20 sek. inden afspilning starter — yt-dlp henter live</p>
+              <div className="fc-stream-header">
+                <div className="fc-stream-title">▶ 432 Hz Live</div>
+                {queue.length > 0 && (
+                  <div className="fc-queue-nav">
+                    <button onClick={() => playIndex(queueIndex - 1)} disabled={queueIndex <= 0}>‹</button>
+                    <span>{queueIndex + 1} / {queue.length}</span>
+                    <button onClick={() => playIndex(queueIndex + 1)} disabled={queueIndex >= queue.length - 1}>›</button>
+                  </div>
+                )}
+              </div>
+              {streamLoading && <div className="fc-stream-loading">⟳ Bufferer... (10-20 sek.)</div>}
               <audio
                 ref={audioRef}
                 src={streamSrc}
@@ -187,9 +241,28 @@ export default function FrequencyConverter() {
                 autoPlay
                 className="fc-audio"
                 onCanPlay={() => setStreamLoading(false)}
+                onEnded={onAudioEnded}
                 onError={() => { setError('Stream fejlede — prøv Download i stedet'); setStreamSrc(null); setStreamLoading(false) }}
               />
-              {streamLoading && <div className="fc-stream-loading">⟳ Bufferer...</div>}
+            </div>
+          )}
+
+          {/* QUEUE LIST */}
+          {queue.length > 0 && (
+            <div className="fc-queue-box">
+              <div className="fc-queue-header">
+                <span>Kø — {queue.length} numre</span>
+                <button className="fc-queue-clear" onClick={() => { setQueue([]); setStreamSrc(null) }}>Ryd</button>
+              </div>
+              {queue.map((u, i) => (
+                <div key={i} className={`fc-queue-item ${i === queueIndex && streamSrc ? 'active' : ''}`}>
+                  <button className="fc-queue-play" onClick={() => playIndex(i)}>
+                    {i === queueIndex && streamSrc ? '▶' : '▷'}
+                  </button>
+                  <span className="fc-queue-url" onClick={() => playIndex(i)}>{shortUrl(u)}</span>
+                  <button className="fc-queue-remove" onClick={() => removeFromQueue(i)}>✕</button>
+                </div>
+              ))}
             </div>
           )}
 

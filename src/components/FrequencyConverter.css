@@ -45,16 +45,32 @@
 .fc-btn { width: 100%; padding: 14px; background: linear-gradient(135deg,rgba(80,200,150,0.2),rgba(80,200,150,0.08)); border: 1px solid rgba(80,200,150,0.4); border-radius: 12px; color: #50c890; font-size: 14px; font-weight: 700; cursor: pointer; }
 .fc-btn:disabled { opacity: 0.4; cursor: not-allowed; }
 
-.fc-btn-row { display: flex; gap: 8px; margin-top: 8px; }
-.fc-btn-row .fc-btn { margin-top: 0; }
+.fc-btn-row { display: flex; gap: 6px; margin-top: 8px; }
+.fc-btn-row .fc-btn { margin-top: 0; padding: 12px 8px; font-size: 13px; }
 .fc-btn-stream { background: linear-gradient(135deg,rgba(100,160,255,0.25),rgba(100,160,255,0.08)); border-color: rgba(100,160,255,0.5); color: #80b0ff; }
-.fc-btn-dl { background: linear-gradient(135deg,rgba(80,200,150,0.2),rgba(80,200,150,0.08)); border-color: rgba(80,200,150,0.4); color: #50c890; }
+.fc-btn-queue  { background: linear-gradient(135deg,rgba(200,150,255,0.2),rgba(200,150,255,0.08)); border-color: rgba(200,150,255,0.4); color: #c890ff; flex: 0 0 60px; }
+.fc-btn-dl     { background: linear-gradient(135deg,rgba(80,200,150,0.2),rgba(80,200,150,0.08)); border-color: rgba(80,200,150,0.4); color: #50c890; }
 
 .fc-stream-box { background: rgba(100,160,255,0.06); border: 1px solid rgba(100,160,255,0.25); border-radius: 14px; padding: 16px; margin-top: 14px; }
-.fc-stream-title { font-size: 14px; font-weight: 700; color: #80b0ff; margin-bottom: 6px; }
-.fc-stream-note { font-size: 11px; color: rgba(255,255,255,0.4); margin: 0 0 12px; }
-.fc-audio { width: 100%; border-radius: 8px; }
-.fc-stream-loading { font-size: 12px; color: #80b0ff; margin-top: 8px; text-align: center; }
+.fc-stream-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.fc-stream-title { font-size: 14px; font-weight: 700; color: #80b0ff; }
+.fc-queue-nav { display: flex; align-items: center; gap: 8px; }
+.fc-queue-nav button { background: rgba(100,160,255,0.15); border: 1px solid rgba(100,160,255,0.3); border-radius: 6px; color: #80b0ff; width: 28px; height: 28px; cursor: pointer; font-size: 16px; }
+.fc-queue-nav button:disabled { opacity: 0.3; cursor: default; }
+.fc-queue-nav span { font-size: 12px; color: rgba(255,255,255,0.5); }
+.fc-audio { width: 100%; border-radius: 8px; margin-top: 4px; }
+.fc-stream-loading { font-size: 12px; color: #80b0ff; margin-bottom: 8px; }
+
+.fc-queue-box { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 14px; margin-top: 14px; }
+.fc-queue-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; font-size: 13px; color: rgba(255,255,255,0.5); }
+.fc-queue-clear { background: none; border: 1px solid rgba(255,80,80,0.3); border-radius: 6px; color: #ff6060; font-size: 11px; padding: 3px 8px; cursor: pointer; }
+.fc-queue-item { display: flex; align-items: center; gap: 8px; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+.fc-queue-item:last-child { border-bottom: none; }
+.fc-queue-item.active { background: rgba(100,160,255,0.08); border-radius: 8px; padding: 8px; margin: 0 -4px; }
+.fc-queue-play { background: none; border: none; color: #80b0ff; font-size: 16px; cursor: pointer; width: 24px; flex-shrink: 0; }
+.fc-queue-url { flex: 1; font-size: 12px; color: rgba(255,255,255,0.6); cursor: pointer; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.fc-queue-item.active .fc-queue-url { color: #80b0ff; }
+.fc-queue-remove { background: none; border: none; color: rgba(255,255,255,0.3); font-size: 12px; cursor: pointer; padding: 0 4px; flex-shrink: 0; }
 
 .fc-error { background: rgba(255,80,80,0.08); border: 1px solid rgba(255,80,80,0.2); border-radius: 10px; padding: 12px; color: #ff8080; font-size: 12px; margin-top: 12px; }
 
