@@ -8,6 +8,8 @@ const AUDIO_TRACKS = [
   { id: 'reel500', title: "Don't Believe Everybody When They Say They Speak From God", duration: '65 sek', src: '/reel-500.mp3', desc: 'Billy Carson — om religiøs manipulation og sand åndelig viden' },
   { id: 'reel501', title: 'Your Brain Is A Receiver',                    duration: '68 sek', src: '/reel-501.mp3',  desc: 'Billy Carson — din hjerne som kosmisk modtager af frekvenser' },
   { id: 'reel503', title: 'Billy Carson — Archons',                      duration: '66 sek', src: '/reel-503.mp3',  desc: 'Billy Carson — om Archonerne og bevidsthedskontrol' },
+  { id: 'reel511', title: 'Billy Carson — Anunnaki',                     duration: '~60 sek', src: '/reel-511.mp3', desc: 'Billy Carson — Anunnakierne, menneskelig oprindelse og de fortabte optegnelser' },
+  { id: 'reel512', title: 'Billy Carson — DNA Engineering',               duration: '~60 sek', src: '/reel-512.mp3', desc: 'Billy Carson — DNA som kvantumantenner og genetisk manipulation i oldtiden' },
 ]
 
 const PHILOSOPHY = [
