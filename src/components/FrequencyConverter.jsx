@@ -10,7 +10,19 @@ export default function FrequencyConverter() {
   const [error, setError]       = useState('')
   const [downloadUrl, setDownloadUrl] = useState(null)
   const [downloadName, setDownloadName] = useState('')
+  const [streamSrc, setStreamSrc] = useState(null)
+  const [streamLoading, setStreamLoading] = useState(false)
   const inputRef = useRef()
+  const audioRef = useRef()
+
+  function streamUrl() {
+    if (!url.trim()) return
+    setError('')
+    setStreamLoading(true)
+    setDownloadUrl(null)
+    const encoded = encodeURIComponent(url.trim())
+    setStreamSrc(`/api/frequency/stream-url?url=${encoded}`)
+  }
 
   async function convertFile() {
     if (!file) return
@@ -154,10 +166,32 @@ export default function FrequencyConverter() {
               <span>✓ Vimeo</span>
               <span>✓ Bandcamp</span>
             </div>
-            <button className="fc-btn" onClick={convertUrl} disabled={!url.trim() || loading}>
-              {loading ? progress : '⚙ Download & Konverter'}
-            </button>
+            <div className="fc-btn-row">
+              <button className="fc-btn fc-btn-stream" onClick={streamUrl} disabled={!url.trim() || loading}>
+                ▶ Spil Live 432 Hz
+              </button>
+              <button className="fc-btn fc-btn-dl" onClick={convertUrl} disabled={!url.trim() || loading}>
+                {loading ? progress : '⬇ Download'}
+              </button>
+            </div>
           </div>
+
+          {streamSrc && (
+            <div className="fc-stream-box">
+              <div className="fc-stream-title">▶ Live 432 Hz Stream</div>
+              <p className="fc-stream-note">Bufferer 10-20 sek. inden afspilning starter — yt-dlp henter live</p>
+              <audio
+                ref={audioRef}
+                src={streamSrc}
+                controls
+                autoPlay
+                className="fc-audio"
+                onCanPlay={() => setStreamLoading(false)}
+                onError={() => { setError('Stream fejlede — prøv Download i stedet'); setStreamSrc(null); setStreamLoading(false) }}
+              />
+              {streamLoading && <div className="fc-stream-loading">⟳ Bufferer...</div>}
+            </div>
+          )}
 
           {error && <div className="fc-error">⚠ {error}</div>}
 
