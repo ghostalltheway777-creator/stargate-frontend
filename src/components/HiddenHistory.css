@@ -1,0 +1,36 @@
+.hh-page { padding: 0 0 80px; max-width: 480px; margin: 0 auto; }
+.hh-hero { text-align: center; padding: 36px 20px 20px; background: linear-gradient(180deg,#0a0806,#120e08); border-bottom: 1px solid rgba(200,150,50,0.2); }
+.hh-icon { font-size: 36px; margin-bottom: 10px; }
+.hh-title { font-size: 26px; font-weight: 700; color: #fff; margin: 0 0 6px; letter-spacing: 2px; }
+.hh-sub { font-size: 11px; color: rgba(255,255,255,0.45); margin: 0 0 12px; }
+.hh-badge { background: rgba(200,150,50,0.12); border: 1px solid rgba(200,150,50,0.25); color: #c8a040; font-size: 9px; letter-spacing: 1px; padding: 5px 10px; border-radius: 4px; display: inline-block; }
+
+.hh-tabs { display: flex; gap: 3px; padding: 12px 12px 0; overflow-x: auto; }
+.hh-tab { flex-shrink: 0; padding: 8px 10px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; color: rgba(255,255,255,0.4); font-size: 11px; cursor: pointer; white-space: nowrap; }
+.hh-tab.active { background: rgba(200,150,50,0.1); border-color: rgba(200,150,50,0.3); color: #c8a040; }
+
+.hh-section { padding: 16px; }
+.hh-intro { font-size: 12px; color: rgba(255,255,255,0.55); line-height: 1.7; margin-bottom: 16px; border-left: 2px solid rgba(200,150,50,0.3); padding-left: 10px; }
+
+.hh-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(200,150,50,0.1); border-radius: 12px; padding: 16px; margin-bottom: 14px; }
+.hh-card-header { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 10px; }
+.hh-card-icon { font-size: 22px; flex-shrink: 0; }
+.hh-card-title { font-size: 13px; font-weight: 600; color: #c8a040; margin: 0; line-height: 1.4; }
+.hh-card-text { font-size: 12px; color: rgba(255,255,255,0.65); line-height: 1.7; margin: 0; }
+
+.hh-impact { font-size: 11px; color: rgba(255,200,80,0.75); font-style: italic; margin-top: 10px; padding-top: 10px; border-top: 1px solid rgba(255,200,80,0.1); }
+.hh-connection { font-size: 11px; color: rgba(150,180,255,0.75); font-style: italic; margin-top: 10px; padding-top: 10px; border-top: 1px solid rgba(150,180,255,0.1); }
+
+.hh-highlight { background: rgba(200,150,50,0.06); border: 1px solid rgba(200,150,50,0.2); border-radius: 10px; padding: 14px; margin-top: 16px; }
+.hh-hl-label { font-size: 9px; color: #c8a040; letter-spacing: 1.5px; font-weight: 600; display: block; margin-bottom: 8px; }
+.hh-highlight p { font-size: 12px; color: rgba(255,255,255,0.65); line-height: 1.7; margin: 0; }
+
+.hh-building-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(200,150,50,0.12); border-radius: 12px; padding: 14px; margin-bottom: 14px; }
+.hh-building-name { font-size: 14px; font-weight: 700; color: #c8a040; margin-bottom: 3px; }
+.hh-building-period { font-size: 10px; color: rgba(255,255,255,0.35); margin-bottom: 12px; }
+.hh-problem-box { background: rgba(200,50,50,0.08); border: 1px solid rgba(200,50,50,0.15); border-radius: 8px; padding: 10px; margin-bottom: 8px; }
+.hh-problem-label { font-size: 9px; color: #ff6060; letter-spacing: 1.5px; font-weight: 600; display: block; margin-bottom: 5px; }
+.hh-problem-box p { font-size: 11px; color: rgba(255,255,255,0.6); line-height: 1.6; margin: 0; }
+.hh-theory-box { background: rgba(50,180,100,0.06); border: 1px solid rgba(50,180,100,0.15); border-radius: 8px; padding: 10px; }
+.hh-theory-label { font-size: 9px; color: #60cc80; letter-spacing: 1.5px; font-weight: 600; display: block; margin-bottom: 5px; }
+.hh-theory-box p { font-size: 11px; color: rgba(255,255,255,0.6); line-height: 1.6; margin: 0; }

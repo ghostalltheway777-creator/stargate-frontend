@@ -1,0 +1,62 @@
+.vx-page { padding: 0 0 80px; max-width: 480px; margin: 0 auto; }
+.vx-hero { text-align: center; padding: 36px 20px 20px; background: linear-gradient(180deg,#060812,#0a0a18); border-bottom: 1px solid rgba(80,120,255,0.15); }
+.vx-hero-icon { font-size: 40px; margin-bottom: 10px; color: #4080ff; }
+.vx-title { font-size: 26px; font-weight: 700; color: #fff; margin: 0 0 6px; letter-spacing: 2px; }
+.vx-sub { font-size: 11px; color: rgba(255,255,255,0.45); margin: 0; }
+
+.vx-tabs { display: flex; gap: 3px; padding: 12px 12px 0; overflow-x: auto; }
+.vx-tab { flex-shrink: 0; padding: 9px 10px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; color: rgba(255,255,255,0.45); font-size: 11px; cursor: pointer; white-space: nowrap; }
+.vx-tab.active { background: rgba(80,120,255,0.12); border-color: rgba(80,120,255,0.3); color: #80a0ff; }
+
+.vx-section { padding: 18px 16px; }
+.vx-intro { font-size: 12px; color: rgba(255,255,255,0.55); line-height: 1.7; margin-bottom: 16px; border-left: 2px solid rgba(80,120,255,0.3); padding-left: 10px; }
+
+.vx-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(80,120,255,0.12); border-radius: 12px; padding: 16px; margin-bottom: 14px; }
+.vx-card p { font-size: 12px; color: rgba(255,255,255,0.65); line-height: 1.7; margin: 0 0 10px; }
+.vx-card p:last-child { margin: 0; }
+.vx-card strong { color: #80a0ff; }
+
+.vx-insight-box { background: rgba(255,200,30,0.06); border: 1px solid rgba(255,200,30,0.15); border-radius: 10px; padding: 14px; margin-bottom: 14px; }
+.vx-insight-label { font-size: 9px; color: #ffc040; letter-spacing: 1.5px; font-weight: 600; display: block; margin-bottom: 8px; }
+.vx-insight-box p { font-size: 12px; color: rgba(255,255,255,0.65); line-height: 1.6; margin: 0 0 8px; }
+.vx-insight-box p:last-child { margin: 0; }
+
+.vx-sequence { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+.vx-seq-item { display: flex; align-items: center; gap: 4px; background: rgba(255,255,255,0.03); border-radius: 6px; padding: 6px 8px; }
+.vx-seq-item.circuit { border: 1px solid rgba(80,120,255,0.2); }
+.vx-seq-item.w-axis { border: 1px solid rgba(255,200,30,0.2); }
+.vx-seq-n { font-size: 11px; color: rgba(255,255,255,0.6); min-width: 28px; }
+.vx-seq-arrow { font-size: 10px; color: rgba(255,255,255,0.3); }
+.vx-seq-root { font-size: 14px; font-weight: 700; }
+.vx-seq-item.circuit .vx-seq-root { color: #80a0ff; }
+.vx-seq-item.w-axis .vx-seq-root { color: #ffd700; }
+
+.vx-pattern-box { background: rgba(255,255,255,0.03); border: 1px solid rgba(80,120,255,0.15); border-radius: 10px; padding: 14px; margin-bottom: 12px; }
+.vx-pattern-box.gold { border-color: rgba(255,200,30,0.2); }
+.vx-pattern-box h3 { font-size: 12px; color: #fff; margin: 0 0 10px; }
+.vx-pattern-box p { font-size: 11px; color: rgba(255,255,255,0.5); line-height: 1.5; margin: 8px 0 0; }
+.vx-pattern-nums { display: flex; gap: 6px; flex-wrap: wrap; }
+.vx-num { width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700; }
+.vx-num.circuit { background: rgba(80,120,255,0.15); color: #80a0ff; border: 1px solid rgba(80,120,255,0.3); }
+.vx-num.w-axis { background: rgba(255,200,30,0.15); color: #ffd700; border: 1px solid rgba(255,200,30,0.3); }
+
+.vx-tesla-quote { background: rgba(255,200,30,0.06); border-left: 3px solid #ffd700; border-radius: 0 8px 8px 0; padding: 14px; margin-bottom: 16px; }
+.vx-tesla-quote span { font-size: 13px; font-style: italic; color: rgba(255,255,255,0.8); line-height: 1.6; display: block; margin-bottom: 6px; }
+.vx-tesla-quote cite { font-size: 11px; color: #ffd700; }
+
+.vx-tesla-card { display: flex; gap: 12px; background: rgba(255,255,255,0.02); border: 1px solid rgba(80,120,255,0.1); border-radius: 10px; padding: 14px; margin-bottom: 12px; }
+.vx-tesla-num { font-size: 32px; font-weight: 700; color: #ffd700; width: 40px; flex-shrink: 0; text-align: center; }
+.vx-tesla-text { font-size: 12px; color: rgba(255,255,255,0.65); line-height: 1.6; margin: 0 0 8px; }
+.vx-tesla-connection { font-size: 11px; color: #80a0ff; font-style: italic; }
+
+.vortex-canvas { display: block; margin: 0 auto 12px; border-radius: 12px; background: #050810; }
+.vx-torus-legend { display: flex; flex-direction: column; gap: 4px; margin-bottom: 14px; font-size: 11px; }
+.vx-legend-blue { color: #80a0ff; }
+.vx-legend-gold { color: #ffd700; }
+
+.vx-torus-item { font-size: 12px; color: rgba(255,255,255,0.6); padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+
+.vx-sacred-card { display: flex; gap: 12px; background: rgba(255,255,255,0.02); border: 1px solid rgba(212,168,67,0.1); border-radius: 10px; padding: 14px; margin-bottom: 12px; }
+.vx-sacred-symbol { font-size: 24px; width: 36px; flex-shrink: 0; text-align: center; color: #d4a843; }
+.vx-sacred-name { font-size: 13px; font-weight: 600; color: #d4a843; margin-bottom: 6px; }
+.vx-sacred-text { font-size: 12px; color: rgba(255,255,255,0.6); line-height: 1.6; margin: 0; }

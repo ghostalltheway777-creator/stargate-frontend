@@ -1,0 +1,31 @@
+.moon-widget {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin: 0.5rem 1rem 0;
+  background: rgba(10,8,30,0.7);
+  border: 1px solid rgba(180,160,255,0.15);
+  border-radius: 14px;
+  padding: 0.9rem 1rem;
+  position: relative;
+}
+
+.moon-phase-symbol {
+  font-size: 2rem;
+  line-height: 1;
+  min-width: 2rem;
+  text-align: center;
+  animation: moon-breathe 6s ease-in-out infinite;
+}
+@keyframes moon-breathe {
+  0%,100% { transform: scale(1); }
+  50%      { transform: scale(1.08); }
+}
+
+.moon-body { flex: 1; }
+.moon-name  { font-family: 'Cinzel', serif; font-size: 0.9rem; color: #d8d0ff; margin-bottom: 0.15rem; }
+.moon-sign  { font-size: 0.7rem; color: #8878aa; margin-bottom: 0.2rem; }
+.moon-energy { font-size: 0.75rem; color: #a090c0; line-height: 1.4; }
+
+.moon-pct-ring { width: 40px; height: 40px; flex-shrink: 0; }
+.moon-pct-ring svg { width: 40px; height: 40px; }

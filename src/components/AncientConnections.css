@@ -1,0 +1,52 @@
+.ac-page { padding: 0 0 80px; max-width: 480px; margin: 0 auto; }
+.ac-hero { text-align: center; padding: 36px 20px 20px; background: linear-gradient(180deg,#0a0806,#120e06); border-bottom: 1px solid rgba(212,168,67,0.2); }
+.ac-hero-icon { font-size: 36px; margin-bottom: 10px; }
+.ac-title { font-size: 26px; font-weight: 700; color: #fff; margin: 0 0 6px; letter-spacing: 2px; }
+.ac-sub { font-size: 11px; color: rgba(255,255,255,0.45); margin: 0; }
+
+.ac-intro-box { background: rgba(212,168,67,0.06); border: 1px solid rgba(212,168,67,0.2); border-radius: 14px; padding: 18px; margin: 16px 16px 0; }
+.ac-intro-box p { font-size: 13px; font-style: italic; color: rgba(255,255,255,0.8); line-height: 1.7; margin: 0 0 8px; }
+.ac-intro-box cite { font-size: 11px; color: rgba(212,168,67,0.7); }
+
+.ac-timeline { padding: 16px; }
+.ac-tl-label { font-size: 10px; font-weight: 700; color: rgba(212,168,67,0.5); letter-spacing: 2px; margin-bottom: 12px; }
+.ac-tl-item { display: flex; gap: 12px; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.04); }
+.ac-tl-year { font-size: 11px; font-weight: 700; color: #d4a843; min-width: 75px; flex-shrink: 0; }
+.ac-tl-text { font-size: 11px; color: rgba(255,255,255,0.6); line-height: 1.5; }
+
+.ac-section { padding: 16px; }
+.ac-section-title { font-size: 14px; font-weight: 700; color: #fff; margin: 0 0 14px; }
+
+.ac-card { width: 100%; display: flex; gap: 12px; align-items: flex-start; background: rgba(212,168,67,0.04); border: 1px solid rgba(212,168,67,0.15); border-radius: 12px; padding: 16px; margin-bottom: 10px; cursor: pointer; text-align: left; transition: all 0.2s; }
+.ac-card:hover { border-color: rgba(212,168,67,0.3); background: rgba(212,168,67,0.08); }
+.ac-card-icon { font-size: 28px; flex-shrink: 0; }
+.ac-card-title { font-size: 15px; font-weight: 700; color: #d4a843; margin-bottom: 3px; }
+.ac-card-original { font-size: 10px; color: rgba(255,255,255,0.35); margin-bottom: 5px; }
+.ac-card-thesis { font-size: 12px; color: rgba(255,255,255,0.6); line-height: 1.4; }
+
+.ac-footer { padding: 0 16px; display: flex; flex-direction: column; gap: 8px; }
+.ac-footer-btn { padding: 13px; background: rgba(212,168,67,0.08); border: 1px solid rgba(212,168,67,0.2); border-radius: 10px; color: #d4a843; font-size: 13px; cursor: pointer; }
+
+/* Detail view */
+.ac-detail-hero { padding: 24px 16px 16px; background: linear-gradient(180deg,#0a0806,#120e06); border-bottom: 1px solid rgba(212,168,67,0.15); }
+.ac-back { background: none; border: none; color: rgba(255,255,255,0.4); font-size: 13px; cursor: pointer; padding: 0 0 12px; display: block; }
+.ac-detail-icon { font-size: 32px; display: block; margin-bottom: 8px; }
+.ac-detail-title { font-size: 24px; font-weight: 700; color: #d4a843; margin: 0 0 8px; }
+.ac-original-badge { display: inline-block; background: rgba(212,168,67,0.1); border: 1px solid rgba(212,168,67,0.25); color: rgba(212,168,67,0.8); font-size: 10px; padding: 4px 10px; border-radius: 20px; margin-bottom: 10px; }
+.ac-thesis { font-size: 12px; color: rgba(255,255,255,0.7); line-height: 1.7; margin: 0; }
+
+.ac-content { padding: 16px; }
+.ac-versions-title { font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.6); margin: 0 0 12px; }
+
+.ac-version-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(212,168,67,0.1); border-radius: 10px; padding: 14px; margin-bottom: 10px; }
+.ac-version-header { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; margin-bottom: 8px; }
+.ac-version-trad { font-size: 12px; font-weight: 700; color: #d4a843; }
+.ac-version-figure { font-size: 13px; font-weight: 600; color: #fff; }
+.ac-version-source { font-size: 10px; color: rgba(255,255,255,0.35); margin-left: auto; }
+.ac-version-detail { font-size: 12px; color: rgba(255,255,255,0.7); line-height: 1.6; margin: 0; }
+
+.ac-billy-box { background: rgba(100,60,200,0.08); border: 1px solid rgba(100,60,200,0.2); border-radius: 12px; padding: 16px; margin: 16px 0; }
+.ac-billy-label { font-size: 9px; color: #9060ff; letter-spacing: 1.5px; font-weight: 600; display: block; margin-bottom: 8px; }
+.ac-billy-box p { font-size: 12px; color: rgba(255,255,255,0.75); line-height: 1.7; margin: 0; font-style: italic; }
+
+.ac-search-btn { width: 100%; padding: 14px; background: rgba(212,168,67,0.1); border: 1px solid rgba(212,168,67,0.25); border-radius: 10px; color: #d4a843; font-size: 13px; cursor: pointer; }

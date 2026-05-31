@@ -1,0 +1,57 @@
+.page-transit {
+  position: fixed;
+  inset: 0;
+  z-index: 900;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.page-transit.transit-active {
+  animation: transit-flash 0.55s ease forwards;
+}
+
+@keyframes transit-flash {
+  0%   { opacity: 0; }
+  20%  { opacity: 1; }
+  80%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.transit-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid rgba(40, 160, 255, 0.7);
+  animation: none;
+}
+.page-transit.transit-active .transit-ring {
+  animation: ring-expand 0.55s ease forwards;
+}
+
+.t-r1 { width: 40px;  height: 40px;  animation-delay: 0s !important; border-color: rgba(100,200,255,0.9); }
+.t-r2 { width: 80px;  height: 80px;  animation-delay: 0.05s !important; border-color: rgba(60,160,255,0.6); }
+.t-r3 { width: 130px; height: 130px; animation-delay: 0.1s !important;  border-color: rgba(40,120,220,0.35); }
+
+@keyframes ring-expand {
+  0%   { transform: scale(0.2); opacity: 1; }
+  70%  { transform: scale(2.5); opacity: 0.5; }
+  100% { transform: scale(4);   opacity: 0; }
+}
+
+.transit-core {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff 0%, #60c0ff 40%, transparent 70%);
+  opacity: 0;
+}
+.page-transit.transit-active .transit-core {
+  animation: core-flash 0.3s ease 0.1s forwards;
+}
+@keyframes core-flash {
+  0%   { opacity: 0; transform: scale(0.5); }
+  50%  { opacity: 1; transform: scale(1.4); }
+  100% { opacity: 0; transform: scale(0.8); }
+}

@@ -1,0 +1,109 @@
+.rd-page { padding: 0 0 80px; max-width: 480px; margin: 0 auto; }
+.rd-hero { text-align: center; padding: 36px 20px 20px; background: linear-gradient(180deg,#080810,#0e0e18); border-bottom: 1px solid rgba(212,168,67,0.15); }
+.rd-hero-icon { font-size: 36px; margin-bottom: 10px; color: #d4a843; }
+.rd-title { font-size: 26px; font-weight: 700; color: #fff; margin: 0 0 6px; letter-spacing: 2px; }
+.rd-sub { font-size: 12px; color: rgba(255,255,255,0.45); margin: 0; }
+
+.rd-core-message { background: rgba(212,168,67,0.06); border: 1px solid rgba(212,168,67,0.2); border-radius: 14px; padding: 18px; margin: 16px 16px 0; }
+.rd-core-text { font-size: 12px; color: rgba(255,255,255,0.75); line-height: 1.8; white-space: pre-wrap; margin: 0; font-family: inherit; }
+
+.rd-section { padding: 16px; }
+.rd-intro { font-size: 12px; color: rgba(255,255,255,0.5); margin-bottom: 14px; line-height: 1.6; }
+
+.rd-religion-card { width: 100%; background: rgba(255,255,255,0.03); border: 1px solid rgba(var(--rc), 0.15); border-left: 3px solid var(--rc, #d4a843); border-radius: 0 12px 12px 0; padding: 14px 16px; margin-bottom: 10px; cursor: pointer; text-align: left; transition: all 0.2s; }
+.rd-religion-card:hover { background: rgba(255,255,255,0.06); border-left-width: 4px; }
+.rd-card-header { display: flex; gap: 12px; align-items: flex-start; }
+.rd-card-icon { font-size: 28px; flex-shrink: 0; }
+.rd-card-name { font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+.rd-card-tags { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.rd-tag { font-size: 11px; padding: 3px 8px; border-radius: 20px; }
+.rd-tag.true { background: rgba(80,180,80,0.12); color: #80cc80; border: 1px solid rgba(80,180,80,0.2); }
+.rd-tag.false { background: rgba(200,80,80,0.1); color: #ff8080; border: 1px solid rgba(200,80,80,0.2); }
+.rd-tag.vs { color: rgba(255,255,255,0.3); font-size: 10px; }
+
+.rd-footer { padding: 0 16px; }
+.rd-footer-btn { width: 100%; padding: 14px; background: rgba(212,168,67,0.08); border: 1px solid rgba(212,168,67,0.2); border-radius: 10px; color: #d4a843; font-size: 13px; cursor: pointer; }
+
+/* Detail view */
+.rd-detail-hero { padding: 24px 16px 0; background: linear-gradient(180deg,#080810,#0e0e18); border-bottom: 1px solid rgba(255,255,255,0.08); }
+.rd-back { background: none; border: none; color: rgba(255,255,255,0.4); font-size: 13px; cursor: pointer; padding: 0 0 12px; display: block; }
+.rd-detail-icon { font-size: 32px; display: block; margin-bottom: 8px; }
+.rd-detail-name { font-size: 24px; font-weight: 700; color: #fff; margin: 0 0 8px; }
+.rd-detail-intro { font-size: 12px; color: rgba(255,255,255,0.55); line-height: 1.7; margin-bottom: 16px; }
+.rd-side-tabs { display: flex; gap: 6px; padding-bottom: 0; }
+.rd-side-tab { flex: 1; padding: 10px 8px; border-radius: 10px 10px 0 0; border: 1px solid rgba(255,255,255,0.08); border-bottom: none; color: rgba(255,255,255,0.4); font-size: 11px; cursor: pointer; background: rgba(255,255,255,0.03); }
+.rd-side-tab.true.active { background: rgba(80,180,80,0.12); color: #80cc80; border-color: rgba(80,180,80,0.25); }
+.rd-side-tab.false.active { background: rgba(200,80,80,0.1); color: #ff8080; border-color: rgba(200,80,80,0.2); }
+
+.rd-content { padding: 16px; }
+.rd-content-title { font-size: 16px; font-weight: 700; margin: 0 0 10px; }
+.rd-content-desc { font-size: 12px; color: rgba(255,255,255,0.65); line-height: 1.7; margin-bottom: 16px; }
+
+.rd-figures h3, .rd-practices h3, .rd-keydiff h3 { font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.5); margin: 0 0 10px; }
+.rd-figures { background: rgba(80,180,80,0.05); border: 1px solid rgba(80,180,80,0.12); border-radius: 10px; padding: 14px; margin-bottom: 12px; }
+.rd-figure { font-size: 12px; color: rgba(255,255,255,0.7); padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.05); line-height: 1.5; }
+.rd-figure:last-child { border-bottom: none; }
+.rd-practices { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07); border-radius: 10px; padding: 14px; margin-bottom: 12px; }
+.rd-practice { font-size: 12px; color: rgba(255,255,255,0.6); padding: 5px 0; }
+.rd-connection-box { background: rgba(212,168,67,0.06); border: 1px solid rgba(212,168,67,0.2); border-radius: 10px; padding: 14px; }
+.rd-conn-label { font-size: 9px; color: #d4a843; letter-spacing: 1.5px; font-weight: 600; display: block; margin-bottom: 8px; }
+.rd-connection-box p { font-size: 12px; color: rgba(255,255,255,0.7); line-height: 1.7; margin: 0; }
+
+.rd-keydiff { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07); border-radius: 10px; padding: 14px; margin-bottom: 12px; }
+.rd-keydiff-text { font-size: 12px; color: rgba(255,255,255,0.65); line-height: 1.8; white-space: pre-wrap; margin: 0; font-family: inherit; background: transparent !important; }
+.rd-archon-box { background: rgba(100,60,200,0.08); border: 1px solid rgba(100,60,200,0.2); border-radius: 10px; padding: 14px; }
+.rd-archon-label { font-size: 9px; color: #9060ff; letter-spacing: 1.5px; font-weight: 600; display: block; margin-bottom: 8px; }
+.rd-archon-box p { font-size: 12px; color: rgba(255,255,255,0.65); line-height: 1.7; margin: 0; }
+
+.rd-verses { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07); border-radius: 10px; padding: 14px; margin-bottom: 12px; }
+.rd-verses h3 { font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.5); margin: 0 0 10px; }
+.rd-verse-card { background: rgba(255,255,255,0.03); border-radius: 8px; padding: 10px; margin-bottom: 8px; }
+.rd-verse-ref { font-size: 11px; font-weight: 700; color: #d4a843; margin-bottom: 4px; }
+.rd-verse-text { font-size: 12px; color: rgba(255,255,255,0.6); line-height: 1.6; }
+.rd-clarification { background: rgba(80,180,80,0.06); border: 1px solid rgba(80,180,80,0.15); border-radius: 8px; padding: 12px; margin-top: 10px; }
+
+.rd-neturei-box { background: rgba(80,180,80,0.06); border: 1px solid rgba(80,180,80,0.2); border-radius: 12px; padding: 16px; margin-bottom: 12px; }
+.rd-neturei-box h3 { font-size: 13px; font-weight: 600; color: #80cc80; margin: 0 0 10px; }
+.rd-neturei-box p { font-size: 12px; color: rgba(255,255,255,0.65); line-height: 1.6; margin-bottom: 10px; }
+.rd-neturei-signs { display: flex; flex-direction: column; gap: 6px; margin: 10px 0; }
+.rd-sign { background: rgba(255,255,255,0.05); border: 1px solid rgba(80,180,80,0.2); border-radius: 6px; padding: 8px 12px; font-size: 12px; font-weight: 600; color: #80cc80; text-align: center; }
+.rd-neturei-note { font-size: 11px; color: rgba(255,255,255,0.55); font-style: italic; line-height: 1.6; margin-top: 10px !important; }
+
+.rd-comparison { margin-bottom: 14px; }
+.rd-comparison h3 { font-size: 13px; font-weight: 600; color: #d4a843; margin: 0 0 6px; }
+.rd-comparison-note { font-size: 11px; color: rgba(255,255,255,0.45); margin-bottom: 14px; }
+
+.rd-versus-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07); border-radius: 12px; overflow: hidden; margin-bottom: 14px; }
+.rd-versus-torah { background: rgba(80,180,80,0.06); padding: 12px 14px; }
+.rd-versus-talmud { background: rgba(200,80,80,0.05); padding: 12px 14px; }
+.rd-versus-vs { text-align: center; padding: 6px; font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.3); letter-spacing: 2px; border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06); background: rgba(0,0,0,0.2); }
+.rd-versus-label { font-size: 9px; font-weight: 700; letter-spacing: 1.5px; display: block; margin-bottom: 5px; }
+.rd-versus-label.torah { color: #80cc80; }
+.rd-versus-label.talmud { color: #ff9080; }
+.rd-versus-ref { font-size: 11px; font-weight: 600; color: rgba(255,255,255,0.7); margin-bottom: 6px; }
+.rd-versus-text { font-size: 11px; line-height: 1.7; white-space: pre-wrap; margin: 0; font-family: inherit; background: transparent !important; }
+.rd-versus-text.torah-text { color: rgba(255,255,255,0.75); }
+.rd-versus-text.talmud-text { color: rgba(255,200,180,0.75); }
+
+.rd-idol-title { font-size: 17px; font-weight: 700; color: #d4a843; margin: 0 0 12px; }
+.rd-idol-intro { background: rgba(212,168,67,0.06); border: 1px solid rgba(212,168,67,0.15); border-radius: 10px; padding: 14px; margin-bottom: 16px; }
+.rd-idol-intro p { font-size: 12px; color: rgba(255,255,255,0.7); line-height: 1.7; margin: 0; }
+.rd-idol-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(212,168,67,0.12); border-radius: 12px; padding: 16px; margin-bottom: 14px; }
+.rd-idol-header { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 12px; }
+.rd-idol-icon { font-size: 26px; flex-shrink: 0; }
+.rd-idol-religion { font-size: 11px; color: rgba(212,168,67,0.6); margin-bottom: 2px; }
+.rd-idol-name { font-size: 14px; font-weight: 700; color: #fff; }
+.rd-idol-what, .rd-idol-truth, .rd-idol-quote { border-radius: 8px; padding: 10px; margin-bottom: 8px; }
+.rd-idol-what { background: rgba(200,50,50,0.06); border: 1px solid rgba(200,50,50,0.1); }
+.rd-idol-truth { background: rgba(80,180,80,0.06); border: 1px solid rgba(80,180,80,0.12); }
+.rd-idol-quote { background: rgba(212,168,67,0.06); border: 1px solid rgba(212,168,67,0.12); }
+.rd-idol-label { font-size: 9px; font-weight: 700; letter-spacing: 1.5px; display: block; margin-bottom: 6px; color: rgba(255,255,255,0.4); }
+.rd-idol-what p, .rd-idol-quote p { font-size: 12px; color: rgba(255,255,255,0.65); line-height: 1.6; margin: 0; }
+.rd-idol-text { font-size: 12px; color: rgba(255,255,255,0.7); line-height: 1.8; white-space: pre-wrap; margin: 0; font-family: inherit; background: transparent !important; }
+
+.rd-expand-btn { width: 100%; padding: 14px 16px; background: rgba(200,50,50,0.06); border: 1px solid rgba(200,50,50,0.15); border-radius: 10px; color: #ff8080; font-size: 13px; font-weight: 600; cursor: pointer; text-align: left; margin-bottom: 10px; }
+.rd-expand-btn.saturn { background: rgba(50,50,80,0.15); border-color: rgba(100,80,200,0.2); color: #a080ff; }
+.rd-expand-content { margin-bottom: 16px; }
+.rd-expand-thesis { font-size: 12px; color: rgba(255,255,255,0.7); line-height: 1.7; margin-bottom: 14px; border-left: 2px solid rgba(200,50,50,0.4); padding-left: 10px; font-style: italic; }
+.rd-expand-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07); border-radius: 10px; padding: 14px; margin-bottom: 10px; }
+.rd-expand-card-title { font-size: 13px; font-weight: 600; color: #fff; margin: 0 0 10px; }

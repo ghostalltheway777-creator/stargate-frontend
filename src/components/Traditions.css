@@ -1,0 +1,218 @@
+.traditions-page { padding-bottom: 6rem; }
+
+/* ── HEADER ───────────────────────────────────────────────────────────────── */
+.trad-header {
+  text-align: center;
+  padding: 2rem 1.2rem 1.2rem;
+}
+
+.trad-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  background: linear-gradient(135deg, #e8e0ff, #aa77ff, #d4a843);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.4rem;
+}
+
+.trad-sub {
+  font-size: 0.8rem;
+  color: var(--text2);
+  font-style: italic;
+}
+
+/* ── CATEGORY ─────────────────────────────────────────────────────────────── */
+.trad-category { margin: 0 0.8rem 0.6rem; }
+
+.cat-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  color: var(--text);
+  text-align: left;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.cat-header.open {
+  border-radius: 12px 12px 0 0;
+  border-color: rgba(136,85,255,0.4);
+  background: linear-gradient(135deg, rgba(136,85,255,0.08), var(--bg2));
+}
+
+.cat-glyph {
+  font-size: 1.4rem;
+  color: var(--gold);
+  width: 2rem;
+  text-align: center;
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 6px rgba(212,168,67,0.4));
+}
+
+.cat-info { flex: 1; }
+
+.cat-label {
+  display: block;
+  font-family: 'Cinzel', serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--text);
+  margin-bottom: 0.1rem;
+}
+
+.cat-desc {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--text2);
+}
+
+.cat-chevron { font-size: 0.65rem; color: var(--text2); }
+
+/* ── TRADITION LIST ───────────────────────────────────────────────────────── */
+.trad-list {
+  background: var(--bg3);
+  border: 1px solid rgba(136,85,255,0.25);
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  overflow: hidden;
+}
+
+/* ── TRADITION CARD ───────────────────────────────────────────────────────── */
+.trad-card {
+  width: 100%;
+  background: none;
+  border: none;
+  border-top: 1px solid rgba(136,85,255,0.12);
+  padding: 0;
+  text-align: left;
+  color: var(--text);
+  transition: background 0.2s;
+}
+
+.trad-card:first-child { border-top: none; }
+
+.trad-card:hover { background: rgba(136,85,255,0.06); }
+
+.trad-card.expanded {
+  background: linear-gradient(180deg,
+    rgba(var(--tc-rgb, 136,85,255), 0.06) 0%,
+    rgba(136,85,255,0.04) 100%);
+}
+
+.trad-top {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.75rem 1rem;
+}
+
+.trad-symbol {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 6px color-mix(in srgb, var(--tc) 40%, transparent));
+  transition: filter 0.3s;
+}
+
+.trad-card.expanded .trad-symbol {
+  filter: drop-shadow(0 0 12px color-mix(in srgb, var(--tc) 70%, transparent));
+}
+
+.trad-name {
+  flex: 1;
+  font-family: 'Cinzel', serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--tc, var(--text));
+}
+
+.trad-chevron {
+  font-size: 0.6rem;
+  color: var(--text2);
+  flex-shrink: 0;
+}
+
+/* ── EXPANDED DETAIL ──────────────────────────────────────────────────────── */
+.trad-detail {
+  padding: 0 1rem 1rem 1rem;
+  border-top: 1px solid rgba(136,85,255,0.12);
+  margin-top: 0;
+}
+
+.trad-row {
+  display: flex;
+  gap: 0.7rem;
+  align-items: flex-start;
+  padding: 0.7rem 0;
+}
+
+.trad-row p {
+  font-size: 0.81rem;
+  color: var(--text2);
+  line-height: 1.65;
+  flex: 1;
+}
+
+.trad-badge {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 0.2rem 0.45rem;
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+  font-family: 'Cinzel', serif;
+}
+
+.trad-badge.d3 {
+  background: rgba(100,100,200,0.2);
+  color: #aaaaff;
+  border: 1px solid rgba(100,100,200,0.35);
+}
+
+.trad-badge.d5 {
+  background: rgba(212,168,67,0.15);
+  color: var(--gold);
+  border: 1px solid rgba(212,168,67,0.35);
+}
+
+.trad-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(136,85,255,0.2), transparent);
+}
+
+/* ── FOOTER QUOTE ─────────────────────────────────────────────────────────── */
+.trad-footer-quote {
+  margin: 1.2rem 0.8rem 0;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  border: 1px solid rgba(212,168,67,0.15);
+  border-radius: 10px;
+  background: rgba(212,168,67,0.04);
+}
+
+.trad-footer-quote p {
+  font-size: 0.83rem;
+  font-style: italic;
+  color: var(--text2);
+  line-height: 1.6;
+  margin-bottom: 0.35rem;
+}
+
+.trad-footer-quote cite {
+  font-size: 0.7rem;
+  color: var(--gold);
+  font-style: normal;
+}

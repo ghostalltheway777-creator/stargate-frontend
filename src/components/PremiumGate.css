@@ -1,0 +1,113 @@
+.premium-gate {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  max-width: 480px;
+  margin: 2rem auto;
+}
+
+.pg-icon {
+  font-size: 3rem;
+  color: #d4a843;
+  filter: drop-shadow(0 0 16px #d4a843);
+  margin-bottom: 0.8rem;
+}
+
+.pg-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #d4a843;
+  letter-spacing: 0.06em;
+  margin: 0 0 0.5rem;
+}
+
+.pg-desc {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.pg-plans {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.pg-plan {
+  flex: 1;
+  min-width: 100px;
+  padding: 1rem 0.8rem;
+  border: 1.5px solid rgba(212,168,67,0.25);
+  border-radius: 12px;
+  background: rgba(212,168,67,0.06);
+}
+
+.pg-plan.featured {
+  border-color: #d4a843;
+  background: rgba(212,168,67,0.14);
+}
+
+.pg-plan-name {
+  font-size: 0.75rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.4rem;
+}
+
+.pg-plan-price {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #d4a843;
+}
+
+.pg-plan-price span {
+  font-size: 0.75rem;
+  color: #999;
+  font-weight: 400;
+}
+
+.pg-plan-note {
+  font-size: 0.72rem;
+  color: #777;
+  margin-top: 0.2rem;
+}
+
+.pg-features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.pg-feature {
+  font-size: 0.85rem;
+  color: #ccc;
+  padding: 0.25rem 0;
+}
+
+.pg-error {
+  color: #e05050;
+  font-size: 0.85rem;
+  margin-bottom: 0.8rem;
+}
+
+.pg-btn {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(135deg, #b8860b, #d4a843, #b8860b);
+  color: #000;
+  font-size: 1rem;
+  font-weight: 800;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  transition: opacity 0.2s;
+}
+
+.pg-btn:hover:not(:disabled) { opacity: 0.9; }
+.pg-btn:disabled { opacity: 0.6; cursor: not-allowed; }

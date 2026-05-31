@@ -1,0 +1,190 @@
+.fp-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1rem 1rem 5rem;
+}
+
+.fp-hero {
+  text-align: center;
+  padding: 2rem 0 1.5rem;
+}
+.fp-symbol { font-size: 2.2rem; color: #50c090; margin-bottom: 0.4rem; }
+.fp-title { font-size: 2rem; font-weight: 900; color: #50c090; margin: 0 0 0.3rem; letter-spacing: 0.05em; }
+.fp-sub { font-size: 0.78rem; color: #777; margin: 0 0 1rem; }
+.fp-quote {
+  font-size: 0.78rem;
+  color: rgba(80,192,144,0.6);
+  font-style: italic;
+  border: 1px solid rgba(80,192,144,0.15);
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  margin: 0;
+}
+.fp-quote cite { display: block; font-size: 0.66rem; color: rgba(80,192,144,0.4); margin-top: 0.3rem; font-style: normal; }
+
+/* Now playing */
+.fp-now-playing {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--fcolor, #50c090);
+  border-radius: 14px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 20px color-mix(in srgb, var(--fcolor, #50c090) 15%, transparent);
+}
+.fp-np-waves { display: flex; align-items: center; gap: 3px; flex-shrink: 0; height: 36px; }
+.fp-wave {
+  width: 3px;
+  border-radius: 3px;
+  animation: wave-bounce 0.8s ease-in-out infinite;
+}
+.fp-wave:nth-child(1) { height: 12px; }
+.fp-wave:nth-child(2) { height: 24px; }
+.fp-wave:nth-child(3) { height: 36px; }
+.fp-wave:nth-child(4) { height: 24px; }
+.fp-wave:nth-child(5) { height: 12px; }
+@keyframes wave-bounce {
+  0%, 100% { transform: scaleY(0.4); }
+  50% { transform: scaleY(1); }
+}
+.fp-np-paused { font-size: 1.5rem; color: #555; }
+.fp-np-info { flex: 1; }
+.fp-np-hz { font-size: 1.3rem; font-weight: 900; }
+.fp-np-name { font-size: 0.82rem; font-weight: 700; color: #ddd; margin-bottom: 0.1rem; }
+.fp-np-desc { font-size: 0.72rem; color: #888; }
+.fp-np-controls { display: flex; flex-direction: column; align-items: flex-end; gap: 0.4rem; flex-shrink: 0; }
+.fp-timer { font-size: 0.72rem; color: #777; font-variant-numeric: tabular-nums; }
+.fp-stop-btn {
+  font-size: 0.72rem;
+  color: #ccc;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 6px;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.fp-stop-btn:hover { background: rgba(255,255,255,0.12); }
+
+/* Settings */
+.fp-settings {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 12px;
+  padding: 0.9rem;
+  flex-wrap: wrap;
+}
+.fp-setting { flex: 1; min-width: 180px; }
+.fp-label { font-size: 0.7rem; color: #777; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem; }
+.fp-range-wrap { display: flex; align-items: center; gap: 0.5rem; }
+.fp-range-icon { font-size: 0.9rem; }
+.fp-range {
+  flex: 1;
+  -webkit-appearance: none;
+  height: 3px;
+  border-radius: 3px;
+  background: rgba(80,192,144,0.3);
+  outline: none;
+}
+.fp-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  background: #50c090;
+  cursor: pointer;
+}
+.fp-duration-btns { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+.fp-dur-btn {
+  font-size: 0.72rem;
+  color: #888;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 6px;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.fp-dur-btn.active { background: rgba(80,192,144,0.15); border-color: rgba(80,192,144,0.4); color: #50c090; }
+
+/* Grid */
+.fp-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+.fp-card {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 12px;
+  padding: 0.9rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+.fp-card:hover { background: rgba(255,255,255,0.05); border-color: var(--fcolor); }
+.fp-active {
+  background: color-mix(in srgb, var(--fcolor) 8%, transparent) !important;
+  border-color: var(--fcolor) !important;
+  box-shadow: 0 0 16px color-mix(in srgb, var(--fcolor) 20%, transparent);
+}
+.fp-card-hz { font-size: 1rem; font-weight: 900; margin-bottom: 0.1rem; }
+.fp-card-name { font-size: 0.8rem; font-weight: 700; color: #ddd; margin-bottom: 0.1rem; }
+.fp-card-chakra { font-size: 0.62rem; color: #666; margin-bottom: 0.3rem; text-transform: uppercase; letter-spacing: 0.04em; }
+.fp-card-desc { font-size: 0.7rem; color: #999; line-height: 1.4; margin-bottom: 0.6rem; }
+.fp-card-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  color: #000;
+  font-weight: 700;
+}
+
+.fp-info-box {
+  background: rgba(80,192,144,0.04);
+  border: 1px solid rgba(80,192,144,0.12);
+  border-radius: 10px;
+  padding: 0.9rem;
+}
+.fp-info-box p { font-size: 0.76rem; color: #888; line-height: 1.55; margin: 0; }
+
+@media (max-width: 400px) {
+  .fp-grid { grid-template-columns: 1fr; }
+}
+
+.fp-science-box { background: rgba(80,200,120,0.06); border: 1px solid rgba(80,200,120,0.2); border-radius: 14px; padding: 18px; margin: 16px 16px 0; }
+.fp-science-title { font-size: 13px; font-weight: 700; color: #80cc80; margin-bottom: 10px; }
+.fp-science-text { font-size: 12px; color: rgba(255,255,255,0.65); line-height: 1.7; margin: 0 0 8px; }
+.fp-science-text strong { color: #80cc80; }
+.fp-science-cats { display: flex; flex-direction: column; gap: 6px; margin-top: 12px; border-top: 1px solid rgba(80,200,120,0.15); padding-top: 12px; }
+.fp-sci-cat { display: grid; grid-template-columns: 80px 1fr 70px; gap: 8px; align-items: center; font-size: 11px; }
+.fp-sci-trad { color: #80cc80; font-weight: 600; }
+.fp-sci-bøn { color: rgba(255,255,255,0.5); }
+.fp-sci-hz { color: rgba(255,200,80,0.7); text-align: right; }
+
+.fp-prayers-section { padding: 16px; }
+.fp-prayers-title { font-size: 18px; font-weight: 700; color: #fff; margin: 0 0 8px; }
+.fp-prayers-sub { font-size: 12px; color: rgba(255,255,255,0.5); line-height: 1.6; margin-bottom: 20px; }
+
+.fp-trad-section { margin-bottom: 24px; border: 1px solid var(--tc, #50aa50); border-radius: 14px; overflow: hidden; }
+.fp-trad-header { display: flex; gap: 12px; align-items: center; padding: 14px 16px; background: rgba(0,0,0,0.3); border-bottom: 1px solid rgba(255,255,255,0.06); }
+.fp-trad-icon { font-size: 28px; flex-shrink: 0; }
+.fp-trad-name { font-size: 15px; font-weight: 700; color: var(--tc, #fff); }
+.fp-trad-hz { font-size: 10px; color: rgba(255,200,80,0.7); margin-top: 3px; }
+
+.fp-prayer-card { padding: 14px 16px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+.fp-prayer-card:last-child { border-bottom: none; }
+.fp-prayer-name { font-size: 13px; font-weight: 600; color: #fff; margin-bottom: 3px; }
+.fp-prayer-lang { font-size: 10px; color: rgba(255,255,255,0.35); margin-bottom: 10px; }
+.fp-prayer-text { font-family: serif; font-size: 12px; color: rgba(255,255,255,0.75); line-height: 1.9; white-space: pre-wrap; margin: 0 0 10px; background: rgba(255,255,255,0.03); border-radius: 8px; padding: 10px; }
+.fp-prayer-note { font-size: 11px; color: rgba(80,200,120,0.7); line-height: 1.5; font-style: italic; }

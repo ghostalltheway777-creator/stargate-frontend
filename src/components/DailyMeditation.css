@@ -1,0 +1,48 @@
+.dm-page { padding: 0 0 80px; max-width: 480px; margin: 0 auto; }
+.dm-hero { text-align: center; padding: 36px 20px 20px; background: linear-gradient(180deg,#080812,#0e0e1a); border-bottom: 1px solid rgba(100,80,200,0.2); }
+.dm-icon { font-size: 36px; margin-bottom: 10px; }
+.dm-title { font-size: 26px; font-weight: 700; color: #fff; margin: 0 0 6px; letter-spacing: 2px; }
+.dm-sub { font-size: 11px; color: rgba(255,255,255,0.45); margin: 0; }
+.dm-section { padding: 16px; }
+.dm-intro { font-size: 12px; color: rgba(255,255,255,0.55); margin-bottom: 16px; text-align: center; }
+.dm-card { width: 100%; background: rgba(100,80,200,0.06); border: 1px solid rgba(100,80,200,0.15); border-radius: 12px; padding: 16px; margin-bottom: 10px; cursor: pointer; text-align: left; transition: all 0.2s; }
+.dm-card:hover { border-color: rgba(100,80,200,0.35); background: rgba(100,80,200,0.12); }
+.dm-card-header { display: flex; justify-content: space-between; align-items: flex-start; }
+.dm-card-title { font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 4px; }
+.dm-card-desc { font-size: 12px; color: rgba(255,255,255,0.55); }
+.dm-card-right { text-align: right; flex-shrink: 0; margin-left: 10px; }
+.dm-card-duration { font-size: 14px; font-weight: 700; color: #a080ff; }
+.dm-card-freq { font-size: 10px; color: rgba(160,128,255,0.6); }
+
+.dm-detail-hero { padding: 24px 16px 16px; background: linear-gradient(180deg,#080812,#0e0e1a); border-bottom: 1px solid rgba(100,80,200,0.15); }
+.dm-back { background: none; border: none; color: rgba(255,255,255,0.4); font-size: 13px; cursor: pointer; padding: 0 0 12px; display: block; }
+.dm-detail-title { font-size: 22px; font-weight: 700; color: #fff; margin: 0 0 8px; }
+.dm-freq-badge { display: inline-block; background: rgba(212,168,67,0.1); border: 1px solid rgba(212,168,67,0.25); color: #d4a843; font-size: 10px; padding: 3px 10px; border-radius: 20px; margin-bottom: 8px; }
+.dm-detail-desc { font-size: 12px; color: rgba(255,255,255,0.6); line-height: 1.6; margin: 0; }
+
+.dm-content { padding: 20px 16px; }
+.dm-progress-ring { position: relative; width: 160px; height: 160px; margin: 0 auto 20px; }
+.dm-ring-svg { width: 100%; height: 100%; }
+.dm-ring-center { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.dm-ring-time { font-size: 28px; font-weight: 700; color: #d4a843; }
+.dm-ring-label { font-size: 11px; color: rgba(255,255,255,0.4); }
+
+.dm-step-box { background: rgba(100,80,200,0.08); border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 16px; margin-bottom: 16px; text-align: center; }
+.dm-step-num { font-size: 10px; color: rgba(160,128,255,0.6); margin-bottom: 8px; letter-spacing: 1px; }
+.dm-step-text { font-size: 14px; color: #fff; line-height: 1.7; margin: 0; }
+
+.dm-steps-list { display: flex; flex-direction: column; gap: 6px; margin-bottom: 20px; }
+.dm-step-item { display: flex; gap: 10px; align-items: flex-start; padding: 8px 10px; border-radius: 8px; font-size: 12px; color: rgba(255,255,255,0.4); transition: all 0.5s; }
+.dm-step-item.active { background: rgba(212,168,67,0.08); color: rgba(255,255,255,0.85); border: 1px solid rgba(212,168,67,0.2); }
+.dm-step-item.done { color: rgba(100,200,100,0.6); }
+.dm-step-dot { width: 20px; height: 20px; border-radius: 50%; background: rgba(255,255,255,0.06); display: flex; align-items: center; justify-content: center; font-size: 10px; flex-shrink: 0; }
+.dm-step-item.active .dm-step-dot { background: rgba(212,168,67,0.2); color: #d4a843; }
+.dm-step-item.done .dm-step-dot { background: rgba(100,200,100,0.15); color: #60cc80; }
+
+.dm-done-box { text-align: center; background: rgba(212,168,67,0.08); border: 1px solid rgba(212,168,67,0.2); border-radius: 12px; padding: 20px; margin-bottom: 14px; }
+.dm-done-icon { font-size: 32px; color: #d4a843; margin-bottom: 10px; }
+.dm-done-box p { font-size: 13px; color: rgba(255,255,255,0.8); line-height: 1.6; margin: 0; }
+
+.dm-start-btn { width: 100%; padding: 16px; background: rgba(100,80,200,0.15); border: 1px solid rgba(100,80,200,0.3); border-radius: 12px; color: #a080ff; font-size: 15px; font-weight: 600; cursor: pointer; }
+.dm-stop-btn { width: 100%; padding: 14px; background: rgba(200,80,80,0.1); border: 1px solid rgba(200,80,80,0.2); border-radius: 10px; color: #ff8080; font-size: 13px; cursor: pointer; }
+.dm-tradition-badge { text-align: center; background: rgba(212,168,67,0.08); border: 1px solid rgba(212,168,67,0.2); border-radius: 20px; padding: 6px 16px; font-size: 12px; color: #d4a843; margin-bottom: 14px; display: inline-block; width: 100%; box-sizing: border-box; }

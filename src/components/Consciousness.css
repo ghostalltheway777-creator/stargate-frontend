@@ -1,0 +1,430 @@
+.consciousness-page {
+  padding: 1rem 0 6rem;
+  position: relative;
+}
+
+/* ── FULL PAGE BACKGROUND GEOMETRY ────────────────────────────────────────── */
+.con-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.con-bg-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 0 8px rgba(212,168,67,0.55)) drop-shadow(0 0 22px rgba(212,168,67,0.22));
+}
+
+.con-bg-top {
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: drop-shadow(0 0 7px rgba(136,85,255,0.5)) drop-shadow(0 0 18px rgba(136,85,255,0.2));
+}
+
+.con-bg-bottom {
+  position: absolute;
+  bottom: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: drop-shadow(0 0 8px rgba(212,168,67,0.5)) drop-shadow(0 0 20px rgba(212,168,67,0.2));
+}
+
+@keyframes con-bg-spin     { from { transform: translate(-50%,-50%) rotate(0deg);   } to { transform: translate(-50%,-50%) rotate(360deg);  } }
+@keyframes con-bg-spin-rev { from { transform: translateX(-50%) rotate(0deg);         } to { transform: translateX(-50%) rotate(-360deg);    } }
+@keyframes con-bg-spin-btm { from { transform: translateX(-50%) rotate(0deg);         } to { transform: translateX(-50%) rotate(360deg);     } }
+
+.con-bg-center { animation: con-bg-spin     80s linear infinite; }
+.con-bg-top    { animation: con-bg-spin-rev 55s linear infinite; }
+.con-bg-bottom { animation: con-bg-spin-btm 70s linear infinite; }
+
+/* everything else sits above the bg */
+.con-header,
+.con-insight,
+.levels,
+.comparisons,
+.con-universal,
+.section-label {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── HEADER ───────────────────────────────────────────────────────────────── */
+.con-header {
+  position: relative;
+  margin: 0 1rem 1.2rem;
+  background: linear-gradient(135deg, rgba(10,10,26,0.55), rgba(10,10,26,0.45));
+  border: 1px solid rgba(212,168,67,0.25);
+  border-radius: 18px;
+  padding: 1.4rem 1rem;
+  text-align: center;
+  overflow: hidden;
+  backdrop-filter: blur(2px);
+}
+
+.con-geo {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  filter: drop-shadow(0 0 6px rgba(212,168,67,0.45)) drop-shadow(0 0 14px rgba(212,168,67,0.2));
+}
+
+@keyframes con-spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.con-geo-spin svg {
+  animation: con-spin-slow 40s linear infinite;
+}
+
+.con-header-content { position: relative; z-index: 1; }
+
+.con-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 1.3rem;
+  color: var(--gold);
+  margin: 0 0 0.3rem;
+  letter-spacing: 0.06em;
+}
+
+.con-sub {
+  font-size: 0.8rem;
+  color: var(--text2);
+  letter-spacing: 0.1em;
+  font-family: 'Cinzel', serif;
+  margin: 0;
+}
+
+/* ── CORE INSIGHT ─────────────────────────────────────────────────────────── */
+.con-insight {
+  margin: 0 1rem 1.4rem;
+  padding: 1rem 1.1rem;
+  background: rgba(14,14,36,0.72);
+  border: 1px solid rgba(212,168,67,0.25);
+  border-radius: 14px;
+  border-left: 3px solid var(--gold);
+  backdrop-filter: blur(3px);
+}
+
+.con-insight-text {
+  font-size: 0.85rem;
+  color: var(--text);
+  line-height: 1.65;
+  margin: 0 0 0.6rem;
+}
+
+.con-insight-sub {
+  font-size: 0.78rem;
+  color: var(--gold);
+  font-family: 'Cinzel', serif;
+  font-style: italic;
+  margin: 0;
+}
+
+/* ── SECTION LABEL ────────────────────────────────────────────────────────── */
+.section-label {
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  color: var(--text2);
+  text-transform: uppercase;
+  font-family: 'Cinzel', serif;
+}
+
+/* ── LEVELS ───────────────────────────────────────────────────────────────── */
+.levels {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin: 0 1rem;
+}
+
+.level-card {
+  background: rgba(14,14,36,0.70);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  border-left: 3px solid var(--lc, var(--accent));
+  backdrop-filter: blur(3px);
+}
+
+.level-header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0.9rem 1rem;
+  cursor: pointer;
+  text-align: left;
+}
+
+.level-glyph {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  width: 28px;
+  text-align: center;
+}
+
+.level-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.level-dim {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 0.75rem;
+  color: var(--text2);
+  letter-spacing: 0.12em;
+}
+
+.level-title {
+  font-family: 'Cinzel', serif;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.level-chevron {
+  color: var(--text2);
+  font-size: 0.7rem;
+  flex-shrink: 0;
+}
+
+/* ── LEVEL BODY ───────────────────────────────────────────────────────────── */
+.level-body {
+  padding: 0 1rem 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.level-core {
+  font-style: italic;
+  color: var(--gold);
+  font-size: 0.85rem;
+  margin: 0.8rem 0 0.6rem;
+  line-height: 1.5;
+}
+
+.level-section-label {
+  font-size: 0.6rem;
+  letter-spacing: 0.16em;
+  color: var(--text2);
+  text-transform: uppercase;
+  font-family: 'Cinzel', serif;
+  margin: 0.8rem 0 0.3rem;
+}
+
+.level-signs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.level-signs li {
+  font-size: 0.82rem;
+  color: var(--text);
+  line-height: 1.4;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.level-quote {
+  margin: 0.4rem 0;
+  padding: 0.6rem 0.8rem;
+  border-left: 2px solid var(--lc, var(--accent));
+  background: rgba(0,0,0,0.15);
+  border-radius: 0 8px 8px 0;
+}
+
+.level-quote p {
+  margin: 0 0 0.2rem;
+  font-size: 0.82rem;
+  color: var(--text);
+  font-style: italic;
+}
+
+.level-quote cite {
+  font-size: 0.72rem;
+  color: var(--text2);
+  font-style: normal;
+  font-family: 'Cinzel', serif;
+}
+
+.level-traditions {
+  font-size: 0.8rem;
+  color: var(--text2);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ── COMPARISONS ──────────────────────────────────────────────────────────── */
+.comparisons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0 1rem;
+}
+
+.comp-card {
+  width: 100%;
+  background: rgba(14,14,36,0.70);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.2s;
+  backdrop-filter: blur(3px);
+}
+
+.comp-card.open {
+  border-color: rgba(136,85,255,0.4);
+}
+
+.comp-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.comp-topic {
+  font-family: 'Cinzel', serif;
+  font-size: 0.85rem;
+  color: var(--text);
+  letter-spacing: 0.03em;
+}
+
+.comp-chevron {
+  color: var(--text2);
+  font-size: 0.7rem;
+}
+
+.comp-body {
+  margin-top: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.comp-row {
+  display: flex;
+  gap: 0.7rem;
+  align-items: flex-start;
+}
+
+.comp-badge {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  padding: 0.2rem 0.5rem;
+  border-radius: 8px;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.comp-badge.d3 {
+  background: rgba(102,136,204,0.15);
+  color: #6688cc;
+  border: 1px solid rgba(102,136,204,0.3);
+}
+
+.comp-badge.d5 {
+  background: rgba(212,168,67,0.15);
+  color: var(--gold);
+  border: 1px solid rgba(212,168,67,0.3);
+}
+
+.comp-row p {
+  font-size: 0.82rem;
+  color: var(--text);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.comp-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 0.2rem 0;
+}
+
+.comp-refs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--border);
+}
+
+.comp-ref {
+  font-size: 0.68rem;
+  font-family: 'Cinzel', serif;
+  color: var(--accent2);
+  background: rgba(136,85,255,0.08);
+  border: 1px solid rgba(136,85,255,0.2);
+  border-radius: 12px;
+  padding: 0.15rem 0.5rem;
+}
+
+/* ── UNIVERSAL TRUTH ──────────────────────────────────────────────────────── */
+.con-universal {
+  position: relative;
+  margin: 1.6rem 1rem 0;
+  padding: 1.4rem 1rem;
+  background: rgba(14,14,36,0.6);
+  border: 1px solid rgba(212,168,67,0.25);
+  border-radius: 18px;
+  text-align: center;
+  overflow: hidden;
+  backdrop-filter: blur(3px);
+}
+
+.con-flower {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  filter: drop-shadow(0 0 5px rgba(212,168,67,0.4)) drop-shadow(0 0 12px rgba(212,168,67,0.18));
+}
+
+.con-flower-spin svg {
+  animation: con-spin-slow 60s linear infinite reverse;
+}
+
+.con-universal-quote {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+.con-universal-quote p {
+  font-family: 'Cinzel', serif;
+  font-size: 0.95rem;
+  color: var(--gold);
+  font-style: italic;
+  margin: 0 0 0.5rem;
+  line-height: 1.6;
+}
+
+.con-universal-quote cite {
+  font-size: 0.75rem;
+  color: var(--text2);
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.06em;
+}

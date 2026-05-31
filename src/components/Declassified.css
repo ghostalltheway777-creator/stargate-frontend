@@ -1,0 +1,59 @@
+.decl-page { padding: 0 0 80px; max-width: 480px; margin: 0 auto; }
+
+.decl-hero { text-align: center; padding: 40px 20px 24px; background: linear-gradient(180deg, #0a0a0f 0%, #0d0d1a 100%); border-bottom: 1px solid rgba(255,60,60,0.15); }
+.decl-hero-symbol { font-size: 40px; margin-bottom: 12px; }
+.decl-hero-title { font-size: 28px; font-weight: 700; color: #fff; margin: 0 0 8px; letter-spacing: 3px; }
+.decl-hero-sub { font-size: 12px; color: rgba(255,255,255,0.5); margin: 0 0 16px; line-height: 1.6; }
+.decl-hero-badge { background: rgba(255,40,40,0.15); border: 1px solid rgba(255,40,40,0.3); color: #ff6060; font-size: 9px; letter-spacing: 1.5px; padding: 6px 12px; border-radius: 4px; display: inline-block; }
+
+.decl-tabs { display: flex; gap: 4px; padding: 16px 16px 0; overflow-x: auto; }
+.decl-tab { flex: 1; min-width: 120px; padding: 10px 8px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; color: rgba(255,255,255,0.5); font-size: 11px; cursor: pointer; white-space: nowrap; transition: all 0.2s; }
+.decl-tab.active { background: rgba(255,60,60,0.12); border-color: rgba(255,60,60,0.3); color: #ff8080; }
+
+.decl-section { padding: 20px 16px; }
+.decl-intro { font-size: 13px; color: rgba(255,255,255,0.6); line-height: 1.7; margin-bottom: 24px; border-left: 2px solid rgba(255,60,60,0.4); padding-left: 12px; }
+
+/* Video cards */
+.decl-video-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 20px; margin-bottom: 20px; }
+.decl-video-header { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
+.decl-video-year { background: rgba(255,60,60,0.2); color: #ff8080; font-size: 10px; padding: 3px 8px; border-radius: 4px; font-weight: 600; }
+.decl-video-title { font-size: 15px; font-weight: 600; color: #fff; margin: 0; }
+.decl-video-play { width: 100%; padding: 20px; background: rgba(255,60,60,0.08); border: 1px solid rgba(255,60,60,0.2); border-radius: 8px; color: #ff8080; font-size: 14px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 12px; transition: all 0.2s; }
+.decl-video-play:hover { background: rgba(255,60,60,0.15); }
+.decl-play-icon { font-size: 20px; }
+.decl-video { width: 100%; border-radius: 8px; margin-bottom: 12px; }
+.decl-keywords { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.decl-keyword { background: rgba(255,255,255,0.06); color: rgba(255,255,255,0.5); font-size: 10px; padding: 3px 8px; border-radius: 20px; }
+.decl-video-desc { font-size: 12px; color: rgba(255,255,255,0.6); line-height: 1.7; margin-bottom: 12px; }
+.decl-archon-box { background: rgba(100,60,200,0.1); border: 1px solid rgba(100,60,200,0.2); border-radius: 8px; padding: 12px; }
+.decl-archon-label { font-size: 9px; color: #9060ff; letter-spacing: 1.5px; font-weight: 600; display: block; margin-bottom: 6px; }
+.decl-archon-text { font-size: 12px; color: rgba(255,255,255,0.6); line-height: 1.6; margin: 0; }
+
+/* Archon cards */
+.decl-archon-card { background: rgba(100,60,200,0.06); border: 1px solid rgba(100,60,200,0.15); border-radius: 12px; padding: 20px; margin-bottom: 16px; }
+.decl-archon-icon { font-size: 24px; margin-bottom: 8px; }
+.decl-archon-title { font-size: 16px; font-weight: 600; color: #c090ff; margin: 0 0 10px; }
+.decl-archon-body { font-size: 13px; color: rgba(255,255,255,0.65); line-height: 1.7; margin-bottom: 14px; }
+.decl-connection-box { background: rgba(255,60,60,0.08); border: 1px solid rgba(255,60,60,0.15); border-radius: 8px; padding: 12px; }
+.decl-connection-label { font-size: 9px; color: #ff8080; letter-spacing: 1.5px; font-weight: 600; display: block; margin-bottom: 6px; }
+.decl-connection-text { font-size: 12px; color: rgba(255,255,255,0.6); line-height: 1.6; margin: 0; }
+.decl-cta { width: 100%; padding: 16px; margin-top: 20px; background: rgba(100,60,200,0.15); border: 1px solid rgba(100,60,200,0.3); border-radius: 12px; color: #c090ff; font-size: 14px; cursor: pointer; }
+
+/* Tools */
+.decl-process { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 20px; margin-bottom: 20px; }
+.decl-process-title { font-size: 13px; font-weight: 600; color: #fff; margin: 0 0 16px; }
+.decl-steps { display: flex; flex-direction: column; gap: 10px; }
+.decl-step { display: flex; align-items: flex-start; gap: 12px; }
+.decl-step-n { background: rgba(255,60,60,0.2); color: #ff8080; width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; flex-shrink: 0; }
+.decl-step-text { font-size: 12px; color: rgba(255,255,255,0.65); line-height: 1.6; padding-top: 2px; }
+.decl-tools-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 20px; }
+.decl-tool-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 14px; text-decoration: none; display: flex; flex-direction: column; gap: 4px; transition: all 0.2s; }
+.decl-tool-card:hover { border-color: rgba(255,60,60,0.3); background: rgba(255,60,60,0.05); }
+.decl-tool-icon { font-size: 20px; }
+.decl-tool-name { font-size: 11px; font-weight: 600; color: #fff; line-height: 1.3; }
+.decl-tool-desc { font-size: 10px; color: rgba(255,255,255,0.45); line-height: 1.5; }
+.decl-tool-link { font-size: 10px; color: #ff8080; margin-top: 4px; }
+.decl-sources-box { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 16px; }
+.decl-sources-box h4 { font-size: 12px; color: #fff; margin: 0 0 12px; }
+.decl-sources-box p { font-size: 11px; color: rgba(255,255,255,0.55); margin: 0 0 6px; line-height: 1.5; }
+.decl-sources-box strong { color: rgba(255,255,255,0.75); }

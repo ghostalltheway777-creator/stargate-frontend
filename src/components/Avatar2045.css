@@ -1,0 +1,63 @@
+.av-page { max-width: 480px; margin: 0 auto; padding: 0 0 80px; }
+
+.av-hero { text-align: center; padding: 36px 20px 20px; background: linear-gradient(180deg,#050814,#0a0820); border-bottom: 1px solid rgba(100,80,255,0.2); }
+.av-hero-year { font-size: 56px; font-weight: 900; color: rgba(100,80,255,0.15); letter-spacing: 4px; line-height: 1; margin-bottom: 4px; }
+.av-title { font-size: 26px; font-weight: 700; color: #fff; margin: 0 0 6px; letter-spacing: 3px; }
+.av-sub { font-size: 11px; color: rgba(255,255,255,0.45); margin: 0 0 14px; }
+.av-badge { font-size: 9px; color: rgba(100,80,255,0.7); letter-spacing: 1.5px; font-weight: 700; border: 1px solid rgba(100,80,255,0.2); border-radius: 20px; padding: 4px 12px; display: inline-block; }
+
+.av-tabs { display: flex; gap: 3px; padding: 12px 12px 0; overflow-x: auto; }
+.av-tab { flex-shrink: 0; padding: 8px 10px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; color: rgba(255,255,255,0.4); font-size: 11px; cursor: pointer; }
+.av-tab.active { background: rgba(100,80,255,0.12); border-color: rgba(100,80,255,0.35); color: #8070ff; }
+
+.av-section { padding: 16px; }
+.av-phase-intro { font-size: 12px; color: rgba(255,255,255,0.5); line-height: 1.6; margin-bottom: 16px; text-align: center; }
+
+.av-intro-card { background: rgba(100,80,255,0.06); border: 1px solid rgba(100,80,255,0.2); border-radius: 12px; padding: 16px; margin-bottom: 16px; text-align: center; }
+.av-intro-card p { font-size: 13px; font-style: italic; color: rgba(255,255,255,0.85); margin: 0 0 8px; line-height: 1.7; }
+.av-intro-card cite { font-size: 10px; color: rgba(100,80,255,0.7); }
+
+.av-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 12px; padding: 16px; margin-bottom: 12px; }
+.av-card-icon { font-size: 22px; margin-bottom: 8px; }
+.av-card-title { font-size: 13px; font-weight: 700; color: #c0b0ff; margin: 0 0 8px; }
+.av-card-text { font-size: 12px; color: rgba(255,255,255,0.7); line-height: 1.7; margin: 0; }
+
+.av-avatar-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(var(--av-color-rgb),0.15); border-left: 3px solid var(--av-color); border-radius: 12px; padding: 16px; margin-bottom: 14px; cursor: pointer; transition: background 0.2s; }
+.av-avatar-card:hover { background: rgba(255,255,255,0.04); }
+.av-avatar-header { display: flex; gap: 10px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 10px; }
+.av-avatar-badge { display: flex; align-items: center; gap: 6px; padding: 4px 8px; border-radius: 8px; flex-shrink: 0; }
+.av-avatar-icon { font-size: 16px; }
+.av-avatar-id { font-size: 11px; font-weight: 700; }
+.av-avatar-name { font-size: 13px; font-weight: 700; color: #fff; }
+.av-avatar-year { font-size: 10px; color: rgba(255,255,255,0.4); margin-top: 2px; }
+.av-avatar-status { font-size: 9px; font-weight: 700; letter-spacing: 1px; border: 1px solid; border-radius: 20px; padding: 3px 8px; flex-shrink: 0; margin-left: auto; }
+.av-avatar-desc { font-size: 12px; color: rgba(255,255,255,0.7); line-height: 1.7; margin: 0; }
+.av-avatar-expanded { margin-top: 14px; display: flex; flex-direction: column; gap: 10px; }
+.av-avatar-reality, .av-avatar-dark { border-radius: 8px; padding: 12px; }
+.av-avatar-reality { background: rgba(80,200,80,0.05); border: 1px solid rgba(80,200,80,0.15); }
+.av-avatar-dark { background: rgba(255,80,80,0.05); border: 1px solid rgba(255,80,80,0.15); }
+.av-avatar-reality p, .av-avatar-dark p { font-size: 11px; color: rgba(255,255,255,0.7); line-height: 1.6; margin: 6px 0 0; }
+.av-label { font-size: 9px; font-weight: 700; letter-spacing: 1px; color: rgba(80,200,80,0.8); }
+.av-label.dark { color: rgba(255,100,100,0.8); }
+
+.av-profile-card { text-align: center; padding: 24px; background: rgba(100,80,255,0.06); border: 1px solid rgba(100,80,255,0.2); border-radius: 14px; margin-bottom: 16px; }
+.av-profile-icon { font-size: 40px; margin-bottom: 8px; }
+.av-profile-name { font-size: 20px; font-weight: 700; color: #fff; margin: 0 0 4px; }
+.av-profile-title { font-size: 11px; color: rgba(100,80,255,0.7); margin: 0; }
+
+.av-soul-card { background: rgba(212,168,67,0.04); border: 1px solid rgba(212,168,67,0.12); border-radius: 12px; padding: 14px; margin-bottom: 12px; }
+.av-soul-header { display: flex; gap: 10px; align-items: center; margin-bottom: 10px; }
+.av-soul-icon { font-size: 20px; }
+.av-soul-trad { font-size: 10px; color: rgba(212,168,67,0.6); font-weight: 700; letter-spacing: 1px; }
+.av-soul-title { font-size: 13px; font-weight: 700; color: #d4a843; }
+.av-soul-text { font-size: 12px; color: rgba(255,255,255,0.7); line-height: 1.7; margin: 0; }
+
+.av-now-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07); border-radius: 12px; padding: 14px; margin-bottom: 12px; }
+.av-now-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
+.av-now-icon { font-size: 18px; }
+.av-now-company { font-size: 13px; font-weight: 700; color: #fff; flex: 1; }
+.av-now-status { font-size: 9px; font-weight: 700; letter-spacing: 1px; border-radius: 20px; padding: 3px 8px; border: 1px solid; }
+.av-now-status.active { color: #60cc60; border-color: rgba(80,200,80,0.3); background: rgba(80,200,80,0.06); }
+.av-now-status.quiet { color: #d4a843; border-color: rgba(212,168,67,0.3); background: rgba(212,168,67,0.06); }
+.av-now-status.secret { color: #ff6060; border-color: rgba(255,80,80,0.3); background: rgba(255,80,80,0.06); }
+.av-now-text { font-size: 12px; color: rgba(255,255,255,0.7); line-height: 1.7; margin: 0; }

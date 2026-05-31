@@ -1,0 +1,185 @@
+.am-page { padding: 0 0 80px; max-width: 480px; margin: 0 auto; }
+.am-hero { text-align: center; padding: 36px 20px 20px; background: linear-gradient(180deg,#060d06,#0a120a); border-bottom: 1px solid rgba(80,180,80,0.15); }
+.am-icon { font-size: 36px; margin-bottom: 10px; }
+.am-title { font-size: 26px; font-weight: 700; color: #fff; margin: 0 0 6px; letter-spacing: 2px; }
+.am-sub { font-size: 11px; color: rgba(255,255,255,0.45); margin: 0; }
+
+.am-main-tabs { display: flex; gap: 4px; padding: 12px 12px 0; overflow-x: auto; }
+.am-main-tab { flex-shrink: 0; flex: 1; min-width: 0; padding: 10px 6px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; color: rgba(255,255,255,0.45); font-size: 11px; cursor: pointer; transition: all 0.2s; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.am-main-tab.active { background: rgba(80,180,80,0.12); border-color: rgba(80,180,80,0.3); color: #80cc80; font-weight: 600; }
+
+.am-section { padding: 16px; }
+.am-intro { font-size: 12px; color: rgba(255,255,255,0.55); line-height: 1.7; margin-bottom: 16px; border-left: 2px solid rgba(80,180,80,0.3); padding-left: 10px; }
+
+.am-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 24px; }
+.am-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(80,180,80,0.12); border-radius: 10px; padding: 12px 8px; display: flex; flex-direction: column; align-items: center; gap: 4px; cursor: pointer; transition: all 0.2s; }
+.am-card:hover { border-color: rgba(80,180,80,0.3); background: rgba(80,180,80,0.06); }
+.am-card-icon { font-size: 22px; }
+.am-card-name { font-size: 11px; font-weight: 600; color: #fff; text-align: center; }
+.am-card-cat { font-size: 9px; color: rgba(80,180,80,0.7); }
+
+.am-section-title { font-size: 14px; font-weight: 700; color: #fff; margin: 24px 0 12px; }
+
+.am-cure-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(80,180,80,0.1); border-radius: 8px; padding: 10px 12px; margin-bottom: 8px; }
+.am-cure-condition { font-size: 12px; font-weight: 600; color: #80cc80; margin-bottom: 4px; }
+.am-cure-remedy { font-size: 11px; color: rgba(255,255,255,0.55); line-height: 1.5; }
+
+.am-rock-card { background: rgba(180,50,50,0.05); border: 1px solid rgba(180,50,50,0.15); border-radius: 12px; padding: 16px; }
+.am-rock-card > p { font-size: 12px; color: rgba(255,255,255,0.65); line-height: 1.7; margin-bottom: 16px; }
+.am-rock-timeline { display: flex; flex-direction: column; gap: 10px; }
+.am-rock-tl-item { display: flex; gap: 10px; }
+.am-rock-tl-year { font-size: 11px; font-weight: 700; color: #ff8080; min-width: 36px; padding-top: 2px; }
+.am-rock-tl-event { font-size: 12px; font-weight: 600; color: #fff; margin-bottom: 2px; }
+.am-rock-tl-text { font-size: 11px; color: rgba(255,255,255,0.5); line-height: 1.5; }
+
+.am-psy-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 24px; }
+.am-psy-card { background: rgba(100,50,200,0.06); border: 1px solid rgba(100,50,200,0.15); border-radius: 12px; padding: 16px 12px; display: flex; flex-direction: column; align-items: center; gap: 6px; cursor: pointer; transition: all 0.2s; }
+.am-psy-card:hover { border-color: rgba(100,50,200,0.35); background: rgba(100,50,200,0.12); }
+.am-psy-card-icon { font-size: 28px; }
+.am-psy-card-name { font-size: 14px; font-weight: 700; color: #fff; }
+.am-psy-card-nat { font-size: 10px; color: rgba(255,255,255,0.4); }
+
+.am-freq-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(80,120,255,0.12); border-radius: 10px; padding: 14px; margin-bottom: 10px; }
+.am-freq-header { display: flex; gap: 10px; align-items: center; margin-bottom: 8px; }
+.am-freq-icon { font-size: 20px; }
+.am-freq-name { font-size: 13px; font-weight: 600; color: #80a0ff; margin: 0; }
+.am-freq-text { font-size: 12px; color: rgba(255,255,255,0.6); line-height: 1.6; margin: 0; }
+
+.am-cta { width: 100%; padding: 14px; background: rgba(80,120,255,0.1); border: 1px solid rgba(80,120,255,0.25); border-radius: 10px; color: #80a0ff; font-size: 13px; cursor: pointer; margin-top: 16px; }
+
+/* Detail view */
+.am-detail { }
+.am-back { background: none; border: none; color: rgba(255,255,255,0.4); font-size: 13px; cursor: pointer; padding: 0 0 16px; }
+.am-detail-header { display: flex; gap: 12px; align-items: center; margin-bottom: 16px; }
+.am-d-icon { font-size: 36px; }
+.am-d-name { font-size: 20px; font-weight: 700; color: #fff; margin: 0 0 4px; }
+.am-d-cat { font-size: 11px; color: rgba(80,180,80,0.7); }
+.am-d-desc { font-size: 12px; color: rgba(255,255,255,0.65); line-height: 1.7; margin-bottom: 14px; }
+
+.am-dosage-box { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 12px; margin-bottom: 10px; }
+.am-box-label { font-size: 9px; color: #80cc80; letter-spacing: 1.5px; font-weight: 600; display: block; margin-bottom: 6px; }
+.am-dosage-box p { font-size: 12px; color: rgba(255,255,255,0.65); line-height: 1.6; margin: 0; }
+
+.am-psy-full-box { background: rgba(100,50,200,0.08); border: 1px solid rgba(100,50,200,0.2); border-radius: 10px; padding: 12px; margin-bottom: 10px; }
+.am-psy-full-box p { font-size: 12px; color: rgba(255,255,255,0.65); line-height: 1.6; margin: 0; }
+
+.am-psy-conn-box { background: rgba(0,0,0,0.3); border: 1px solid rgba(255,200,50,0.2); border-radius: 10px; padding: 12px; margin-bottom: 10px; }
+.am-psy-conn-box p { font-size: 12px; color: rgba(255,255,255,0.65); line-height: 1.6; margin: 0; }
+
+/* AI Stack */
+.am-stack-form { background: rgba(80,180,80,0.05); border: 1px solid rgba(80,180,80,0.15); border-radius: 12px; padding: 16px; margin-bottom: 16px; }
+.am-stack-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-bottom: 12px; }
+.am-stack-field { display: flex; flex-direction: column; gap: 4px; }
+.am-stack-field.full { margin-bottom: 10px; }
+.am-stack-field label { font-size: 11px; color: rgba(80,180,80,0.8); font-weight: 600; }
+.am-stack-field input, .am-stack-field select, .am-stack-field textarea { background: rgba(255,255,255,0.06); border: 1px solid rgba(80,180,80,0.2); border-radius: 8px; padding: 8px 10px; color: #fff; font-size: 12px; outline: none; width: 100%; box-sizing: border-box; }
+.am-stack-field textarea { resize: none; }
+.am-stack-btn { width: 100%; padding: 14px; background: rgba(80,180,80,0.15); border: 1px solid rgba(80,180,80,0.3); border-radius: 10px; color: #80cc80; font-size: 14px; font-weight: 600; cursor: pointer; }
+.am-stack-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.am-stack-result { background: rgba(255,255,255,0.03); border: 1px solid rgba(80,180,80,0.2); border-radius: 12px; padding: 16px; }
+.am-stack-result h3 { font-size: 13px; color: #80cc80; margin: 0 0 12px; }
+.am-stack-text { font-size: 12px; color: rgba(255,255,255,0.75); line-height: 1.8; white-space: pre-wrap; margin: 0; font-family: inherit; }
+
+/* Dose table */
+.am-table-toggle { width: 100%; padding: 10px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; color: rgba(255,255,255,0.5); font-size: 12px; cursor: pointer; margin-bottom: 10px; }
+.am-dose-table { overflow-x: auto; margin-bottom: 16px; }
+.am-dose-header { display: grid; grid-template-columns: 100px 80px 80px 1fr 1fr; gap: 6px; font-size: 9px; font-weight: 700; color: rgba(255,255,255,0.35); letter-spacing: 0.5px; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 6px; }
+.am-dose-row { display: grid; grid-template-columns: 100px 80px 80px 1fr 1fr; gap: 6px; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.04); align-items: start; }
+.am-dose-sub { font-size: 11px; font-weight: 600; color: #80cc80; }
+.am-dose-micro { font-size: 10px; color: rgba(255,200,80,0.8); }
+.am-dose-full { font-size: 10px; color: rgba(255,100,80,0.8); }
+.am-dose-effect { font-size: 10px; color: rgba(255,255,255,0.5); line-height: 1.4; }
+.am-dose-deep { font-size: 10px; color: rgba(150,100,255,0.8); line-height: 1.4; }
+
+/* Natur Doctor Chat */
+.am-doctor-hero { display: flex; gap: 12px; align-items: center; background: rgba(80,180,80,0.08); border: 1px solid rgba(80,180,80,0.2); border-radius: 12px; padding: 14px; margin-bottom: 16px; }
+.am-doctor-avatar { font-size: 32px; }
+.am-doctor-name { font-size: 15px; font-weight: 700; color: #80cc80; }
+.am-doctor-sub { font-size: 11px; color: rgba(255,255,255,0.4); margin-top: 2px; }
+
+.am-chat-messages { display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px; min-height: 80px; }
+.am-chat-msg { max-width: 90%; padding: 12px 14px; border-radius: 12px; font-size: 12px; line-height: 1.7; }
+.am-chat-msg.doctor { background: rgba(80,180,80,0.08); border: 1px solid rgba(80,180,80,0.15); align-self: flex-start; border-bottom-left-radius: 4px; }
+.am-chat-msg.doctor p { margin: 0 0 6px; color: rgba(255,255,255,0.75); }
+.am-chat-msg.doctor p:last-child { margin: 0; }
+.am-chat-msg.user { background: rgba(100,150,255,0.1); border: 1px solid rgba(100,150,255,0.2); align-self: flex-end; border-bottom-right-radius: 4px; color: rgba(255,255,255,0.8); }
+.am-chat-msg.loading { opacity: 0.6; font-style: italic; color: rgba(80,180,80,0.7) !important; }
+.am-chat-response { font-size: 12px; color: rgba(255,255,255,0.75); line-height: 1.8; white-space: pre-wrap; margin: 0; font-family: inherit; }
+
+.am-chat-input-row { display: flex; gap: 8px; align-items: flex-end; }
+.am-chat-input { flex: 1; background: rgba(255,255,255,0.06); border: 1px solid rgba(80,180,80,0.25); border-radius: 10px; padding: 10px 12px; color: #fff; font-size: 13px; resize: none; outline: none; line-height: 1.5; }
+.am-chat-input::placeholder { color: rgba(255,255,255,0.3); }
+.am-chat-send { padding: 10px 16px; background: rgba(80,180,80,0.2); border: 1px solid rgba(80,180,80,0.4); border-radius: 10px; color: #80cc80; font-size: 18px; cursor: pointer; align-self: flex-end; }
+.am-chat-send:disabled { opacity: 0.4; cursor: not-allowed; }
+.am-chat-note { font-size: 10px; color: rgba(255,255,255,0.3); text-align: center; margin-top: 8px; }
+
+.am-profile-row { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 6px; margin-bottom: 12px; }
+.am-profile-input { background: rgba(255,255,255,0.06); border: 1px solid rgba(80,180,80,0.2); border-radius: 8px; padding: 8px 6px; color: #fff; font-size: 11px; outline: none; text-align: center; width: 100%; box-sizing: border-box; }
+.am-profile-input::placeholder { color: rgba(255,255,255,0.3); font-size: 10px; }
+.am-chat-reset { width: 100%; margin-top: 8px; padding: 8px; background: none; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: rgba(255,255,255,0.3); font-size: 11px; cursor: pointer; }
+
+/* Fix hvide inputs og selects */
+.am-profile-input, .am-chat-input,
+.am-stack-field input, .am-stack-field select, .am-stack-field textarea {
+  background: rgba(10,15,30,0.8) !important;
+  color: #fff !important;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.am-profile-input option, .am-stack-field select option {
+  background: #0a0f1e;
+  color: #fff;
+}
+.am-psy-grid { background: transparent; }
+.am-psy-card { color: #fff; }
+
+/* Fix hvide pre og table elementer */
+pre { background: transparent !important; color: inherit; }
+.am-chat-response { background: transparent !important; }
+.am-dose-table, .am-dose-row, .am-dose-header { background: transparent !important; }
+.am-chat-msg.doctor pre, .am-chat-msg.user pre { background: transparent !important; color: inherit; }
+/* Fix expanding tab hvid baggrund */
+.am-psy-card { color: #fff !important; }
+.am-psy-card * { color: inherit; }
+
+/* Force dark på ALLE containere i ancient medicine */
+.am-page, .am-page * {
+  background-color: transparent;
+}
+.am-page input, .am-page select, .am-page textarea {
+  background-color: #0a0f1e !important;
+  color: #ffffff !important;
+}
+.am-dose-table {
+  background: transparent !important;
+}
+.am-dose-table * {
+  background: transparent !important;
+}
+.am-chat-messages pre, .am-doctor-hero pre, .am-chat-msg pre {
+  background: transparent !important;
+  color: inherit !important;
+}
+/* Fix psy kort hvide tekst */
+.am-psy-full-box, .am-psy-conn-box, .am-dosage-box {
+  background: rgba(0,0,0,0.3) !important;
+}
+.am-history-box { background: rgba(212,168,67,0.06); border: 1px solid rgba(212,168,67,0.2); border-radius: 10px; padding: 14px; margin-top: 10px; }
+.am-history-text { font-size: 12px; color: rgba(255,255,255,0.75); line-height: 1.8; white-space: pre-wrap; margin: 0; font-family: inherit; background: transparent !important; }
+
+.am-doctor-tabs { display: flex; gap: 4px; margin-bottom: 14px; }
+.am-doctor-tab { flex: 1; padding: 9px 6px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; color: rgba(255,255,255,0.4); font-size: 11px; cursor: pointer; }
+.am-doctor-tab.active { background: rgba(80,180,80,0.12); border-color: rgba(80,180,80,0.3); color: #80cc80; }
+.am-labs-section, .am-log-section { padding: 4px 0; }
+.am-log-entry { background: rgba(80,180,80,0.04); border: 1px solid rgba(80,180,80,0.1); border-radius: 8px; padding: 10px; margin-bottom: 8px; }
+.am-log-date { font-size: 10px; color: rgba(255,255,255,0.3); margin-bottom: 4px; }
+.am-log-symptom { font-size: 12px; color: #fff; margin-bottom: 3px; }
+.am-log-remedy { font-size: 11px; color: rgba(80,180,80,0.8); margin-bottom: 3px; }
+.am-log-result { font-size: 11px; color: rgba(212,168,67,0.8); font-style: italic; }
+.am-log-form { margin-bottom: 16px; }
+.am-image-select { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
+.am-body-btn { padding: 8px 12px; background: rgba(255,255,255,0.04); border: 1px solid rgba(80,180,80,0.15); border-radius: 20px; color: rgba(255,255,255,0.5); font-size: 12px; cursor: pointer; }
+.am-body-btn.active { background: rgba(80,180,80,0.12); border-color: rgba(80,180,80,0.3); color: #80cc80; }
+.am-image-upload { background: rgba(80,180,80,0.04); border: 2px dashed rgba(80,180,80,0.25); border-radius: 12px; padding: 24px; text-align: center; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 8px; margin-bottom: 12px; }
+.am-image-upload p { font-size: 13px; color: rgba(255,255,255,0.6); margin: 0; }
+.am-image-upload:hover { border-color: rgba(80,180,80,0.4); background: rgba(80,180,80,0.08); }

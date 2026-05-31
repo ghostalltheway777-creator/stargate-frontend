@@ -1,0 +1,156 @@
+.hub-page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem 1rem 4rem;
+}
+
+.hub-header {
+  text-align: center;
+  padding: 2.2rem 0 1.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Runic border top/bottom */
+.hub-header::before,
+.hub-header::after {
+  content: '✦ Γ ⊕ Λ ✦ Σ ⊗ Π ✦ Δ ◎ Ω ✦';
+  display: block;
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  color: rgba(212,168,67,0.18);
+  text-align: center;
+  padding: 0.3rem 0;
+  animation: rune-scroll 20s linear infinite;
+  white-space: nowrap;
+}
+.hub-header::after {
+  animation-direction: reverse;
+  animation-duration: 25s;
+}
+
+@keyframes rune-scroll {
+  from { letter-spacing: 0.2em; opacity: 0.18; }
+  50%  { letter-spacing: 0.3em; opacity: 0.35; }
+  to   { letter-spacing: 0.2em; opacity: 0.18; }
+}
+
+.hub-title {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #d4a843;
+  letter-spacing: 0.1em;
+  margin: 0.4rem 0 0.4rem;
+  text-shadow:
+    0 0 30px rgba(212,168,67,0.5),
+    0 0 60px rgba(212,168,67,0.2);
+  animation: title-glow 4s ease-in-out infinite;
+}
+@keyframes title-glow {
+  0%,100% { text-shadow: 0 0 25px rgba(212,168,67,0.4), 0 0 50px rgba(212,168,67,0.15); }
+  50%      { text-shadow: 0 0 40px rgba(212,168,67,0.7), 0 0 80px rgba(212,168,67,0.3); }
+}
+
+.hub-sub {
+  color: #a0916a;
+  font-size: 0.82rem;
+  letter-spacing: 0.05em;
+}
+
+.hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.9rem;
+}
+
+.hub-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
+  padding: 1.3rem 1.2rem;
+  background: rgba(255,255,255,0.025);
+  border: 1.5px solid color-mix(in srgb, var(--card-color) 25%, transparent);
+  border-radius: 16px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.25s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Radial corner glow */
+.hub-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at top left, color-mix(in srgb, var(--card-color) 10%, transparent) 0%, transparent 65%);
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+/* Shimmer sweep on hover */
+.hub-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 50%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.055), transparent);
+  transform: translateX(-120%) skewX(-15deg);
+  pointer-events: none;
+  transition: none;
+}
+.hub-card:hover::after {
+  animation: shimmer-sweep 0.65s ease forwards;
+}
+
+.hub-card:hover {
+  border-color: color-mix(in srgb, var(--card-color) 65%, transparent);
+  background: color-mix(in srgb, var(--card-color) 7%, rgba(5,5,20,0.8));
+  transform: translateY(-3px) scale(1.01);
+  box-shadow:
+    0 6px 28px color-mix(in srgb, var(--card-color) 18%, transparent),
+    0 0 0 1px color-mix(in srgb, var(--card-color) 20%, transparent);
+}
+.hub-card:active { transform: scale(0.97); }
+
+.hub-icon {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+  filter: drop-shadow(0 0 10px color-mix(in srgb, var(--card-color) 60%, transparent));
+  transition: filter 0.3s, transform 0.3s;
+}
+.hub-card:hover .hub-icon {
+  filter: drop-shadow(0 0 18px color-mix(in srgb, var(--card-color) 90%, transparent));
+  transform: scale(1.1);
+}
+
+.hub-name {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--card-color);
+  letter-spacing: 0.03em;
+}
+
+.hub-desc {
+  font-size: 0.73rem;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.4;
+}
+
+.hub-locked { opacity: 0.5; filter: blur(0.3px); }
+.hub-locked .hub-icon { filter: grayscale(1); }
+.hub-premium-banner {
+  display: inline-block;
+  margin-top: 10px;
+  background: linear-gradient(90deg, rgba(212,168,67,0.15), rgba(212,168,67,0.08));
+  border: 1px solid rgba(212,168,67,0.3);
+  color: #d4a843;
+  font-size: 12px;
+  padding: 7px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+.hub-premium-banner:hover { background: rgba(212,168,67,0.2); }
+

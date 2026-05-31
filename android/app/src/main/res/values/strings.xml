@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">STARGATE</string>
+    <string name="title_activity_main">STARGATE</string>
+    <string name="package_name">com.stargate.awareness</string>
+    <string name="custom_url_scheme">com.stargate.awareness</string>
+</resources>

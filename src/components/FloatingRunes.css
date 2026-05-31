@@ -1,0 +1,31 @@
+.floating-runes-wrap {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.fr-sym {
+  position: absolute;
+  user-select: none;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.rune-f0 { animation-name: rune-f0; }
+.rune-f1 { animation-name: rune-f1; }
+.rune-f2 { animation-name: rune-f2; }
+
+@keyframes rune-f0 {
+  0%,100% { transform: translateY(0) rotate(0deg); opacity: 0.6; }
+  50%      { transform: translateY(-12px) rotate(5deg); opacity: 1; }
+}
+@keyframes rune-f1 {
+  0%,100% { transform: translateY(0) rotate(-3deg); opacity: 0.4; }
+  50%      { transform: translateY(-8px) rotate(3deg); opacity: 0.8; }
+}
+@keyframes rune-f2 {
+  0%,100% { transform: translateY(0) scale(1); opacity: 0.5; }
+  50%      { transform: translateY(-15px) scale(1.12); opacity: 0.9; }
+}

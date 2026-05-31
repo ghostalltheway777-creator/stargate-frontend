@@ -1,0 +1,173 @@
+.chakra-page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem 1rem 4rem;
+}
+
+.chakra-header {
+  text-align: center;
+  padding: 2rem 0 1.5rem;
+}
+
+.chakra-stack {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.cs-dot { font-size: 1.4rem; }
+
+.chakra-title {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #d4a843;
+  letter-spacing: 0.08em;
+  margin: 0 0 0.3rem;
+  text-shadow: 0 0 30px rgba(212,168,67,0.4);
+}
+
+.chakra-sub { color: #a0916a; font-size: 0.85rem; }
+
+/* Chakra wheel grid */
+.chakra-wheel {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(88px, 1fr));
+  gap: 0.7rem;
+  margin-bottom: 1.5rem;
+}
+
+.chakra-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.18rem;
+  padding: 0.85rem 0.4rem 0.7rem;
+  background: rgba(255,255,255,0.03);
+  border: 1.5px solid color-mix(in srgb, var(--ch-color) 25%, transparent);
+  border-radius: 14px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.chakra-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at top, color-mix(in srgb, var(--ch-color) 10%, transparent), transparent 70%);
+  pointer-events: none;
+}
+
+.chakra-btn:hover,
+.chakra-btn.active {
+  border-color: color-mix(in srgb, var(--ch-color) 70%, transparent);
+  background: color-mix(in srgb, var(--ch-color) 10%, transparent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px color-mix(in srgb, var(--ch-color) 25%, transparent);
+}
+
+.cb-emoji { font-size: 1.5rem; }
+.cb-num   { font-size: 0.65rem; color: #666; }
+.cb-name  { font-size: 0.75rem; font-weight: 700; color: var(--ch-color); }
+.cb-sanskrit { font-size: 0.6rem; color: #888; font-style: italic; }
+.cb-meta  { display: flex; gap: 0.3rem; font-size: 0.55rem; color: #666; flex-wrap: wrap; justify-content: center; }
+
+/* Detail card */
+.chakra-detail {
+  margin-bottom: 1rem;
+  padding: 1.2rem;
+}
+
+.cd-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cd-orb {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  animation: pulse-orb 2.5s ease-in-out infinite;
+}
+
+@keyframes pulse-orb {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50%       { transform: scale(1.08); opacity: 0.85; }
+}
+
+.cd-name     { font-size: 1.3rem; font-weight: 800; letter-spacing: 0.04em; }
+.cd-sanskrit { font-size: 0.8rem; color: #aaa; margin-top: 0.15rem; }
+.cd-location { font-size: 0.78rem; color: #888; margin-top: 0.1rem; }
+
+.chakra-q-input {
+  width: 100%;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  color: #eee;
+  padding: 0.6rem 0.9rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+  box-sizing: border-box;
+}
+.chakra-q-input:focus { outline: none; border-color: rgba(255,255,255,0.3); }
+
+/* Result */
+.chakra-result {
+  margin-top: 1rem;
+  padding: 1.2rem;
+}
+
+/* Overview path */
+.chakra-overview {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.chakra-overview-title {
+  color: #888;
+  font-size: 0.85rem;
+  margin-bottom: 1.2rem;
+}
+
+.chakra-path {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.cp-item {
+  display: flex;
+  align-items: center;
+}
+
+.cp-orb {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+.cp-orb:hover { transform: scale(1.2); }
+
+.cp-line {
+  width: 22px;
+  height: 2px;
+  background: rgba(255,255,255,0.1);
+}
+
+.chakra-freq-note {
+  color: #666;
+  font-size: 0.75rem;
+  font-style: italic;
+}

@@ -1,0 +1,202 @@
+.num-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 1rem 4rem;
+}
+
+.num-header {
+  text-align: center;
+  padding: 1.8rem 0 1rem;
+}
+
+.num-symbols {
+  font-size: 1.1rem;
+  letter-spacing: 0.2rem;
+  color: #d4a843;
+  opacity: 0.7;
+  margin-bottom: 0.5rem;
+}
+
+.num-title {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: #d4a843;
+  margin: 0.2rem 0;
+  letter-spacing: 0.05em;
+}
+
+.num-sub { color: #a0916a; font-size: 0.9rem; max-width: 480px; margin: 0 auto; line-height: 1.5; }
+
+/* Form */
+.num-form {
+  padding: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.num-field-row {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.num-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  flex: 1;
+  min-width: 200px;
+}
+
+.num-field-sm { min-width: 160px; flex: 0 0 auto; }
+
+.num-field label {
+  font-size: 0.74rem;
+  color: #888;
+}
+
+.num-field input {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(212,168,67,0.25);
+  border-radius: 8px;
+  color: #eee;
+  padding: 0.55rem 0.7rem;
+  font-size: 0.9rem;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.num-field input:focus { outline: none; border-color: #d4a843; }
+.num-field input[type="date"] { color-scheme: dark; }
+
+/* Preview */
+.num-preview {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.num-preview-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.6rem 0.4rem;
+  border-radius: 10px;
+  background: rgba(212,168,67,0.06);
+  border: 1px solid rgba(212,168,67,0.15);
+  gap: 0.15rem;
+}
+
+.num-preview-item.master {
+  background: rgba(212,168,67,0.15);
+  border-color: #d4a843;
+  box-shadow: 0 0 12px rgba(212,168,67,0.2);
+}
+
+.np-icon { font-size: 1.1rem; }
+.np-label { font-size: 0.62rem; color: #888; text-align: center; }
+.np-val { font-size: 1.3rem; font-weight: 800; color: #d4a843; }
+
+/* Master banner */
+.num-master-banner {
+  background: linear-gradient(135deg, rgba(212,168,67,0.2), rgba(212,168,67,0.08));
+  border: 1px solid #d4a843;
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  color: #f0d070;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  letter-spacing: 0.04em;
+}
+
+/* Result */
+.num-result { padding: 1.4rem; margin-bottom: 1rem; }
+
+/* Sacred numbers section */
+.num-sacred-section {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(212,168,67,0.15);
+}
+
+.num-sacred-title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #d4a843;
+  margin-bottom: 0.5rem;
+}
+
+.num-sacred-sub {
+  font-size: 0.84rem;
+  color: #999;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+  max-width: 640px;
+}
+
+.num-sacred-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.num-sacred-card {
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid;
+}
+
+.nsc-number {
+  font-size: 1.9rem;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 0.15rem;
+}
+
+.nsc-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #ccc;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+}
+
+.nsc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nsc-list li {
+  font-size: 0.76rem;
+  color: #aaa;
+  padding: 0.22rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  line-height: 1.4;
+}
+
+.nsc-list li::before {
+  content: '· ';
+  color: #d4a84380;
+}
+
+.num-gematria-note {
+  background: rgba(212,168,67,0.06);
+  border-left: 3px solid rgba(212,168,67,0.4);
+  padding: 0.9rem 1rem;
+  border-radius: 0 10px 10px 0;
+  font-size: 0.83rem;
+  color: #bba060;
+  line-height: 1.6;
+}
+
+@media (max-width: 500px) {
+  .num-sacred-grid { grid-template-columns: 1fr; }
+  .num-preview { grid-template-columns: repeat(3, 1fr); }
+}

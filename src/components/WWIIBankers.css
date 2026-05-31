@@ -1,0 +1,31 @@
+.wb-page { padding: 0 0 80px; max-width: 480px; margin: 0 auto; }
+.wb-hero { text-align: center; padding: 36px 20px 20px; background: linear-gradient(180deg,#0a0806,#120a06); border-bottom: 1px solid rgba(180,120,50,0.2); }
+.wb-icon { font-size: 36px; margin-bottom: 10px; }
+.wb-title { font-size: 24px; font-weight: 700; color: #fff; margin: 0 0 6px; letter-spacing: 2px; }
+.wb-sub { font-size: 11px; color: rgba(255,255,255,0.45); margin: 0 0 14px; }
+.wb-quote { background: rgba(180,120,50,0.08); border: 1px solid rgba(180,120,50,0.2); border-radius: 10px; padding: 12px; }
+.wb-quote p { font-size: 12px; font-style: italic; color: rgba(255,255,255,0.8); margin: 0 0 6px; line-height: 1.5; }
+.wb-quote cite { font-size: 10px; color: rgba(180,120,50,0.8); }
+.wb-tabs { display: flex; gap: 3px; padding: 12px 12px 0; overflow-x: auto; }
+.wb-tab { flex-shrink: 0; padding: 8px 10px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; color: rgba(255,255,255,0.4); font-size: 11px; cursor: pointer; white-space: nowrap; }
+.wb-tab.active { background: rgba(180,120,50,0.1); border-color: rgba(180,120,50,0.3); color: #cc9944; }
+.wb-section { padding: 16px; }
+.wb-intro { font-size: 12px; color: rgba(255,255,255,0.6); line-height: 1.7; margin-bottom: 16px; border-left: 2px solid rgba(180,120,50,0.3); padding-left: 10px; }
+.wb-card { background: rgba(180,120,50,0.04); border: 1px solid rgba(180,120,50,0.1); border-radius: 12px; padding: 16px; margin-bottom: 12px; }
+.wb-card-title { font-size: 13px; font-weight: 600; color: #cc9944; margin: 0 0 10px; }
+.wb-card-text { font-size: 12px; color: rgba(255,255,255,0.75); line-height: 1.7; margin: 0; }
+.wb-cta { width: 100%; padding: 14px; background: rgba(180,120,50,0.1); border: 1px solid rgba(180,120,50,0.25); border-radius: 10px; color: #cc9944; font-size: 13px; cursor: pointer; margin-top: 8px; }
+
+.wb-war-header { background: rgba(180,120,50,0.06); border: 1px solid rgba(180,120,50,0.15); border-radius: 10px; padding: 14px; margin-bottom: 16px; text-align: center; }
+.wb-war-header p { font-size: 12px; font-style: italic; color: rgba(255,255,255,0.8); margin: 0 0 6px; line-height: 1.5; }
+.wb-war-header cite { font-size: 10px; color: rgba(180,120,50,0.7); }
+.wb-war-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(180,120,50,0.12); border-radius: 10px; padding: 12px; margin-bottom: 12px; }
+.wb-war-header-row { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; margin-bottom: 10px; }
+.wb-war-year { font-size: 11px; font-weight: 700; color: #cc9944; min-width: 70px; }
+.wb-war-name { font-size: 14px; font-weight: 700; color: #fff; flex: 1; }
+.wb-war-profit { font-size: 10px; color: rgba(80,200,80,0.8); text-align: right; }
+.wb-war-lie, .wb-war-real, .wb-war-who { font-size: 11px; color: rgba(255,255,255,0.7); line-height: 1.5; margin-bottom: 6px; }
+.wb-war-label { font-size: 9px; font-weight: 700; display: inline-block; margin-right: 6px; }
+.wb-war-label.lie { color: #ff8080; }
+.wb-war-label.real { color: #80cc80; }
+.wb-war-label.who { color: #ffcc44; }

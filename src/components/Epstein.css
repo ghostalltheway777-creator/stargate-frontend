@@ -1,0 +1,85 @@
+.eps-page { padding: 0 0 80px; max-width: 480px; margin: 0 auto; }
+
+/* Timeline */
+.eps-timeline { padding: 8px 0; }
+.eps-tl-item { display: flex; gap: 0; margin-bottom: 4px; }
+.eps-tl-year { width: 46px; font-size: 11px; font-weight: 700; color: #ff8080; padding-top: 14px; flex-shrink: 0; text-align: right; padding-right: 10px; }
+.eps-tl-line { width: 2px; background: linear-gradient(180deg, rgba(180,30,30,0.6), rgba(180,30,30,0.1)); margin: 0 10px; flex-shrink: 0; min-height: 80px; }
+.eps-tl-content { background: rgba(255,255,255,0.03); border: 1px solid rgba(180,30,30,0.1); border-radius: 8px; padding: 10px 12px; margin-bottom: 8px; flex: 1; }
+.eps-tl-event { font-size: 12px; font-weight: 600; color: #fff; margin-bottom: 4px; }
+.eps-tl-desc { font-size: 11px; color: rgba(255,255,255,0.80); line-height: 1.5; }
+
+/* Whistleblowers */
+.eps-whistle-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,180,30,0.15); border-radius: 12px; padding: 16px; margin-bottom: 14px; }
+.eps-whistle-header { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 10px; }
+.eps-whistle-icon { font-size: 24px; flex-shrink: 0; }
+.eps-whistle-name { font-size: 14px; font-weight: 600; color: #fff; }
+.eps-whistle-title { font-size: 11px; color: rgba(255,200,80,0.7); margin-top: 2px; }
+.eps-whistle-text { font-size: 12px; color: rgba(255,255,255,0.85); line-height: 1.7; margin-bottom: 12px; }
+.eps-whistle-claim { background: rgba(255,200,30,0.06); border: 1px solid rgba(255,200,30,0.15); border-radius: 8px; padding: 10px; margin-bottom: 10px; }
+.eps-claim-label { font-size: 9px; color: #ffc040; letter-spacing: 1.5px; font-weight: 600; display: block; margin-bottom: 5px; }
+.eps-whistle-claim p { font-size: 12px; color: rgba(255,255,255,0.7); margin: 0; line-height: 1.6; font-style: italic; }
+.eps-whistle-status { font-size: 11px; padding: 5px 10px; border-radius: 6px; display: inline-block; }
+.eps-whistle-status.verified { background: rgba(50,180,80,0.12); color: #50c860; border: 1px solid rgba(50,180,80,0.2); }
+.eps-whistle-status.disputed { background: rgba(255,150,30,0.1); color: #ffaa50; border: 1px solid rgba(255,150,30,0.2); }
+
+.eps-hero { text-align: center; padding: 36px 20px 20px; background: linear-gradient(180deg,#080810,#100808); border-bottom: 1px solid rgba(180,30,30,0.2); }
+.eps-hero-icon { font-size: 36px; margin-bottom: 10px; }
+.eps-title { font-size: 26px; font-weight: 700; color: #fff; margin: 0 0 6px; letter-spacing: 2px; }
+.eps-sub { font-size: 11px; color: rgba(255,255,255,0.70); margin: 0 0 14px; line-height: 1.6; }
+.eps-warning { background: rgba(180,30,30,0.15); border: 1px solid rgba(180,30,30,0.3); color: #ff6060; font-size: 9px; letter-spacing: 1px; padding: 5px 10px; border-radius: 4px; display: inline-block; }
+
+.eps-tabs { display: flex; gap: 3px; padding: 12px 12px 0; overflow-x: auto; }
+.eps-tab { flex-shrink: 0; padding: 9px 10px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; color: rgba(255,255,255,0.70); font-size: 11px; cursor: pointer; white-space: nowrap; }
+.eps-tab.active { background: rgba(180,30,30,0.12); border-color: rgba(180,30,30,0.3); color: #ff8080; }
+
+.eps-section { padding: 18px 16px; }
+.eps-intro { font-size: 13px; color: rgba(255,255,255,0.75); line-height: 1.7; margin-bottom: 18px; border-left: 2px solid rgba(180,30,30,0.5); padding-left: 10px; }
+
+/* Network */
+.eps-node { display: flex; gap: 12px; align-items: flex-start; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-left: 3px solid var(--node-color); border-radius: 8px; padding: 12px; margin-bottom: 10px; }
+.eps-node-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--node-color); flex-shrink: 0; margin-top: 5px; }
+.eps-node-name { font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 4px; }
+.eps-node-role { font-size: 12px; color: rgba(255,255,255,0.7); line-height: 1.5; }
+.eps-node-agenda { font-size: 12px; color: rgba(255,200,80,0.9); line-height: 1.5; margin-top: 5px; font-style: italic; }
+.eps-source-note { font-size: 10px; color: rgba(255,255,255,0.3); margin-top: 16px; text-align: center; }
+
+/* Rituals */
+.eps-ritual-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(180,30,30,0.15); border-radius: 12px; padding: 18px; margin-bottom: 16px; }
+.eps-ritual-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.eps-ritual-symbol { font-size: 24px; }
+.eps-ritual-title { font-size: 14px; font-weight: 600; color: #ff9090; margin: 0; }
+.eps-ritual-text { font-size: 12px; color: rgba(255,255,255,0.65); line-height: 1.7; margin-bottom: 12px; }
+.eps-ancient-box { background: rgba(100,60,200,0.08); border: 1px solid rgba(100,60,200,0.2); border-radius: 8px; padding: 12px; }
+.eps-ancient-label { font-size: 9px; color: #9060ff; letter-spacing: 1.5px; font-weight: 600; display: block; margin-bottom: 6px; }
+.eps-ancient-text { font-size: 11px; color: rgba(255,255,255,0.85); line-height: 1.6; margin: 0; }
+
+/* Archons */
+.eps-archon-card { background: rgba(100,60,200,0.06); border: 1px solid rgba(100,60,200,0.15); border-radius: 12px; padding: 16px; margin-bottom: 14px; }
+.eps-archon-icon { font-size: 22px; display: block; margin-bottom: 8px; }
+.eps-archon-title { font-size: 14px; font-weight: 600; color: #c090ff; margin: 0 0 8px; }
+.eps-archon-text { font-size: 12px; color: rgba(255,255,255,0.65); line-height: 1.7; margin: 0; }
+.eps-cta { width: 100%; padding: 14px; margin-top: 16px; background: rgba(100,60,200,0.12); border: 1px solid rgba(100,60,200,0.25); border-radius: 10px; color: #c090ff; font-size: 13px; cursor: pointer; }
+
+/* Societies */
+.eps-society-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 14px; margin-bottom: 12px; }
+.eps-society-header { display: flex; gap: 10px; align-items: center; margin-bottom: 8px; }
+.eps-society-symbol { font-size: 22px; }
+.eps-society-name { font-size: 14px; font-weight: 600; color: #fff; }
+.eps-society-founded { font-size: 11px; color: rgba(255,255,255,0.60); }
+.eps-society-members { font-size: 11px; color: rgba(255,200,100,0.8); margin-bottom: 5px; }
+.eps-society-desc { font-size: 11px; color: rgba(255,255,255,0.80); }
+
+/* Docs */
+.eps-doc-card { display: flex; gap: 10px; align-items: flex-start; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07); border-radius: 8px; padding: 12px; margin-bottom: 8px; }
+.eps-doc-icon { font-size: 18px; flex-shrink: 0; }
+.eps-doc-info { display: flex; flex-direction: column; gap: 3px; }
+.eps-doc-name { font-size: 12px; font-weight: 600; color: #fff; }
+.eps-doc-desc { font-size: 11px; color: rgba(255,255,255,0.70); }
+
+.eps-2024-note { background: rgba(255,200,30,0.08); border: 1px solid rgba(255,200,30,0.2); border-radius: 8px; padding: 10px 12px; font-size: 11px; color: rgba(255,200,80,0.8); margin-bottom: 14px; line-height: 1.5; }
+.eps-2024-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(180,30,30,0.12); border-left: 3px solid rgba(180,30,30,0.4); border-radius: 0 8px 8px 0; padding: 12px; margin-bottom: 8px; }
+.eps-2024-name { font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 2px; }
+.eps-2024-role { font-size: 10px; color: rgba(255,150,80,0.7); margin-bottom: 6px; }
+.eps-2024-mentions { font-size: 12px; color: rgba(255,255,255,0.65); line-height: 1.5; margin-bottom: 6px; }
+.eps-2024-source { font-size: 10px; color: rgba(255,255,255,0.3); }

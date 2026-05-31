@@ -1,0 +1,48 @@
+.pt-page { padding: 0 0 80px; max-width: 480px; margin: 0 auto; }
+.pt-hero { text-align: center; padding: 36px 20px 20px; background: linear-gradient(180deg,#060810,#0a0818); border-bottom: 1px solid rgba(100,80,200,0.2); }
+.pt-eye { font-size: 40px; margin-bottom: 10px; }
+.pt-title { font-size: 26px; font-weight: 700; color: #fff; margin: 0 0 6px; letter-spacing: 2px; }
+.pt-sub { font-size: 11px; color: rgba(255,255,255,0.45); margin: 0; line-height: 1.6; }
+
+.pt-tabs { display: flex; gap: 3px; padding: 12px 12px 0; overflow-x: auto; }
+.pt-tab { flex-shrink: 0; padding: 8px 10px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; color: rgba(255,255,255,0.4); font-size: 11px; cursor: pointer; white-space: nowrap; }
+.pt-tab.active { background: rgba(100,80,200,0.12); border-color: rgba(100,80,200,0.3); color: #a080ff; }
+
+.pt-section { padding: 16px; }
+.pt-intro { font-size: 12px; color: rgba(255,255,255,0.55); line-height: 1.7; margin-bottom: 16px; border-left: 2px solid rgba(100,80,200,0.3); padding-left: 10px; }
+
+.pt-card { background: rgba(100,80,200,0.05); border: 1px solid rgba(100,80,200,0.12); border-radius: 12px; padding: 16px; margin-bottom: 12px; }
+.pt-card-title { font-size: 13px; font-weight: 600; color: #a080ff; margin: 0 0 8px; }
+.pt-card-text { font-size: 12px; color: rgba(255,255,255,0.65); line-height: 1.7; margin: 0; }
+
+.pt-ancient-card { background: rgba(212,168,67,0.05); border: 1px solid rgba(212,168,67,0.12); border-radius: 12px; padding: 14px; margin-bottom: 12px; }
+.pt-ancient-header { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 10px; }
+.pt-ancient-symbol { font-size: 24px; flex-shrink: 0; }
+.pt-ancient-civ { font-size: 11px; color: rgba(212,168,67,0.6); margin-bottom: 2px; }
+.pt-ancient-name { font-size: 13px; font-weight: 600; color: #d4a843; }
+.pt-ancient-text { font-size: 12px; color: rgba(255,255,255,0.6); line-height: 1.7; margin: 0; }
+
+.pt-dmt-card { background: rgba(0,0,0,0.3); border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 16px; margin-bottom: 12px; }
+.pt-dmt-card h3 { font-size: 13px; font-weight: 600; color: #a080ff; margin: 0 0 10px; }
+.pt-dmt-card p { font-size: 12px; color: rgba(255,255,255,0.65); line-height: 1.7; margin: 0; }
+.pt-dmt-list { margin-top: 10px; display: flex; flex-direction: column; gap: 6px; }
+.pt-dmt-item { font-size: 12px; color: rgba(255,255,255,0.6); padding-left: 4px; }
+
+.pt-warn-card { background: rgba(200,50,50,0.05); border: 1px solid rgba(200,50,50,0.15); border-radius: 12px; padding: 16px; margin-bottom: 12px; }
+.pt-warn-card h3 { font-size: 13px; font-weight: 600; color: #ff8080; margin: 0 0 10px; }
+.pt-warn-card p { font-size: 12px; color: rgba(255,255,255,0.65); line-height: 1.7; margin: 0; }
+.pt-detox-item { display: flex; flex-direction: column; gap: 2px; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+.pt-detox-name { font-size: 12px; font-weight: 600; color: #80cc80; }
+.pt-detox-desc { font-size: 11px; color: rgba(255,255,255,0.5); }
+
+.pt-activate-card { display: flex; gap: 12px; background: rgba(255,255,255,0.02); border: 1px solid rgba(100,80,200,0.1); border-radius: 10px; padding: 14px; margin-bottom: 10px; }
+.pt-activate-icon { font-size: 22px; flex-shrink: 0; }
+.pt-activate-name { font-size: 13px; font-weight: 600; color: #a080ff; margin: 0 0 6px; }
+.pt-activate-text { font-size: 12px; color: rgba(255,255,255,0.6); line-height: 1.6; margin: 0; }
+
+.pt-connect-box { background: rgba(100,80,200,0.06); border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 14px; margin-top: 16px; }
+.pt-connect-label { font-size: 9px; color: #a080ff; letter-spacing: 1.5px; font-weight: 600; display: block; margin-bottom: 10px; }
+.pt-connect-links { display: flex; flex-direction: column; gap: 8px; }
+.pt-connect-btn { background: rgba(100,80,200,0.1); border: 1px solid rgba(100,80,200,0.2); border-radius: 8px; padding: 10px 14px; color: #a080ff; font-size: 12px; cursor: pointer; text-align: left; }
+
+.pt-cta { width: 100%; padding: 14px; background: rgba(100,80,200,0.1); border: 1px solid rgba(100,80,200,0.25); border-radius: 10px; color: #a080ff; font-size: 13px; cursor: pointer; margin-top: 16px; }

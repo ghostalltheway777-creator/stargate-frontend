@@ -1,0 +1,309 @@
+.ip-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1rem 1rem 5rem;
+}
+
+/* Hero */
+.ip-hero {
+  text-align: center;
+  padding: 2rem 0 1.5rem;
+}
+.ip-hero-symbol { font-size: 2.2rem; margin-bottom: 0.5rem; }
+.ip-title {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #d4a843;
+  margin: 0 0 0.4rem;
+  letter-spacing: 0.06em;
+}
+.ip-subtitle {
+  color: #888;
+  font-size: 0.82rem;
+  margin: 0 0 1rem;
+}
+.ip-hero-quote {
+  font-size: 0.75rem;
+  color: rgba(212,168,67,0.55);
+  font-style: italic;
+  border: 1px solid rgba(212,168,67,0.1);
+  border-radius: 10px;
+  padding: 0.6rem 1rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Sections */
+.ip-section {
+  margin-bottom: 0.7rem;
+  border: 1px solid rgba(212,168,67,0.15);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.ip-section-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 1rem 1.1rem;
+  background: rgba(212,168,67,0.04);
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.2s;
+}
+.ip-section-header:hover { background: rgba(212,168,67,0.08); }
+
+.ip-sec-icon { font-size: 1.4rem; flex-shrink: 0; }
+.ip-sec-title { font-size: 0.95rem; font-weight: 700; color: #d4a843; margin-bottom: 0.15rem; }
+.ip-sec-sub { font-size: 0.72rem; color: #888; }
+.ip-chevron { margin-left: auto; color: #d4a84380; font-size: 0.7rem; flex-shrink: 0; }
+
+.ip-section-body {
+  padding: 1.2rem;
+  border-top: 1px solid rgba(212,168,67,0.1);
+}
+
+/* Insight box */
+.ip-insight-box {
+  background: rgba(212,168,67,0.06);
+  border: 1px solid rgba(212,168,67,0.15);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+}
+.ip-insight-text {
+  font-size: 0.85rem;
+  color: #ccc;
+  line-height: 1.6;
+  margin: 0 0 0.6rem;
+}
+.ip-insight-text:last-child { margin-bottom: 0; }
+
+/* 3D/5D comparison */
+.ip-3d-5d {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+.ip-3d-card, .ip-5d-card {
+  border-radius: 10px;
+  padding: 0.9rem;
+  font-size: 0.78rem;
+}
+.ip-3d-card { background: rgba(224,80,80,0.07); border: 1px solid rgba(224,80,80,0.2); }
+.ip-5d-card { background: rgba(80,180,80,0.07); border: 1px solid rgba(80,180,80,0.2); }
+.ip-3d-label { color: #e05050; font-weight: 700; font-size: 0.72rem; margin-bottom: 0.5rem; letter-spacing: 0.05em; }
+.ip-5d-label { color: #50b450; font-weight: 700; font-size: 0.72rem; margin-bottom: 0.5rem; letter-spacing: 0.05em; }
+.ip-3d-card ul, .ip-5d-card ul { margin: 0; padding-left: 1rem; }
+.ip-3d-card li { color: #ccc; margin-bottom: 0.3rem; }
+.ip-5d-card li { color: #ccc; margin-bottom: 0.3rem; }
+
+.ip-sub-h3 {
+  font-size: 0.8rem;
+  color: #d4a843;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 1.2rem 0 0.7rem;
+}
+
+/* Institutions */
+.ip-inst-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+.ip-inst-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 8px;
+  padding: 0.7rem;
+}
+.ip-inst-name { font-size: 0.82rem; font-weight: 700; color: #e0c88a; margin-bottom: 0.2rem; }
+.ip-inst-est { font-size: 0.68rem; color: #777; margin-bottom: 0.3rem; }
+.ip-inst-issue { font-size: 0.74rem; color: #aaa; line-height: 1.4; }
+
+/* Names of God */
+.ip-names-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+.ip-name-card {
+  background: rgba(212,168,67,0.05);
+  border: 1px solid rgba(212,168,67,0.15);
+  border-radius: 10px;
+  padding: 0.8rem;
+  text-align: center;
+}
+.ip-name { font-size: 1.1rem; font-weight: 800; color: #d4a843; margin-bottom: 0.2rem; }
+.ip-name-trad { font-size: 0.65rem; color: #888; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.3rem; }
+.ip-name-meaning { font-size: 0.72rem; color: #bbb; font-style: italic; }
+
+/* Hindu */
+.ip-hindu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+.ip-hindu-card {
+  background: rgba(255,150,50,0.05);
+  border: 1px solid rgba(255,150,50,0.15);
+  border-radius: 10px;
+  padding: 0.8rem;
+}
+.ip-hindu-name { font-size: 0.95rem; font-weight: 800; color: #f0a040; margin-bottom: 0.1rem; }
+.ip-hindu-role { font-size: 0.68rem; color: #c08040; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.4rem; }
+.ip-hindu-desc { font-size: 0.76rem; color: #bbb; line-height: 1.45; }
+
+.ip-flood-box {
+  background: rgba(80,144,200,0.06);
+  border: 1px solid rgba(80,144,200,0.15);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.ip-flood-title { font-size: 0.78rem; font-weight: 700; color: #5090c0; margin-bottom: 0.7rem; letter-spacing: 0.04em; }
+.ip-flood-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 0.7rem;
+}
+.ip-flood-item {
+  font-size: 0.74rem;
+  color: #aaa;
+  background: rgba(80,144,200,0.06);
+  border-radius: 6px;
+  padding: 0.4rem 0.5rem;
+  line-height: 1.4;
+}
+.ip-flood-item strong { color: #7ab0d8; }
+.ip-flood-note { font-size: 0.74rem; color: #888; margin: 0; line-height: 1.4; }
+
+/* Yoga */
+.ip-yoga-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+.ip-yoga-card {
+  background: rgba(80,80,200,0.06);
+  border: 1px solid rgba(100,100,220,0.15);
+  border-radius: 10px;
+  padding: 0.9rem;
+}
+.ip-yoga-freq { font-size: 1.2rem; margin-bottom: 0.3rem; }
+.ip-yoga-name { font-size: 0.85rem; font-weight: 700; color: #9090e0; margin-bottom: 0.3rem; }
+.ip-yoga-desc { font-size: 0.74rem; color: #aaa; line-height: 1.45; }
+
+/* Prayers */
+.ip-prayer-list { display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1rem; }
+.ip-prayer-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(212,168,67,0.1);
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+}
+.ip-prayer-header { display: flex; align-items: baseline; gap: 0.6rem; margin-bottom: 0.35rem; flex-wrap: wrap; }
+.ip-prayer-name { font-size: 0.88rem; font-weight: 700; color: #d4a843; }
+.ip-prayer-trad { font-size: 0.68rem; color: #777; }
+.ip-prayer-desc { font-size: 0.78rem; color: #bbb; line-height: 1.45; }
+
+/* Crystals */
+.ip-crystal-grid { display: flex; flex-direction: column; gap: 0.7rem; }
+.ip-crystal-card {
+  display: flex;
+  gap: 0.9rem;
+  align-items: flex-start;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px;
+  padding: 0.9rem;
+}
+.ip-crystal-gem {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.6);
+}
+.ip-crystal-name { font-size: 0.9rem; font-weight: 700; color: #e0e0e0; margin-bottom: 0.15rem; }
+.ip-crystal-meta { font-size: 0.67rem; color: #888; margin-bottom: 0.3rem; }
+.ip-crystal-desc { font-size: 0.76rem; color: #aaa; line-height: 1.45; }
+
+/* Quote block */
+.ip-quote-block {
+  border-left: 2px solid rgba(212,168,67,0.3);
+  padding: 0.6rem 1rem;
+  margin: 1rem 0 0;
+}
+.ip-quote-block p { font-size: 0.82rem; color: #c8a84a; font-style: italic; margin: 0 0 0.2rem; }
+.ip-quote-block cite { font-size: 0.68rem; color: #888; }
+
+.ip-body-intro { font-size: 0.84rem; color: #bbb; line-height: 1.6; margin-bottom: 1rem; }
+
+/* Power structures */
+.ip-power-list { display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1.2rem; }
+.ip-power-card {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-left: 3px solid var(--pcolor, #888);
+  border-radius: 0 10px 10px 0;
+  padding: 0.9rem;
+}
+.ip-power-header { display: flex; align-items: baseline; gap: 0.6rem; margin-bottom: 0.4rem; flex-wrap: wrap; }
+.ip-power-name { font-size: 0.9rem; font-weight: 700; }
+.ip-power-est { font-size: 0.68rem; color: #666; }
+.ip-power-desc { font-size: 0.76rem; color: #aaa; line-height: 1.5; }
+
+/* Pallavicini */
+.ip-pallavicini-box {
+  background: rgba(100,80,160,0.07);
+  border: 1px solid rgba(120,100,180,0.2);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+}
+.ip-pall-name { font-size: 1rem; font-weight: 700; color: #b090e0; margin-bottom: 0.15rem; }
+.ip-pall-sub { font-size: 0.7rem; color: #777; margin-bottom: 0.8rem; }
+.ip-pall-desc { font-size: 0.78rem; color: #bbb; line-height: 1.55; margin-bottom: 0.5rem; }
+.ip-pall-connections { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.6rem; }
+.ip-pall-tag {
+  font-size: 0.65rem;
+  color: #9070c8;
+  background: rgba(120,90,200,0.1);
+  border: 1px solid rgba(120,90,200,0.25);
+  border-radius: 20px;
+  padding: 0.15rem 0.55rem;
+}
+
+/* Religion influence */
+.ip-religion-influence { display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1.2rem; }
+.ip-rel-card {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 10px;
+  padding: 0.8rem;
+}
+.ip-rel-header { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.4rem; flex-wrap: wrap; }
+.ip-rel-icon { font-size: 1rem; }
+.ip-rel-name { font-size: 0.88rem; font-weight: 700; }
+.ip-rel-who { font-size: 0.68rem; color: #777; background: rgba(255,255,255,0.05); border-radius: 4px; padding: 0.1rem 0.4rem; margin-left: auto; }
+.ip-rel-desc { font-size: 0.75rem; color: #aaa; line-height: 1.5; }
+
+@media (max-width: 520px) {
+  .ip-3d-5d, .ip-inst-grid, .ip-hindu-grid, .ip-yoga-grid { grid-template-columns: 1fr; }
+  .ip-flood-grid { grid-template-columns: 1fr 1fr; }
+  .ip-names-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); }
+}

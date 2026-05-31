@@ -1,0 +1,22 @@
+.share-btn {
+  background: rgba(212,168,67,0.12);
+  border: 1px solid rgba(212,168,67,0.3);
+  color: #d4a843;
+  padding: 0.45rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.18s;
+}
+
+.share-btn:hover {
+  background: rgba(212,168,67,0.22);
+  border-color: rgba(212,168,67,0.6);
+}
+
+.share-btn.copied {
+  background: rgba(60,180,80,0.15);
+  border-color: rgba(60,180,80,0.5);
+  color: #4caf6a;
+}

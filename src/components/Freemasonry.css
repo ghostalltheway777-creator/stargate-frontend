@@ -1,0 +1,118 @@
+.fm-page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 1rem 1rem 4rem;
+}
+
+.fm-header { text-align: center; padding: 1.8rem 0 1rem; }
+
+.fm-eye {
+  font-size: 3rem;
+  filter: drop-shadow(0 0 20px rgba(212,168,67,0.6));
+  margin-bottom: 0.4rem;
+}
+
+.fm-title {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: #d4a843;
+  margin: 0.2rem 0;
+  letter-spacing: 0.08em;
+}
+
+.fm-sub { color: #a0916a; font-size: 0.9rem; }
+
+.fm-section-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #d4a843;
+  margin: 0 0 0.3rem;
+}
+
+.fm-section-sub { font-size: 0.8rem; color: #777; margin-bottom: 1rem; }
+
+/* Degrees */
+.fm-pyramid-section {
+  margin: 1.5rem 0;
+  padding: 1.3rem;
+  background: rgba(212,168,67,0.04);
+  border: 1px solid rgba(212,168,67,0.12);
+  border-radius: 14px;
+}
+
+.fm-degrees { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1rem; }
+
+.fm-degree {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 10px;
+  background: rgba(212,168,67,0.05);
+  border-left: 3px solid rgba(212,168,67,0.3);
+  transition: all 0.15s;
+}
+
+.fm-degree:hover { background: rgba(212,168,67,0.1); }
+.fm-degree:last-child { border-left-color: #d4a843; background: rgba(212,168,67,0.1); }
+
+.fm-degree-n {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #d4a843;
+  min-width: 44px;
+  line-height: 1;
+}
+
+.fm-degree-name {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #e0c870;
+  margin-bottom: 0.2rem;
+}
+
+.fm-degree-secret { font-size: 0.78rem; color: #999; line-height: 1.4; font-style: italic; }
+
+.fm-degree-note {
+  font-size: 0.76rem;
+  color: #666;
+  font-style: italic;
+  line-height: 1.5;
+  border-left: 2px solid rgba(212,168,67,0.2);
+  padding-left: 0.8rem;
+}
+
+/* Symbols */
+.fm-symbols-section { margin: 1.5rem 0; }
+
+.fm-symbols-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 0.8rem;
+}
+
+.fm-symbol-card {
+  padding: 1rem;
+  background: rgba(212,168,67,0.05);
+  border: 1px solid rgba(212,168,67,0.15);
+  border-radius: 12px;
+  transition: all 0.15s;
+}
+
+.fm-symbol-card:hover { background: rgba(212,168,67,0.1); border-color: rgba(212,168,67,0.3); }
+
+.fm-sym-icon { font-size: 1.6rem; margin-bottom: 0.4rem; }
+.fm-sym-name { font-size: 0.88rem; font-weight: 700; color: #d4a843; margin-bottom: 0.4rem; }
+.fm-sym-desc { font-size: 0.78rem; color: #999; line-height: 1.5; }
+
+/* Analysis */
+.fm-analysis-section { margin: 1.5rem 0; }
+
+.fm-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.fm-result { padding: 1.4rem; margin-top: 1rem; }

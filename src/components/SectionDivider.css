@@ -1,0 +1,48 @@
+.sect-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  margin: 0.4rem 0;
+}
+
+.sd-line {
+  flex: 1;
+  height: 1px;
+}
+.sd-line-left  { background: linear-gradient(90deg, transparent, rgba(212,168,67,0.25)); }
+.sd-line-right { background: linear-gradient(90deg, rgba(212,168,67,0.25), transparent); }
+
+.sect-divider--rune .sd-line-left  { background: linear-gradient(90deg, transparent, rgba(136,85,255,0.2)); }
+.sect-divider--rune .sd-line-right { background: linear-gradient(90deg, rgba(136,85,255,0.2), transparent); }
+
+.sd-center {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-shrink: 0;
+}
+
+.sd-glyph {
+  font-size: 0.7rem;
+  color: rgba(212,168,67,0.4);
+  animation: sd-pulse 3s ease-in-out infinite;
+}
+.sect-divider--rune .sd-glyph {
+  color: rgba(136,85,255,0.35);
+  font-size: 0.75rem;
+}
+
+@keyframes sd-pulse {
+  0%, 100% { opacity: 0.35; transform: scale(1); }
+  50%       { opacity: 0.8;  transform: scale(1.2); }
+}
+
+.sd-label {
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+  color: rgba(212,168,67,0.5);
+  text-transform: uppercase;
+  font-family: 'Cinzel', serif;
+  padding: 0 0.3rem;
+}

@@ -1,0 +1,13 @@
+.pc-page { padding: 0 0 80px; max-width: 480px; margin: 0 auto; }
+.pc-hero { text-align: center; padding: 36px 20px 20px; background: linear-gradient(180deg,#080810,#0e0812); border-bottom: 1px solid rgba(100,80,200,0.2); }
+.pc-icon { font-size: 36px; margin-bottom: 10px; }
+.pc-title { font-size: 24px; font-weight: 700; color: #fff; margin: 0 0 6px; letter-spacing: 2px; }
+.pc-sub { font-size: 11px; color: rgba(255,255,255,0.45); margin: 0; }
+.pc-tabs { display: flex; gap: 3px; padding: 12px 12px 0; overflow-x: auto; }
+.pc-tab { flex-shrink: 0; padding: 8px 10px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; color: rgba(255,255,255,0.4); font-size: 11px; cursor: pointer; white-space: nowrap; }
+.pc-tab.active { background: rgba(100,80,200,0.12); border-color: rgba(100,80,200,0.3); color: #a080ff; }
+.pc-section { padding: 16px; }
+.pc-intro { font-size: 12px; color: rgba(255,255,255,0.6); line-height: 1.7; margin-bottom: 16px; border-left: 2px solid rgba(100,80,200,0.3); padding-left: 10px; }
+.pc-card { background: rgba(100,80,200,0.05); border: 1px solid rgba(100,80,200,0.12); border-radius: 12px; padding: 16px; margin-bottom: 12px; }
+.pc-card-title { font-size: 13px; font-weight: 600; color: #a080ff; margin: 0 0 10px; }
+.pc-card-text { font-size: 12px; color: rgba(255,255,255,0.75); line-height: 1.7; margin: 0; }

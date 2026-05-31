@@ -1,0 +1,187 @@
+.courses-page { padding-bottom: 1rem; }
+
+.courses-header {
+  padding: 1.4rem 1.2rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.courses-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  background: linear-gradient(135deg, #e8e0ff, #aa77ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.courses-sub {
+  font-size: 0.8rem;
+  color: var(--text2);
+  margin: 0.3rem 0 1rem;
+}
+
+.progress-bar-wrap {
+  background: var(--bg3);
+  border-radius: 4px;
+  height: 6px;
+  overflow: hidden;
+  margin-bottom: 0.4rem;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--gold));
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.progress-text {
+  font-size: 0.72rem;
+  color: var(--text2);
+}
+
+/* Category accordion */
+.course-cat {
+  border-bottom: 1px solid var(--border);
+}
+
+.course-cat-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.85rem 1.2rem;
+  background: none;
+  color: var(--text);
+  text-align: left;
+  transition: background 0.15s;
+}
+
+.course-cat-header:hover,
+.course-cat-header.open {
+  background: rgba(136,85,255,0.05);
+}
+
+.ccat-name {
+  flex: 1;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent2);
+  letter-spacing: 0.03em;
+}
+
+.ccat-progress {
+  font-size: 0.7rem;
+  color: var(--text2);
+}
+
+.ccat-chevron {
+  font-size: 0.7rem;
+  color: var(--text2);
+}
+
+.chapter-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.chapter-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid rgba(120,80,220,0.08);
+  background: none;
+  color: var(--text);
+  text-align: left;
+  transition: background 0.15s;
+}
+
+.chapter-item:active,
+.chapter-item:hover {
+  background: rgba(136,85,255,0.06);
+}
+
+.chapter-item.done .ch-icon {
+  background: rgba(100,220,120,0.15);
+  border-color: rgba(100,220,120,0.4);
+  color: #64dc78;
+}
+
+.ch-icon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: rgba(136,85,255,0.1);
+  border: 1px solid rgba(136,85,255,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: var(--accent2);
+}
+
+.ch-body { flex: 1; min-width: 0; }
+
+.ch-num {
+  font-size: 0.68rem;
+  color: var(--text2);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.15rem;
+}
+
+.ch-title {
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.ch-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.3rem;
+  flex-shrink: 0;
+}
+
+.badge {
+  font-size: 0.65rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 10px;
+  letter-spacing: 0.06em;
+}
+
+.badge.free {
+  background: rgba(100,220,120,0.12);
+  border: 1px solid rgba(100,220,120,0.3);
+  color: #64dc78;
+}
+
+.badge.premium {
+  background: rgba(212,168,67,0.1);
+  border: 1px solid rgba(212,168,67,0.3);
+  color: var(--gold);
+}
+
+.ch-arrow {
+  color: var(--text2);
+  font-size: 1.1rem;
+}
+
+.upgrade-btn {
+  margin-top: 0.8rem;
+  width: 100%;
+  background: linear-gradient(135deg, var(--accent), #6633cc);
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.75rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.upgrade-btn:active { opacity: 0.85; }

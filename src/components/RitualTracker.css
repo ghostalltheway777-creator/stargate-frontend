@@ -1,0 +1,100 @@
+.ritual-page { padding-bottom: 7rem; }
+
+.ritual-hero {
+  text-align: center;
+  padding: 2.5rem 1.2rem 1.5rem;
+  background: linear-gradient(180deg, rgba(40,10,10,0.5) 0%, transparent 100%);
+}
+.ritual-flame { font-size: 2.8rem; animation: flame 2s ease-in-out infinite; }
+@keyframes flame {
+  0%,100% { transform: scale(1) rotate(-2deg); }
+  50%      { transform: scale(1.1) rotate(2deg); }
+}
+.ritual-hero h1 { font-family: 'Cinzel', serif; font-size: 1.4rem; color: #ffd080; margin: 0.4rem 0; }
+.ritual-hero p  { font-size: 0.8rem; color: #9080a0; }
+
+.ritual-streak {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem 1.2rem;
+  margin: 0 1rem;
+  background: rgba(20,10,5,0.6);
+  border: 1px solid rgba(212,168,67,0.2);
+  border-radius: 14px;
+}
+.streak-num   { font-family: 'Cinzel', serif; font-size: 2.8rem; color: var(--gold,#d4a843); line-height: 1; }
+.streak-label { font-size: 0.72rem; color: #886; letter-spacing: 0.08em; margin-top: 0.2rem; }
+.streak-ring  { position: relative; width: 80px; height: 80px; }
+.streak-ring svg { width: 80px; height: 80px; }
+.ring-pct {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem; font-weight: 700; color: var(--gold,#d4a843);
+}
+
+.ritual-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+  padding: 1rem;
+}
+.ritual-item {
+  position: relative;
+  background: rgba(20,10,5,0.6);
+  border: 1px solid rgba(212,168,67,0.12);
+  border-radius: 12px;
+  padding: 1rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  transition: all 0.2s;
+}
+.ritual-item.done {
+  background: rgba(40,30,5,0.8);
+  border-color: rgba(212,168,67,0.4);
+  box-shadow: 0 0 12px rgba(212,168,67,0.1);
+}
+.ritual-item:active { transform: scale(0.95); }
+.ritual-icon  { font-size: 1.6rem; }
+.ritual-label { font-size: 0.72rem; color: #aaa; }
+.ritual-check {
+  position: absolute; top: 0.4rem; right: 0.5rem;
+  color: var(--gold,#d4a843); font-size: 0.85rem; font-weight: 700;
+}
+
+.ritual-note-wrap { padding: 0 1rem; }
+.ritual-note-label { font-size: 0.72rem; letter-spacing: 0.1em; color: #886; text-transform: uppercase; margin-bottom: 0.5rem; }
+.ritual-note {
+  width: 100%; background: rgba(20,10,5,0.5);
+  border: 1px solid rgba(212,168,67,0.15);
+  border-radius: 10px; color: #e0d8c0;
+  padding: 0.7rem; font-size: 0.85rem; line-height: 1.6;
+  resize: none; font-family: inherit;
+}
+.ritual-note:focus { outline: none; border-color: rgba(212,168,67,0.4); }
+.ritual-save {
+  margin-top: 0.5rem;
+  width: 100%; padding: 0.7rem;
+  background: rgba(212,168,67,0.12);
+  border: 1px solid rgba(212,168,67,0.3);
+  color: var(--gold,#d4a843);
+  border-radius: 8px; font-size: 0.82rem;
+  transition: background 0.2s;
+}
+.ritual-save:hover { background: rgba(212,168,67,0.2); }
+
+.ritual-history { padding: 0 1rem; margin-top: 1rem; }
+.section-label { font-size: 0.68rem; letter-spacing: 0.12em; color: #886; text-transform: uppercase; margin: 0.5rem 0; }
+
+.history-row {
+  display: flex; align-items: center; gap: 0.8rem;
+  padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.h-date  { font-size: 0.72rem; color: #888; width: 90px; }
+.h-dots  { display: flex; gap: 4px; flex: 1; }
+.h-dot   { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.1); }
+.h-dot.done { background: var(--gold,#d4a843); }
+.h-count { font-size: 0.72rem; color: #666; width: 30px; text-align: right; }

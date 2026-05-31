@@ -1,0 +1,28 @@
+{
+  "name": "stargate",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview --host"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.3.4",
+    "@capacitor/cli": "^8.3.4",
+    "@capacitor/core": "^8.3.4",
+    "@capacitor/ios": "^8.3.4",
+    "@zxing/browser": "^0.2.0",
+    "@zxing/library": "^0.22.0",
+    "html2canvas": "^1.4.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.0",
+    "web-push": "^3.6.7"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.0",
+    "vite-plugin-pwa": "^0.20.5"
+  }
+}

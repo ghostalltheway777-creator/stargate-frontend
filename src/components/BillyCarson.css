@@ -1,0 +1,119 @@
+.bc-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1rem 1rem 5rem;
+}
+
+.bc-hero {
+  text-align: center;
+  padding: 2rem 0 1.5rem;
+}
+.bc-eye { font-size: 2.2rem; margin-bottom: 0.4rem; }
+.bc-title { font-size: 2rem; font-weight: 900; color: #d4a843; margin: 0 0 0.3rem; letter-spacing: 0.05em; }
+.bc-sub { font-size: 0.8rem; color: #888; margin: 0 0 1rem; }
+.bc-quote {
+  font-size: 0.8rem;
+  color: rgba(212,168,67,0.65);
+  font-style: italic;
+  border: 1px solid rgba(212,168,67,0.12);
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  margin: 0;
+}
+.bc-quote cite { display: block; font-size: 0.68rem; color: rgba(212,168,67,0.4); margin-top: 0.3rem; font-style: normal; }
+
+.bc-section { margin-bottom: 0.7rem; border: 1px solid rgba(212,168,67,0.15); border-radius: 14px; overflow: hidden; }
+
+.bc-sec-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 1rem 1.1rem;
+  background: rgba(212,168,67,0.04);
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.2s;
+}
+.bc-sec-header:hover { background: rgba(212,168,67,0.08); }
+.bc-sec-icon { font-size: 1.4rem; flex-shrink: 0; }
+.bc-sec-title { font-size: 0.95rem; font-weight: 700; color: #d4a843; margin-bottom: 0.15rem; }
+.bc-sec-sub { font-size: 0.72rem; color: #888; }
+.bc-chevron { margin-left: auto; color: #d4a84380; font-size: 0.7rem; flex-shrink: 0; }
+
+.bc-sec-body { padding: 1.2rem; border-top: 1px solid rgba(212,168,67,0.1); }
+
+/* Bio */
+.bc-bio-grid { display: grid; grid-template-columns: 1fr 200px; gap: 1.2rem; }
+.bc-bio-text p { font-size: 0.82rem; color: #ccc; line-height: 1.6; margin: 0 0 0.6rem; }
+.bc-bio-text p:last-child { margin: 0; }
+.bc-bio-facts { display: flex; flex-direction: column; gap: 0.5rem; }
+.bc-fact { display: flex; align-items: flex-start; gap: 0.5rem; font-size: 0.74rem; color: #aaa; line-height: 1.4; }
+.bc-fact-icon { flex-shrink: 0; }
+
+/* Theories */
+.bc-theories-grid { display: flex; flex-direction: column; gap: 0.8rem; }
+.bc-theory-card {
+  background: rgba(144,96,192,0.05);
+  border: 1px solid rgba(144,96,192,0.15);
+  border-radius: 10px;
+  padding: 0.9rem;
+}
+.bc-th-icon { font-size: 1.3rem; margin-bottom: 0.3rem; }
+.bc-th-title { font-size: 0.88rem; font-weight: 700; color: #c090e0; margin-bottom: 0.4rem; }
+.bc-th-desc { font-size: 0.76rem; color: #aaa; line-height: 1.5; }
+
+/* Video */
+.bc-video-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #000;
+}
+.bc-video-wrap iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: none;
+}
+.bc-yt-link {
+  display: block;
+  text-align: center;
+  margin-top: 0.6rem;
+  font-size: 0.78rem;
+  color: rgba(224,80,80,0.8);
+  text-decoration: none;
+  padding: 0.4rem;
+  border-radius: 6px;
+  border: 1px solid rgba(224,80,80,0.2);
+  transition: all 0.2s;
+}
+.bc-yt-link:hover { background: rgba(224,80,80,0.1); color: #f08080; }
+
+/* Books */
+.bc-books-list { display: flex; flex-direction: column; gap: 0.6rem; }
+.bc-book-card {
+  background: rgba(212,168,67,0.04);
+  border: 1px solid rgba(212,168,67,0.12);
+  border-radius: 10px;
+  padding: 0.9rem;
+}
+.bc-book-title { font-size: 0.88rem; font-weight: 700; color: #d4a843; margin-bottom: 0.1rem; }
+.bc-book-year { font-size: 0.65rem; color: #666; margin-bottom: 0.4rem; }
+.bc-book-desc { font-size: 0.76rem; color: #aaa; line-height: 1.45; }
+
+/* Connections */
+.bc-connections { display: flex; flex-direction: column; gap: 0.5rem; }
+.bc-conn-card {
+  border-left: 2px solid rgba(80,192,128,0.3);
+  padding: 0.5rem 0.8rem;
+}
+.bc-conn-name { font-size: 0.84rem; font-weight: 700; color: #50c080; margin-bottom: 0.2rem; }
+.bc-conn-link { font-size: 0.76rem; color: #aaa; line-height: 1.45; }
+
+@media (max-width: 520px) {
+  .bc-bio-grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,227 @@
+.tarot-page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem 1rem 4rem;
+}
+
+.tarot-header {
+  text-align: center;
+  padding: 2rem 0 1.2rem;
+}
+
+.tarot-arcana-row {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+.ta-sym { font-size: 1.3rem; }
+
+.tarot-title {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #c050a0;
+  letter-spacing: 0.08em;
+  margin: 0 0 0.3rem;
+  text-shadow: 0 0 30px rgba(192,80,160,0.4);
+}
+
+.tarot-sub { color: #a0916a; font-size: 0.85rem; }
+
+/* Tabs */
+.tarot-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.tt-tab {
+  flex: 1;
+  padding: 0.5rem 0.3rem;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  color: #888;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.tt-tab.active {
+  background: rgba(192,80,160,0.15);
+  border-color: rgba(192,80,160,0.5);
+  color: #c050a0;
+}
+
+/* Card flip */
+.tarot-daily {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tarot-daily-label {
+  color: #888;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.tarot-card-flip {
+  width: 140px;
+  height: 220px;
+  perspective: 800px;
+  cursor: pointer;
+}
+
+.tcf-front, .tcf-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: 14px;
+  transition: transform 0.6s cubic-bezier(0.4,0,0.2,1);
+}
+
+.tarot-card-flip { position: relative; }
+
+.tcf-front {
+  background: linear-gradient(135deg, #1a1035, #0d0820);
+  border: 2px solid rgba(192,80,160,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(0deg);
+}
+
+.tcf-back-face {
+  font-size: 5rem;
+  opacity: 0.4;
+}
+
+.tcf-back {
+  transform: rotateY(180deg);
+  background: rgba(0,0,0,0.5);
+}
+
+.tarot-card-flip.flipped .tcf-front { transform: rotateY(-180deg); }
+.tarot-card-flip.flipped .tcf-back  { transform: rotateY(0deg); }
+
+.tc-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  padding: 1rem 0.6rem;
+  border: 1.5px solid;
+  border-radius: 14px;
+  height: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.tc-num      { font-size: 0.65rem; color: #888; }
+.tc-icon     { font-size: 2rem; }
+.tc-name     { font-size: 0.82rem; font-weight: 800; letter-spacing: 0.02em; }
+.tc-sub      { font-size: 0.6rem; color: #999; font-style: italic; }
+.tc-kabbalah { font-size: 0.58rem; color: #666; }
+
+.tarot-daily-actions {
+  width: 100%;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.tarot-q-input {
+  width: 100%;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  color: #eee;
+  padding: 0.6rem 0.9rem;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+.tarot-q-input:focus { outline: none; border-color: rgba(192,80,160,0.4); }
+
+/* Spread */
+.tarot-spread-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.tarot-spread-btns {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.tarot-spread-btn {
+  flex: 1;
+  min-width: 80px;
+  font-size: 0.82rem !important;
+  padding: 0.5rem 0.4rem !important;
+}
+
+.tarot-spread-grid {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tarot-spread-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tarot-interp-btn {
+  padding: 0.3rem 0.8rem;
+  background: rgba(192,80,160,0.15);
+  border: 1px solid rgba(192,80,160,0.4);
+  border-radius: 8px;
+  color: #c050a0;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.tarot-interp-btn:hover { background: rgba(192,80,160,0.25); }
+
+/* All cards */
+.tarot-all-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 0.6rem;
+}
+
+.tc-all-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.7rem 0.4rem;
+  border: 1.5px solid;
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s;
+}
+.tc-all-card:hover { transform: translateY(-2px); filter: brightness(1.2); }
+
+.tca-icon { font-size: 1.4rem; }
+.tca-name { font-size: 0.68rem; font-weight: 700; }
+.tca-num  { font-size: 0.58rem; color: #666; }
+.tca-kw   { font-size: 0.55rem; color: #888; font-style: italic; }
+
+/* Result */
+.tarot-result {
+  margin-top: 1rem;
+  padding: 1.2rem;
+}

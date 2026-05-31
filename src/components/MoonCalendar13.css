@@ -1,0 +1,53 @@
+.m13-page { padding: 0 0 80px; max-width: 480px; margin: 0 auto; }
+.m13-hero { text-align: center; padding: 36px 20px 20px; background: linear-gradient(180deg,#060812,#080d18); border-bottom: 1px solid rgba(80,140,255,0.15); }
+.m13-hero-icon { font-size: 36px; margin-bottom: 10px; }
+.m13-title { font-size: 26px; font-weight: 700; color: #fff; margin: 0 0 6px; letter-spacing: 2px; }
+.m13-sub { font-size: 11px; color: rgba(255,255,255,0.45); margin: 0; }
+
+.m13-tabs { display: flex; gap: 4px; padding: 12px 12px 0; }
+.m13-tab { flex: 1; padding: 9px 6px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; color: rgba(255,255,255,0.45); font-size: 11px; cursor: pointer; }
+.m13-tab.active { background: rgba(80,140,255,0.1); border-color: rgba(80,140,255,0.3); color: #80b0ff; }
+
+.m13-section { padding: 16px; }
+.m13-intro { font-size: 12px; color: rgba(255,255,255,0.55); line-height: 1.7; margin-bottom: 16px; border-left: 2px solid rgba(80,140,255,0.3); padding-left: 10px; }
+
+.m13-today-card { background: rgba(255,255,255,0.03); border: 2px solid var(--moon-color, #4080ff); border-radius: 14px; padding: 20px; margin-bottom: 14px; text-align: center; }
+.m13-today-num { font-size: 12px; color: rgba(255,255,255,0.4); margin-bottom: 6px; }
+.m13-today-name { font-size: 20px; font-weight: 700; color: var(--moon-color, #80b0ff); margin-bottom: 6px; }
+.m13-today-desc { font-size: 12px; color: rgba(255,255,255,0.6); margin-bottom: 16px; font-style: italic; }
+.m13-today-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+.m13-day-cell { aspect-ratio: 1; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 10px; background: rgba(255,255,255,0.04); color: rgba(255,255,255,0.3); }
+.m13-day-cell.past { background: rgba(80,140,255,0.1); color: rgba(255,255,255,0.5); }
+.m13-day-cell.today { background: var(--moon-color, #4080ff); color: #fff; font-weight: 700; border-radius: 50%; }
+
+.m13-info-box { background: rgba(80,140,255,0.06); border: 1px solid rgba(80,140,255,0.15); border-radius: 10px; padding: 14px; font-size: 12px; color: rgba(255,255,255,0.65); line-height: 1.7; }
+.m13-info-box strong { color: #80b0ff; }
+
+.m13-doot { text-align: center; padding: 30px 20px; background: rgba(255,200,30,0.06); border: 1px solid rgba(255,200,30,0.2); border-radius: 14px; margin-bottom: 14px; }
+.m13-doot-icon { font-size: 40px; margin-bottom: 10px; }
+.m13-doot h2 { font-size: 22px; color: #ffd700; margin: 0 0 10px; }
+.m13-doot p { font-size: 12px; color: rgba(255,255,255,0.65); line-height: 1.6; margin: 0; }
+
+.m13-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px; }
+.m13-compare-col { background: rgba(255,255,255,0.03); border-radius: 10px; padding: 12px; }
+.m13-compare-col h3 { font-size: 12px; font-weight: 600; margin: 0 0 10px; }
+.m13-compare-col.gregorian h3 { color: #ff6060; }
+.m13-compare-col.natural h3 { color: #60cc80; }
+.m13-compare-col ul { list-style: none; padding: 0; margin: 0; }
+.m13-compare-col li { font-size: 10px; color: rgba(255,255,255,0.5); padding: 3px 0; border-bottom: 1px solid rgba(255,255,255,0.04); line-height: 1.4; }
+
+.m13-insight { background: rgba(255,255,255,0.03); border: 1px solid rgba(80,140,255,0.12); border-radius: 10px; padding: 12px; margin-bottom: 12px; }
+.m13-insight-label { font-size: 9px; color: #80b0ff; letter-spacing: 1.5px; font-weight: 600; display: block; margin-bottom: 6px; }
+.m13-insight p { font-size: 12px; color: rgba(255,255,255,0.6); line-height: 1.6; margin: 0; }
+
+.m13-month-card { display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.02); border-left: 3px solid var(--mc, #4080ff); border-radius: 0 8px 8px 0; padding: 10px 12px; margin-bottom: 8px; }
+.m13-month-num { font-size: 10px; color: rgba(255,255,255,0.35); min-width: 50px; }
+.m13-month-name { font-size: 12px; font-weight: 600; color: var(--mc, #80b0ff); flex: 1; }
+.m13-month-desc { font-size: 10px; color: rgba(255,255,255,0.4); text-align: right; }
+.m13-doot-card { display: flex; align-items: center; gap: 10px; background: rgba(255,200,30,0.05); border-left: 3px solid #ffd700; border-radius: 0 8px 8px 0; padding: 10px 12px; }
+
+.m13-tl-item { display: flex; gap: 10px; margin-bottom: 12px; }
+.m13-tl-year { font-size: 10px; font-weight: 700; color: #80b0ff; min-width: 60px; padding-top: 3px; }
+.m13-tl-content { background: rgba(255,255,255,0.03); border: 1px solid rgba(80,140,255,0.1); border-radius: 8px; padding: 10px 12px; flex: 1; }
+.m13-tl-event { font-size: 12px; font-weight: 600; color: #fff; margin-bottom: 4px; }
+.m13-tl-desc { font-size: 11px; color: rgba(255,255,255,0.5); line-height: 1.5; }

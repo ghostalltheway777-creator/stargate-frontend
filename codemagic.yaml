@@ -1,0 +1,26 @@
+workflows:
+  android-release:
+    name: Stargate Android Release
+    max_build_duration: 60
+    environment:
+      node: 18.0.0
+      java: 17
+    scripts:
+      - name: Install dependencies
+        script: npm install
+      - name: Build web assets
+        script: npm run build
+      - name: Install Capacitor CLI
+        script: npm install -g @capacitor/cli
+      - name: Sync Capacitor
+        script: npx cap sync android
+      - name: Build Android APK
+        script: |
+          cd android
+          ./gradlew assembleRelease
+    artifacts:
+      - android/app/build/outputs/apk/release/*.apk
+    publishing:
+      google_play:
+        credentials: $GCLOUD_SERVICE_ACCOUNT_CREDENTIALS
+        track: internal

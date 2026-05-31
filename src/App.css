@@ -1,0 +1,237 @@
+/* Global dark inputs — fix browser default white */
+input, select, textarea {
+  background: rgba(10, 15, 30, 0.85) !important;
+  color: #fff !important;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 8px;
+  font-family: inherit;
+}
+input::placeholder, textarea::placeholder { color: rgba(255,255,255,0.3); }
+select option { background: #0a0f1e; color: #fff; }
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.app-header {
+  padding: 0.6rem 1.2rem 0.8rem;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(136,85,255,0.08) 0%, transparent 100%);
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+
+.header-back {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  color: var(--text2);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  padding: 0.3rem 0.5rem;
+  transition: color 0.2s;
+}
+
+.header-back:hover { color: var(--accent2); }
+
+.a11y-btn {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  color: var(--text2);
+  font-size: 1.1rem;
+  padding: 0.3rem 0.4rem;
+  transition: color 0.2s;
+}
+
+.a11y-btn:hover { color: var(--accent2); }
+
+.a11y-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 190;
+  background: rgba(0,0,0,0.4);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.logo-star {
+  font-size: 1.6rem;
+  color: var(--gold);
+  filter: drop-shadow(0 0 8px rgba(212,168,67,0.6));
+  animation: pulse-star 3s ease-in-out infinite;
+}
+
+@keyframes pulse-star {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.7; transform: scale(1.1); }
+}
+
+.logo-eyebrow {
+  font-size: 0.55rem;
+  letter-spacing: 0.35em;
+  color: rgba(212,168,67,0.7);
+  text-transform: uppercase;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 1px;
+}
+
+.logo-text {
+  font-family: 'Cinzel Decorative', 'Cinzel', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  background: linear-gradient(135deg, #e8e0ff, #aa77ff, #d4a843);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.logo-sub {
+  font-size: 0.72rem;
+  color: var(--text2);
+  letter-spacing: 0.06em;
+  margin-top: 0.25rem;
+}
+
+.logo-tradition {
+  color: var(--gold);
+  font-family: 'Cinzel', serif;
+  font-size: 0.72rem;
+}
+
+.app-main {
+  flex: 1;
+  padding: 0 0 6rem;
+  overflow-y: auto;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 680px;
+  display: flex;
+  background: rgba(8, 8, 22, 0.98);
+  border-top: 1px solid var(--border);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 0.5rem 0 calc(0.5rem + env(safe-area-inset-bottom));
+  z-index: 9999;
+  pointer-events: all;
+  isolation: isolate;
+}
+
+.nav-btn {
+  flex: 1;
+  background: none;
+  color: var(--text2);
+  font-size: 0.6rem;
+  padding: 0.4rem 0.1rem;
+  position: relative;
+  z-index: 9999;
+  pointer-events: all;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  transition: color 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.nav-icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.nav-name {
+  font-size: 0.55rem;
+  letter-spacing: 0.03em;
+}
+
+.nav-btn.active {
+  color: var(--accent2);
+}
+
+.nav-btn.active .nav-icon {
+  filter: drop-shadow(0 0 4px rgba(170,119,255,0.6));
+}
+
+.nav-btn:active {
+  opacity: 0.7;
+}
+
+/* Shared card style */
+.card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.2rem;
+  margin: 0.8rem 1rem;
+}
+
+.card:hover {
+  border-color: rgba(136,85,255,0.4);
+}
+
+.section-title {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  color: var(--text2);
+  text-transform: uppercase;
+  margin: 1.4rem 1rem 0.6rem;
+}
+
+.pill {
+  display: inline-block;
+  background: rgba(136,85,255,0.15);
+  border: 1px solid rgba(136,85,255,0.35);
+  color: var(--accent2);
+  border-radius: 20px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.pill:hover, .pill.active {
+  background: rgba(136,85,255,0.3);
+}
+
+.pill.gold {
+  background: rgba(212,168,67,0.12);
+  border-color: rgba(212,168,67,0.35);
+  color: var(--gold);
+}
+
+.offline-banner {
+  background: #3a2000;
+  border-bottom: 1px solid #7a4a00;
+  color: #f0a040;
+  text-align: center;
+  font-size: 0.82rem;
+  padding: 0.4rem;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}

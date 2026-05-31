@@ -1,0 +1,57 @@
+.fs-page { padding: 0 0 80px; max-width: 480px; margin: 0 auto; }
+.fs-hero { text-align: center; padding: 32px 20px 16px; background: linear-gradient(180deg,#060d06,#0a120a); border-bottom: 1px solid rgba(80,200,80,0.15); }
+.fs-icon { font-size: 36px; margin-bottom: 8px; }
+.fs-title { font-size: 26px; font-weight: 700; color: #fff; margin: 0 0 6px; letter-spacing: 2px; }
+.fs-sub { font-size: 11px; color: rgba(255,255,255,0.45); margin: 0; }
+
+.fs-scanner { padding: 16px; }
+.fs-manual { display: flex; flex-direction: column; gap: 10px; }
+.fs-input-row { display: flex; gap: 8px; }
+.fs-barcode-input { font-family: monospace !important; }
+.fs-search-btn { padding: 12px 18px; background: rgba(80,200,80,0.15); border: 1px solid rgba(80,200,80,0.3); border-radius: 10px; color: #80cc80; font-size: 18px; cursor: pointer; }
+.fs-search-btn:disabled { opacity: 0.4; }
+.fs-camera-btn { padding: 12px; background: rgba(80,120,255,0.1); border: 1px solid rgba(80,120,255,0.25); border-radius: 10px; color: #80a0ff; font-size: 13px; cursor: pointer; }
+
+.fs-camera-wrap { position: relative; }
+.fs-video { width: 100%; border-radius: 12px; max-height: 240px; object-fit: cover; }
+.fs-camera-overlay { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+.fs-scan-line { width: 70%; height: 2px; background: rgba(80,200,80,0.8); box-shadow: 0 0 10px rgba(80,200,80,0.6); animation: scanline 2s ease-in-out infinite; }
+@keyframes scanline { 0%,100% { transform: translateY(-40px); } 50% { transform: translateY(40px); } }
+.fs-camera-note { text-align: center; font-size: 12px; color: rgba(255,255,255,0.5); margin: 8px 0 0; }
+.fs-camera-stop { display: block; margin: 10px auto 0; padding: 8px 20px; background: rgba(200,50,50,0.15); border: 1px solid rgba(200,50,50,0.3); border-radius: 8px; color: #ff8080; font-size: 12px; cursor: pointer; }
+
+.fs-error { margin: 0 16px 16px; background: rgba(200,50,50,0.1); border: 1px solid rgba(200,50,50,0.2); border-radius: 8px; padding: 12px; font-size: 12px; color: #ff8080; text-align: center; }
+
+.fs-result { padding: 0 16px; }
+.fs-product-img { width: 100%; max-height: 180px; object-fit: contain; border-radius: 12px; background: rgba(255,255,255,0.05); margin-bottom: 12px; }
+.fs-product-name { font-size: 18px; font-weight: 700; color: #fff; margin: 0 0 4px; }
+.fs-brand { font-size: 12px; color: rgba(255,255,255,0.4); margin-bottom: 14px; }
+
+.fs-score-box { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 16px; margin-bottom: 14px; text-align: center; }
+.fs-score-grade { font-size: 48px; font-weight: 900; margin-bottom: 8px; }
+.fs-score-bar-wrap { background: rgba(255,255,255,0.08); border-radius: 20px; height: 8px; margin: 0 0 8px; overflow: hidden; }
+.fs-score-bar { height: 100%; border-radius: 20px; transition: width 0.5s; }
+.fs-score-label { font-size: 14px; font-weight: 600; }
+
+.fs-section-label { font-size: 9px; font-weight: 700; letter-spacing: 1.5px; margin-bottom: 8px; }
+.fs-section-label.danger { color: #ff8080; }
+.fs-section-label.good { color: #80cc80; }
+
+.fs-dangers, .fs-goods { margin-bottom: 12px; }
+.fs-tag { display: inline-block; padding: 4px 10px; border-radius: 20px; font-size: 11px; margin: 3px; }
+.fs-tag.danger { background: rgba(200,50,50,0.15); color: #ff8080; border: 1px solid rgba(200,50,50,0.25); }
+.fs-tag.good { background: rgba(80,200,80,0.12); color: #80cc80; border: 1px solid rgba(80,200,80,0.2); }
+
+.fs-warnings { margin-bottom: 12px; }
+.fs-warning { font-size: 11px; color: rgba(255,180,50,0.8); background: rgba(255,180,50,0.08); border-radius: 6px; padding: 6px 10px; margin-bottom: 4px; }
+
+.fs-ingredients { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07); border-radius: 10px; padding: 12px; margin-bottom: 14px; }
+.fs-ingredients-text { font-size: 11px; color: rgba(255,255,255,0.55); line-height: 1.6; margin: 0; }
+
+.fs-ai-btn { width: 100%; padding: 13px; background: rgba(80,200,80,0.1); border: 1px solid rgba(80,200,80,0.25); border-radius: 10px; color: #80cc80; font-size: 13px; cursor: pointer; margin-bottom: 14px; }
+.fs-ai-loading { text-align: center; font-size: 12px; color: rgba(80,200,80,0.6); padding: 12px; font-style: italic; }
+.fs-ai-result { background: rgba(80,200,80,0.05); border: 1px solid rgba(80,200,80,0.15); border-radius: 12px; padding: 14px; margin-bottom: 14px; }
+.fs-ai-text { font-size: 12px; color: rgba(255,255,255,0.75); line-height: 1.7; white-space: pre-wrap; margin: 0; font-family: inherit; background: transparent !important; }
+
+.fs-tip { margin: 0 16px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07); border-radius: 10px; padding: 12px; }
+.fs-tip p { font-size: 12px; color: rgba(255,255,255,0.5); line-height: 1.5; margin: 0; }
