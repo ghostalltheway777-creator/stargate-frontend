@@ -20,7 +20,4 @@ workflows:
           ./gradlew assembleRelease
     artifacts:
       - android/app/build/outputs/apk/release/*.apk
-    publishing:
-      google_play:
-        credentials: $GCLOUD_SERVICE_ACCOUNT_CREDENTIALS
-        track: internal
+      - android/app/build/outputs/apk/debug/*.apk
