@@ -1,0 +1,34 @@
+.ms-page { max-width: 480px; margin: 0 auto; padding: 0 0 80px; }
+.ms-hero { text-align: center; padding: 32px 20px 16px; background: linear-gradient(180deg,#080505,#0d0808); border-bottom: 1px solid rgba(180,80,80,0.2); }
+.ms-icon { font-size: 36px; margin-bottom: 8px; }
+.ms-title { font-size: 22px; font-weight: 700; color: #fff; margin: 0 0 6px; letter-spacing: 2px; }
+.ms-sub { font-size: 11px; color: rgba(255,255,255,0.4); margin: 0; }
+
+.ms-tabs { display: flex; gap: 3px; padding: 12px 12px 0; overflow-x: auto; scrollbar-width: none; }
+.ms-tabs::-webkit-scrollbar { display: none; }
+.ms-tab { flex-shrink: 0; padding: 8px 10px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; color: rgba(255,255,255,0.4); font-size: 11px; cursor: pointer; }
+.ms-tab.active { background: rgba(180,80,80,0.12); border-color: rgba(180,80,80,0.35); color: #dd8080; }
+
+.ms-section { padding: 16px; }
+.ms-alert { background: rgba(180,80,80,0.06); border: 1px solid rgba(180,80,80,0.2); border-radius: 12px; padding: 14px; margin-bottom: 16px; text-align: center; }
+.ms-alert p { font-size: 12px; font-style: italic; color: rgba(255,255,255,0.8); margin: 0; line-height: 1.7; }
+.ms-alert cite { font-size: 10px; color: rgba(180,80,80,0.7); display: block; margin-top: 6px; }
+
+.ms-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07); border-radius: 12px; padding: 16px; margin-bottom: 14px; }
+.ms-card-icon { font-size: 22px; margin-bottom: 8px; }
+.ms-card-title { font-size: 13px; font-weight: 700; color: #dd8080; margin: 0 0 10px; }
+.ms-card-text { font-size: 12px; color: rgba(255,255,255,0.7); line-height: 1.8; margin: 0 0 8px; }
+.ms-card-src { font-size: 10px; color: rgba(255,255,255,0.3); margin: 0; font-style: italic; }
+
+.ms-time-calc { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 14px; padding: 16px; margin-bottom: 16px; }
+.ms-time-title { font-size: 13px; font-weight: 700; color: #fff; margin-bottom: 12px; }
+.ms-time-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.ms-time-act { font-size: 11px; color: rgba(255,255,255,0.7); min-width: 110px; }
+.ms-time-hrs { font-size: 10px; color: rgba(255,255,255,0.4); min-width: 80px; }
+.ms-time-bar-wrap { flex: 1; height: 6px; background: rgba(255,255,255,0.05); border-radius: 3px; overflow: hidden; }
+.ms-time-bar { height: 100%; border-radius: 3px; }
+.ms-time-note { font-size: 11px; color: rgba(255,255,255,0.4); margin: 12px 0 0; line-height: 1.6; }
+
+.ms-green-box { background: rgba(80,200,100,0.08); border: 1px solid rgba(80,200,100,0.25); border-radius: 14px; padding: 20px; margin-bottom: 16px; }
+.ms-green-box h2 { font-size: 15px; font-weight: 700; color: #50cc70; margin: 0 0 10px; }
+.ms-green-box p { font-size: 12px; color: rgba(255,255,255,0.75); line-height: 1.7; margin: 0; }

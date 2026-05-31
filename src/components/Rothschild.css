@@ -1,0 +1,145 @@
+.rth-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a14 0%, #0d0d1e 50%, #0a0a14 100%);
+  color: #e8e0d0;
+  padding-bottom: 40px;
+}
+
+.rth-hero {
+  text-align: center;
+  padding: 32px 20px 20px;
+  background: linear-gradient(180deg, #0d0520 0%, transparent 100%);
+}
+
+.rth-icon { font-size: 48px; margin-bottom: 12px; }
+
+.rth-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #a88cdc;
+  margin: 0 0 8px;
+  letter-spacing: 0.5px;
+}
+
+.rth-sub {
+  font-size: 13px;
+  color: #6a5a8a;
+  margin: 0;
+}
+
+.rth-tabs {
+  display: flex;
+  overflow-x: auto;
+  gap: 8px;
+  padding: 16px 16px 0;
+  scrollbar-width: none;
+}
+.rth-tabs::-webkit-scrollbar { display: none; }
+
+.rth-tab {
+  flex-shrink: 0;
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 1px solid #2a1a4a;
+  background: transparent;
+  color: #6a5a8a;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.rth-tab.active {
+  background: #a88cdc;
+  border-color: #a88cdc;
+  color: #0a0a14;
+  font-weight: 600;
+}
+
+.rth-section {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.rth-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(168,140,220,0.15);
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.rth-card.rth-quote {
+  border-color: rgba(168,140,220,0.4);
+  background: rgba(168,140,220,0.08);
+}
+
+.rth-card-icon { font-size: 28px; margin-bottom: 10px; }
+
+.rth-card-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #a88cdc;
+  margin: 0 0 10px;
+}
+
+.rth-card-text {
+  font-size: 14px;
+  line-height: 1.65;
+  color: #c8bfaf;
+  margin: 0;
+}
+
+.rth-blockquote {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #e0d4f8;
+  font-style: italic;
+  border-left: 3px solid #a88cdc;
+  margin: 0;
+  padding-left: 16px;
+}
+
+.rth-card-src {
+  font-size: 12px;
+  color: #5a4a7a;
+  margin: 10px 0 0;
+  font-style: italic;
+}
+
+.rth-green-box {
+  background: rgba(40,80,40,0.3);
+  border: 1px solid rgba(80,160,80,0.3);
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.rth-green-box h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #7bc47b;
+  margin: 0 0 10px;
+}
+
+.rth-green-box p {
+  font-size: 14px;
+  line-height: 1.65;
+  color: #a8c8a8;
+  margin: 0;
+}
+
+.rth-alert {
+  background: rgba(60,30,80,0.4);
+  border: 1px solid rgba(168,140,220,0.3);
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+
+.rth-alert p {
+  font-size: 13px;
+  color: #a88cdc;
+  margin: 0;
+  line-height: 1.5;
+  font-style: italic;
+}

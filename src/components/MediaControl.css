@@ -1,0 +1,40 @@
+.mc-page { max-width: 480px; margin: 0 auto; padding: 0 0 80px; }
+.mc-hero { text-align: center; padding: 32px 20px 16px; background: linear-gradient(180deg,#060808,#080c0c); border-bottom: 1px solid rgba(80,160,200,0.15); }
+.mc-icon { font-size: 36px; margin-bottom: 8px; }
+.mc-title { font-size: 22px; font-weight: 700; color: #fff; margin: 0 0 6px; letter-spacing: 2px; }
+.mc-sub { font-size: 11px; color: rgba(255,255,255,0.4); margin: 0; }
+
+.mc-tabs { display: flex; gap: 3px; padding: 12px 12px 0; overflow-x: auto; scrollbar-width: none; }
+.mc-tabs::-webkit-scrollbar { display: none; }
+.mc-tab { flex-shrink: 0; padding: 8px 10px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; color: rgba(255,255,255,0.4); font-size: 11px; cursor: pointer; }
+.mc-tab.active { background: rgba(80,160,200,0.12); border-color: rgba(80,160,200,0.35); color: #50a0c8; }
+
+.mc-section { padding: 16px; }
+.mc-intro { font-size: 12px; color: rgba(255,255,255,0.6); line-height: 1.7; margin-bottom: 16px; border-left: 2px solid rgba(80,160,200,0.3); padding-left: 10px; }
+.mc-alert { background: rgba(80,160,200,0.06); border: 1px solid rgba(80,160,200,0.2); border-radius: 12px; padding: 14px; margin-bottom: 16px; text-align: center; }
+.mc-alert p { font-size: 12px; font-style: italic; color: rgba(255,255,255,0.8); margin: 0; line-height: 1.7; }
+.mc-alert cite { font-size: 10px; color: rgba(80,160,200,0.7); display: block; margin-top: 6px; }
+
+.mc-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07); border-radius: 12px; padding: 16px; margin-bottom: 14px; }
+.mc-card-icon { font-size: 22px; margin-bottom: 8px; }
+.mc-card-title { font-size: 13px; font-weight: 700; color: #50a0c8; margin: 0 0 10px; }
+.mc-card-text { font-size: 12px; color: rgba(255,255,255,0.7); line-height: 1.8; margin: 0 0 8px; }
+.mc-card-src { font-size: 10px; color: rgba(255,255,255,0.3); margin: 0; font-style: italic; }
+.mc-year { font-size: 11px; font-weight: 700; color: rgba(212,168,67,0.8); margin-bottom: 6px; }
+
+.mc-big-card { background: rgba(80,160,200,0.06); border: 1px solid rgba(80,160,200,0.2); border-radius: 14px; padding: 20px; margin-bottom: 16px; }
+.mc-big-title { font-size: 16px; font-weight: 700; color: #50a0c8; margin: 0 0 12px; }
+.mc-big-text { font-size: 12px; color: rgba(255,255,255,0.8); line-height: 1.7; margin: 0; }
+.mc-ritzau-box { background: rgba(212,168,67,0.08); border: 1px solid rgba(212,168,67,0.2); border-radius: 8px; padding: 10px 14px; margin: 12px 0; display: flex; align-items: center; gap: 10px; }
+.mc-ritzau-badge { background: rgba(212,168,67,0.2); color: #d4a843; font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 4px; flex-shrink: 0; }
+.mc-ritzau-box p { font-size: 11px; color: rgba(255,255,255,0.6); margin: 0; font-style: italic; }
+
+.mc-country-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07); border-radius: 10px; padding: 14px; margin-bottom: 12px; }
+.mc-country-name { font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+.mc-country-medier { font-size: 11px; color: rgba(255,255,255,0.65); line-height: 1.7; margin: 0; }
+
+.mc-spot-item { display: flex; gap: 12px; align-items: flex-start; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.04); }
+.mc-spot-item:last-child { border-bottom: none; }
+.mc-spot-num { font-size: 18px; font-weight: 900; color: #50a0c8; min-width: 28px; }
+.mc-spot-title { font-size: 12px; font-weight: 700; color: #fff; margin-bottom: 4px; }
+.mc-spot-desc { font-size: 11px; color: rgba(255,255,255,0.6); line-height: 1.6; }

@@ -58,7 +58,13 @@ import CovidScam from './components/CovidScam'
 import WorldOrder from './components/WorldOrder'
 import Palestine from './components/Palestine'
 import Hollywood from './components/Hollywood'
+import MediaControl from './components/MediaControl'
+import RomanEmpire from './components/RomanEmpire'
+import ModernSlavery from './components/ModernSlavery'
+import SportCircus from './components/SportCircus'
 import WWIIBankers from './components/WWIIBankers'
+import HitlerHistory from './components/HitlerHistory'
+import Rothschild from './components/Rothschild'
 import SacredSexuality from './components/SacredSexuality'
 import DailyMeditation from './components/DailyMeditation'
 import NetworkDiagram from './components/NetworkDiagram'
@@ -199,6 +205,10 @@ function AppInner() {
           <Route path="/world-order"    element={<P><WorldOrder /></P>} />
           <Route path="/palestine"      element={<P><Palestine /></P>} />
           <Route path="/hollywood"      element={<P><Hollywood /></P>} />
+          <Route path="/media"          element={<P><MediaControl /></P>} />
+          <Route path="/roman-empire"   element={<P><RomanEmpire /></P>} />
+          <Route path="/modern-slavery" element={<P><ModernSlavery /></P>} />
+          <Route path="/sport-circus"   element={<P><SportCircus /></P>} />
 
           {/* PREMIUM — kræver betaling */}
           <Route path="/explore"        element={<ExploreHub />} />
@@ -249,6 +259,8 @@ function AppInner() {
           <Route path="/transhumanism"           element={<P><Transhumanism /></P>} />
           <Route path="/avatar2045"              element={<P><Avatar2045 /></P>} />
           <Route path="/wwii-bankers"            element={<P><WWIIBankers /></P>} />
+          <Route path="/hitler-history"          element={<P><HitlerHistory /></P>} />
+          <Route path="/rothschild"              element={<P><Rothschild /></P>} />
           <Route path="/sacred-sexuality"      element={<P><SacredSexuality /></P>} />
           <Route path="/network"        element={<P><NetworkDiagram /></P>} />
           <Route path="/alien-search"   element={<P><AlienSearch /></P>} />
