@@ -10,6 +10,8 @@ workflows:
           cd android
           chmod +x gradlew
           echo "sdk.dir=$ANDROID_SDK_ROOT" > local.properties
-          ./gradlew assembleDebug --stacktrace
+          # Patch capacitor.build.gradle to remove cordova dependency
+          sed -i 's|apply from: "../capacitor-cordova-android-plugins/cordova.variables.gradle"||g' app/capacitor.build.gradle
+          ./gradlew assembleDebug
     artifacts:
       - android/app/build/outputs/apk/debug/*.apk
