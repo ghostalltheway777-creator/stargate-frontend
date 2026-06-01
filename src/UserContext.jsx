@@ -74,7 +74,6 @@ export function UserProvider({ children }) {
       throw new Error(err.detail || 'Login fejlede')
     }
     const data = await res.json()
-    // restore uuid and profile
     localStorage.setItem('sg_uuid', data.uuid)
     setUuidState(data.uuid)
     const restored = {
@@ -87,6 +86,7 @@ export function UserProvider({ children }) {
     }
     setProfile(restored)
     localStorage.setItem('sg_profile', JSON.stringify(restored))
+    localStorage.setItem('sg_session_expiry', Date.now() + 30 * 24 * 60 * 60 * 1000)
     return restored
   }
 
@@ -107,12 +107,17 @@ export function UserProvider({ children }) {
     const newId = genUUID()
     localStorage.setItem('sg_uuid', newId)
     localStorage.removeItem('sg_profile')
+    localStorage.removeItem('sg_session_expiry')
     setUuidState(newId)
     setProfile(DEFAULT_PROFILE)
     setPersonalDay(null)
   }
 
-  const isSetup = Boolean(profile.displayName && profile.birthdate)
+  const sessionValid = (() => {
+    const exp = localStorage.getItem('sg_session_expiry')
+    return exp && Date.now() < parseInt(exp)
+  })()
+  const isSetup = Boolean((profile.displayName && profile.birthdate) || sessionValid)
 
   const [isPremium, setIsPremium] = useState(false)
 

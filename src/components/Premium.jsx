@@ -80,7 +80,7 @@ export default function Premium() {
       <div className="pm-hero">
         <div className="pm-symbol">✦</div>
         <h1 className="pm-title">Stargate Premium</h1>
-        <p className="pm-sub">Ubegrænset adgang · AI-guide · Alle kurser · 3 dage gratis</p>
+        <p className="pm-sub">Alt det systemet ikke vil have dig til at vide — samlet ét sted</p>
       </div>
 
       <div className="pm-trial-badge">3 DAGE GRATIS — ingen betaling nu</div>
@@ -107,10 +107,12 @@ export default function Premium() {
       {/* Hvad får du */}
       <div className="pm-perks-box">
         {[
-          { icon: '🎓', title: 'Alle kurser', desc: 'Fuldt adgang til alle studieprogrammer — alle moduler ulåst' },
-          { icon: '◈', title: 'AI Higher Self', desc: 'Ubegrænset AI-samtaler med din personlige åndelige guide' },
-          { icon: '∿', title: 'Frekvensafspiller', desc: 'Alle 13 helende frekvenser · 432 Hz · 528 Hz · 963 Hz' },
-          { icon: '⬛', title: 'Eksklusivt indhold', desc: 'Nye sider og afsnit tilgængelige for premium-brugere først' },
+          { icon: '🌿', title: 'Verdens Bedste AI Natur-Doktor', desc: 'Baseret på tusinders år gammel helbredsviden fra Dr. Sebi, ayurveda og ancient medicine. Stil alle dine sundhedsspørgsmål — få svar som din egen personlige naturlæge' },
+          { icon: '📱', title: 'Food Scanner — Se Sandheden', desc: 'Scan stregkoden på enhver fødevare. Få øjeblikkelig analyse af seed oils, E-numre, GMO og skjulte giftstoffer. Aldrig snydt igen' },
+          { icon: '∿', title: '432 Hz Musik Konverter', desc: 'Konverter al din musik fra 440 Hz til den naturlige frekvens 432 Hz i realtid. Stream direkte eller download. Hør forskellen med det samme' },
+          { icon: '◈', title: 'AI Higher Self Guide', desc: 'Ubegrænset dyb AI-samtale med din personlige åndelige guide. Numerologi, astro-kort, drømmetydning og bevidsthedsudforskning tilpasset præcis dig' },
+          { icon: '🎓', title: 'Alt Indhold Ulåst', desc: 'Fuld adgang til alle sektioner — skjult historie, UAP/aliens, frimureri, Rothschild, antik medicin, hellige geometri og meget mere. Indhold der ikke findes andre steder' },
+          { icon: '🔮', title: 'Eksklusivt Premium Indhold', desc: 'Nye afsnit og sektioner tilgængelige for premium-brugere dage før alle andre. Du er altid først' },
         ].map(p => (
           <div key={p.title} className="pm-perk-card">
             <span className="pm-perk-icon">{p.icon}</span>
